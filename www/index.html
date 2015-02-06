@@ -1,0 +1,30 @@
+---
+layout: default
+title: John Sietsma
+---
+
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+        <div class="row neg-margin">
+            {% sorted_for page in site.pages sort_by:order %}
+            <a href="{{ page.url }}">
+                <div class="col-md-4">
+                    <div class="project greyscale" style="background-image: url({{ page.root}}{{ page.splash }});">
+                        {{ page.title }}
+                    </div>
+                </div>
+            </a>
+            {% endsorted_for %} <!-- page -->
+        </div>
+</section>
+
+
+<section id="services" class="section">
+        <div class="intro ">
+                <div class="vcard"<span class="fn"><a href="http://johnsietsma.com" class="url">John Sietsma</a></span> - <span class="adr">
+      <span class="locality">Melbourne</span>,
+      <span class="region">Australia</span>
+   </span></div>
+        </div>
+</section>

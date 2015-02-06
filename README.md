@@ -1,4 +1,4 @@
-johnsietsma.com
+JohnSietsma.com
 ===============
 
-The johnsietsma.com website
+My portfolio site.

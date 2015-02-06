@@ -1,0 +1,14 @@
+{
+  "name": "John Sietsma",
+  "version": "0.0.1",
+  "description": "Game development and design",
+  "main": "index.js",
+  "author": "John Sietsma",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notoes/johnsietsma.com.git"
+  },
+  "devDependencies": {
+  }
+}
