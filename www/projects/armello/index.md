@@ -3,14 +3,13 @@ layout: default
 title: Armello
 www: http://www.armello.com/
 categories: [project]
-root: "../../"
 position: Company Director, Technical Director
-order: 2
+order: 4
 date: 2011-09-01
 to-date: 2013-01-01
 platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET]
-splash: "../../images/armello/splash.jpeg"
+splash: "images/armello/splash.jpeg"
 ---
 
 {% include project_header.md %}
@@ -45,16 +44,16 @@ Armello was shown at 3 expos. GDC 2013, PAX Aus 2013 and PAX Prime 2013.
 <div class="text-center screen-shot">
     <div class="row neg-margin">
         <div class="col-md-6">
-            <img src="{{site.url}}/images/armello/Armello_PAX01.jpeg" alt="Armello screen shot"/>
+            <img src="{{site.baseurl}}/images/armello/Armello_PAX01.jpeg" alt="Armello screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.url}}/images/armello/Armello_PAX02.jpeg" alt="Armello screen shot"/>
+            <img src="{{site.baseurl}}/images/armello/Armello_PAX02.jpeg" alt="Armello screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.url}}/images/armello/Armello_PAX05.jpeg" alt="Armello screen shot"/>
+            <img src="{{site.baseurl}}/images/armello/Armello_PAX05.jpeg" alt="Armello screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.url}}/images/armello/Armello_PAX06.jpeg" alt="Armello screen shot"/>
+            <img src="{{site.baseurl}}/images/armello/Armello_PAX06.jpeg" alt="Armello screen shot"/>
         </div>
     </div>
 </div>

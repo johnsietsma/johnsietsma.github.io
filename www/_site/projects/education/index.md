@@ -5,7 +5,6 @@ title: Education
 categories: [project]
 order: 4
 date: 2001-03-01
-root: "../"
 ---
 
 #Education

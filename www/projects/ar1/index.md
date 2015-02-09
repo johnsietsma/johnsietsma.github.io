@@ -2,14 +2,13 @@
 layout: default
 title: Augmented Reality Development
 categories: [project]
-root: "../../"
-order: 4
+order: 6
 position: Freelance Developer
 date: 2010-01-01
 to-date: 2010-11-01
 platforms: [Mobile]
 technologies: [Django, Python]
-splash: "../../images/ar1/splash.jpg"
+splash: "images/ar1/splash.jpg"
 ---
 
 {% include project_header.md %}

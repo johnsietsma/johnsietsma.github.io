@@ -3,14 +3,13 @@ layout: default
 title: Dekko Augmented Reality
 www: http://www.dekko.co/
 categories: [project]
-root: "../../"
 position: Games Developer and Designer
-order: 3
+order: 5
 date: 2010-12-01
 to-date: 2013-01-01
 platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET, ObjectiveC, C]
-splash: "../../images/dekko/dekko_splash.jpeg"
+splash: "images/dekko/dekko_splash.jpeg"
 ---
 
 {% include project_header.md %}

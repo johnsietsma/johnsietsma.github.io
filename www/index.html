@@ -10,7 +10,7 @@ title: John Sietsma
             {% sorted_for page in site.pages sort_by:order %}
             <a href="{{ page.url }}">
                 <div class="col-md-4">
-                    <div class="project greyscale" style="background-image: url({{ page.root}}{{ page.splash }});">
+                    <div class="project greyscale" style="background-image: url( {{ site.baseurl }}/{{ page.splash }} );">
                         {{ page.title }}
                     </div>
                 </div>
