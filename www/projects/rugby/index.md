@@ -13,6 +13,14 @@ splash: "images/rugby/splash.jpg"
 
 {% include project_header.md %}
 
+
+Big Ant Studios is an independant Australian games studio, specialising in sports and racing games. I was hired to lead the programming team on the game “Rugby League Live”.
+
+Key Roles:
+
+* Project management and scheduling a team of 9 people using Agile principles.
+* Architecting and overseeing key systems written in C++ and C# WPF.
+
 <div class="container text-center video">
     <div class="row">
         <div class="col-md-12">

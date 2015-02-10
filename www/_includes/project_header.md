@@ -1,4 +1,4 @@
-# [{{page.title}}]({{page.www}})
+# {{page.title}}
 
   - Position: {{page.position}}
   - Platforms: {{page.platforms | join: ', '}}

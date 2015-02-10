@@ -16,11 +16,10 @@ splash: "images/armello/splash.jpeg"
 
 Armello is a swashbuckling adventure that combines RPG elements with the strategic play of card and board games, creating a personal, story-fuelled experience.
 
-It's a high quality game being made with distributed team using a revenue sharing model. Over 30 people have contributed to the game.
-
 As one of the directors, I help set out our business model, attract and lead developers, set the technical direction and write a lot of code!
 
-Armello was shown at 3 expos. GDC 2013, PAX Aus 2013 and PAX Prime 2013.
+> “John is a pleasure to work with, highly intelligent, analytical, with exceptional analysis instincts, and has always proved to be hugely capable and pragmatic.”
+> <cite>Blake Mizzi ­ Director at League of Geeks</cite>
 
 <div class="text-center video">
     <div class="row">

@@ -13,7 +13,15 @@ splash: "images/hoe/splash.jpg"
 
 {% include project_header.md %}
 
-Lead programmer of one the two internal technology teams that was responsible for tool development, core libraries, asset pipeline, database system, job system, build system and software engineering practices.
+Transmission Games was one of Australia’s largest independent game development studios. There were over 100 employees working on a number of different sports and flying games. I was brought on as tools programmer and quickly became lead of one the two internal technology teams.
+
+Key Roles:
+
+* Writing a city generation tool that combined OpenStreetMap data and 3D models to recreate London.
+* Working on a C#/.NET, WPF based level design tool, allowing designers to layout 100 square kilometer levels.
+* Creating a build pipeline which converted the gigabytes the level databases and assets into PS3, XBox360 and PC builds.
+* Overseeing the creation of core C++ libraries for job dispatching and database management.
+
 
 <div class="container text-center video">
     <div class="row">

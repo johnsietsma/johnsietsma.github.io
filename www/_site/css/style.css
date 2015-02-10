@@ -3,7 +3,8 @@
 }
 body {
   font: 1.5em "Glegoo";
-  color: #3f4953;
+  color: #343c45;
+  background-color: #ffffff;
 }
 .section {
   border-style: none;
@@ -19,8 +20,18 @@ body {
 .navbar .nav {
   font: 0.6em "Droid Sans";
 }
+h1 {
+  background-color: #3c8e63;
+  color: #FFFFFF;
+  font: 1.5em "Droid Sans";
+  font-weight: 700;
+  padding-left: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-shadow: -1px -1px 0 #343c45, 1px -1px 0 #343c45, -1px 1px 0 #343c45, 1px 1px 0 #343c45;
+}
 h2 {
-  background-color: #c44d58;
+  background-color: #3c8e63;
   color: #FFFFFF;
   font: 1.5em "Droid Sans";
   font-weight: 700;
@@ -53,7 +64,7 @@ strong {
   padding-left: 6px;
   border-width: medium;
   border-style: solid;
-  border-color: #288d86;
+  border-color: #3c8e63;
   color: #FFFFFF;
 }
 .project-image {
@@ -64,7 +75,7 @@ strong {
   padding-left: 6px;
   border-width: medium;
   border-style: solid;
-  border-color: #288d86;
+  border-color: #3c8e63;
   color: #FFFFFF;
 }
 .greyscale {
@@ -87,7 +98,7 @@ strong {
   margin-bottom: 6px;
   border-style: solid;
   border-width: medium;
-  border-color: #288d86;
+  border-color: #3c8e63;
 }
 .video iframe {
   margin-left: 6px;
@@ -96,7 +107,7 @@ strong {
   margin-bottom: 6px;
   border-style: solid;
   border-width: medium;
-  border-color: #288d86;
+  border-color: #3c8e63;
 }
 .button {
   background-color: red;
@@ -112,16 +123,16 @@ li {
   margin-bottom: 12px;
 }
 .icon {
-  color: #c44d58;
+  color: #3c8e63;
 }
 .contact {
-  color: #c44d58;
+  color: #3c8e63;
 }
 /* ==========================================================================
    Navigation styles
    ========================================================================== */
 .navbar-inverse {
-  background-color: #c44d58;
+  background-color: #3c8e63;
   border-color: transparent;
 }
 .nav > li > a {
