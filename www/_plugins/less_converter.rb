@@ -15,7 +15,7 @@ module Jekyll
         rescue LoadError
             STDERR.puts 'You are missing a library required for less. Please run:'
             STDERR.puts ' $ [sudo] gem install less'
-            raise FatalException.new("Missing dependency: less")
+            raise Jekyll::Errors::FatalException.new("Missing dependency: less")
         end
 
         def matches(ext)
