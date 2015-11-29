@@ -1,10 +1,19 @@
 canonical_url: http://www.johnsietsma.com
-baseurl: ""
+baseurl: "" # using the full domain here causes issues running Jekyll locally.
 assetsurl: /assets
 title: John Sietsma
 description: "A portfolio of John Sietsma's game development and design work. John Sietsma has experience with Unity 3D, C#, .NET, Mono, Python, Django and C/C++."
 #avatar: /assets/img/ogp.png
 language: en-au
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md 
+  - Vagrantfile
+  - bootstrap.sh
+  - start_server.sh
 
 #
 # Icons
@@ -60,9 +69,3 @@ recent_posts_num: 10
 #
 paginate: 10
 paginate_path: page/:num
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md

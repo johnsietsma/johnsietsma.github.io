@@ -7,7 +7,8 @@ title: John Sietsma
 <section id="projects" class="projects">
     <h2>Projects</h2>
         <div class="row neg-margin">
-            {% sorted_for page in site.pages sort_by:order %}
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for page in sorted_pages %}
             <a href="{{ page.url }}">
                 <div class="col-md-4">
                     <div class="project greyscale" style="background-image: url( {{ site.baseurl }}/{{ page.splash }} );">
@@ -15,6 +16,6 @@ title: John Sietsma
                     </div>
                 </div>
             </a>
-            {% endsorted_for %} <!-- page -->
+            {% endfor %} <!-- page -->
         </div>
 </section>

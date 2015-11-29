@@ -1,6 +1,5 @@
 *.sublime-workspace
 .vagrant
-
-www/_site
 .vscode
 *.lock
+_site
