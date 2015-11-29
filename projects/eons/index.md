@@ -8,7 +8,7 @@ date: 2014-10-01
 to-date: 2014-06-01
 platforms: [Oculus Rift]
 technologies: [Unity, C#/.NET, Shaders, VR]
-splash: "images/eons/splash.jpg"
+splash: "/images/eons/splash.jpg"
 ---
 
 {% include project_header.md %}
@@ -41,13 +41,13 @@ You can download the source [here](https://github.com/notoes/eons).
 <div class="text-center screen-shot">
     <div class="row neg-margin">
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/eons/screen1.png" alt="Eons screen shot"/>
+            <img src="{{site.assetsurl}}/images/eons/screen1.png" alt="Eons screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/eons/screen2.png" alt="Eons screen shot"/>
+            <img src="{{site.assetsurl}}/images/eons/screen2.png" alt="Eons screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/eons/screen3.png" alt="Eons screen shot"/>
+            <img src="{{site.assetsurl}}/images/eons/screen3.png" alt="Eons screen shot"/>
         </div>
     </div>
 </div>

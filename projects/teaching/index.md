@@ -3,7 +3,7 @@ layout: default
 title: Teaching
 categories: [project]
 order: 9
-splash: "images/teaching/splash.jpg"
+splash: "/images/teaching/splash.jpg"
 ---
 
 ## Teaching and Mentoring

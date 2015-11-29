@@ -9,13 +9,15 @@ title: John Sietsma
         <div class="row neg-margin">
             {% assign sorted_pages = site.pages | sort:"order" %}
             {% for page in sorted_pages %}
+            {% if page.categories contains 'project' %}
             <a href="{{ page.url }}">
                 <div class="col-md-4">
-                    <div class="project greyscale" style="background-image: url( {{ site.baseurl }}/{{ page.splash }} );">
+                    <div class="project greyscale" style="background-image: url( {{ page.splash | prepend: site.assetsurl }} );">
                         {{ page.title }}
                     </div>
                 </div>
             </a>
+            {% endif %}
             {% endfor %} <!-- page -->
         </div>
 </section>

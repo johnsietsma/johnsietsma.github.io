@@ -8,7 +8,7 @@ date: 2007-03-01
 to-date: 2008-11-01
 platforms: [Xbox360, PS3, PC]
 technologies: [C#, .NET, C/C++, Xbox360, PS3]
-splash: "images/rugby/splash.jpg"
+splash: "/images/rugby/splash.jpg"
 ---
 
 {% include project_header.md %}

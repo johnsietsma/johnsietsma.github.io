@@ -8,7 +8,7 @@ date: 2007-03-01
 to-date: 2008-03-01
 platforms: [iPad]
 technologies: [C#, .NET, C/C++, Xbox360, PS3]
-splash: "images/hoe/splash.jpg"
+splash: "/images/hoe/splash.jpg"
 ---
 
 {% include project_header.md %}

@@ -9,7 +9,7 @@ date: 2014-03-01
 to-date: 2014-10-01
 platforms: [Steam, iOS, Android]
 technologies: [Unity, C#, .NET, Shaders, Mechanim]
-splash: "images/clf/splash.png"
+splash: "/images/clf/splash.png"
 ---
 
 {% include project_header.md %}
@@ -33,10 +33,10 @@ Key Roles:
 <div class="text-center screen-shot">
     <div class="row neg-margin">
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/clf/power.gif" alt="Oscura power"/>
+            <img src="{{site.assetsurl}}/images/clf/power.gif" alt="Oscura power"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/clf/o3_yellow.gif" alt="Oscura yellow power"/>
+            <img src="{{site.assetsurl}}/images/clf/o3_yellow.gif" alt="Oscura yellow power"/>
         </div>
     </div>
 </div>

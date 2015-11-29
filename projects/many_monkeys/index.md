@@ -9,7 +9,7 @@ date: 2014-09-01
 to-date: 2015-01-01
 platforms: [Windows, Installation]
 technologies: [Unity, C#, .NET, C/C++, Kinect, Point Cloud Library, Image Processing]
-splash: "images/many_monkeys/splash.png"
+splash: "/images/many_monkeys/splash.png"
 ---
 
 {% include project_header.md %}
@@ -34,16 +34,16 @@ of the Kinects.
 <div class="text-center screen-shot">
     <div class="row neg-margin">
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/many_monkeys/music1.gif" alt="Debug screen shot"/>
+            <img src="{{site.assetsurl}}/images/many_monkeys/music1.gif" alt="Debug screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/many_monkeys/movie2.gif" alt="Music screen shot"/>
+            <img src="{{site.assetsurl}}/images/many_monkeys/movie2.gif" alt="Music screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/many_monkeys/underwater.jpg" alt="Underwater screen shot"/>
+            <img src="{{site.assetsurl}}/images/many_monkeys/underwater.jpg" alt="Underwater screen shot"/>
         </div>
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/many_monkeys/point_cloud.png" alt="Point cloud screen shot"/>
+            <img src="{{site.assetsurl}}/images/many_monkeys/point_cloud.png" alt="Point cloud screen shot"/>
         </div>
     </div>
 </div>
