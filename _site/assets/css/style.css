@@ -1,0 +1,202 @@
+/* colours */
+/* Responsive sizes */
+body {
+  font: 1.5em "Glegoo";
+  color: #343c45;
+  background-color: white;
+  height: 100%;
+  width: 100%; }
+
+.gravatar {
+  width: 100%;
+  margin-top: -80px;
+  text-align: center; }
+
+.index {
+  color: #DFECE6;
+  text-align: center; }
+  .index .author-header {
+    color: #3CA2A2;
+    margin-top: 0px;
+    padding-top: 15px;
+    font: 2em "Droid Sans"; }
+  .index .author-text {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .index .fa {
+    color: #DFECE6;
+    font-size: 24px; }
+
+.articles {
+  text-align: center;
+  font-size: 1.5em "Glegoo"; }
+  .articles ul {
+    padding: 0px;
+    list-style-type: none; }
+    .articles ul li {
+      margin-bottom: 20px;
+      font-size: 1.5em "Glegoo"; }
+      .articles ul li a:hover {
+        color: #969696; }
+      .articles ul li small {
+        font-size: 1em "Glegoo";
+        margin-top: -10px;
+        padding-top: 0px;
+        color: #969696; }
+    .articles ul small {
+      font-size: 1em "Glegoo"; }
+  .articles a, .articles a:active {
+    color: #FFFFFF; }
+  .articles a:hover {
+    color: #3CA2A2; }
+
+.section {
+  border-style: none;
+  border-width: none; }
+
+.navbar h1 {
+  color: #FFFFFF;
+  font: 2em "Droid Sans";
+  font-weight: 700;
+  font-stretch: ultra-condensed;
+  text-shadow: -1px -1px 0 #343c45, 1px -1px 0 #343c45, -1px 1px 0 #343c45, 1px 1px 0 #343c45; }
+
+.navbar .nav {
+  font: 0.6em "Droid Sans"; }
+
+/*h1, h2 {
+  background-color: $highlight_color;
+  color: #FFFFFF;
+  font: $subheader_font;
+  font-weight: 700;
+  padding-left: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  @include text-shadow( $dark_slate );
+}*/
+hr {
+  margin: 0px 0px 20px 0px; }
+
+strong {
+  font: 1.1em "Droid Sans";
+  font-weight: bold; }
+
+.intro {
+  text-align: justify; }
+  .intro .content {
+    padding: 0 0 1em 0; }
+
+/* Magic to update gutters without customising bootsrap */
+.neg-margin {
+  margin-left: -20px;
+  margin-right: -20px; }
+
+.content-panel {
+  background-color: #3B3B35;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid #3CA2A2; }
+
+.project {
+  height: 12em;
+  margin: 6px 6px 24px 6px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-width: medium;
+  border-style: solid;
+  border-color: #3c8e63;
+  color: #FFFFFF; }
+
+.project-image {
+  overflow: hidden;
+  height: 12em;
+  margin: 6px 6px 24px 6px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-width: medium;
+  border-style: solid;
+  border-color: #3c8e63;
+  color: #FFFFFF; }
+
+.greyscale {
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(80%);
+  /* For Webkit browsers */
+  filter: gray;
+  /* For IE 6 - 9 */
+  -webkit-transition: all .6s ease;
+  /* Transition for Webkit browsers */ }
+
+.project:hover {
+  filter: none;
+  -webkit-filter: none; }
+
+.screen-shot img {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3c8e63; }
+
+.video iframe {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3c8e63; }
+
+.button {
+  background-color: red;
+  width: 10em;
+  float: left;
+  padding: 0.5em;
+  margin: 1em; }
+
+cite {
+  font-style: italic; }
+
+li {
+  margin-bottom: 12px; }
+
+.icon {
+  color: #3c8e63; }
+
+.contact {
+  color: #3c8e63; }
+
+/* ==========================================================================
+   Navigation styles
+   ========================================================================== */
+.navbar-inverse {
+  background-color: #3c8e63;
+  border-color: transparent; }
+
+.nav > li > a {
+  color: #FFFFFF;
+  font: 1.5em "Glegoo"; }
+
+.navbar .nav > li > a {
+  color: #FFFFFF;
+  float: none;
+  padding: 25px 16px;
+  text-decoration: none;
+  text-shadow: none;
+  letter-spacing: -0.7px; }
+
+.navbar .nav > li > a:hover {
+  color: rgba(49, 54, 58, 0.9); }
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
