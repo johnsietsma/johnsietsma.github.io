@@ -1,2 +1,68 @@
-markdown: redcarpet
+canonical_url: http://www.johnsietsma.com
+baseurl: ""
+assetsurl: /assets
+title: John Sietsma
+description: "A portfolio of John Sietsma's game development and design work. John Sietsma has experience with Unity 3D, C#, .NET, Mono, Python, Django and C/C++."
+#avatar: /assets/img/ogp.png
+language: en-au
 
+#
+# Icons
+#
+icons:
+  rss: true
+  email:
+  github: notoes
+  bitbucket:
+  twitter: johnsietsma
+  facebook:
+  google_plus:
+  tumblr:
+  behance:
+  dribbble:
+  flickr:
+  instagram:
+  linkedin:  https://au.linkedin.com/in/jsietsma
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # full URL
+  steam:
+  wordpress:
+  youtube:
+
+#
+# Prettify url.
+#
+permalink: pretty
+
+ogp:
+  image_url: http://www.johnsietsma.com/assets/images/profile_512.jpg
+  fb:
+    admin: # facebook admin id
+    app_id: # facebook application id
+
+
+#
+# Scripts.
+#
+google_analytics: UA-44034071-2
+google_site_verification: "9js9QIDMT2cmliNmP3SqMg42Vo6OwUxsmpWoiPq6KWc"
+disqus: johnsietsma
+
+#
+# Recent posts.
+#
+recent_posts_num: 10
+
+#
+# Pagination.
+#
+paginate: 10
+paginate_path: page/:num
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md

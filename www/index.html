@@ -1,20 +1,49 @@
 ---
-layout: default
+layout: main
 title: John Sietsma
 ---
 
+<div class="container-fluid index">
+    <div class="row">
 
-<section id="projects" class="projects">
-    <h2>Projects</h2>
-        <div class="row neg-margin">
-            {% sorted_for page in site.pages sort_by:order %}
-            <a href="{{ page.url }}">
-                <div class="col-md-4">
-                    <div class="project greyscale" style="background-image: url( {{ site.baseurl }}/{{ page.splash }} );">
-                        {{ page.title }}
-                    </div>
-                </div>
-            </a>
-            {% endsorted_for %} <!-- page -->
+        <div class="col-md-12 main content-panel">
+
+            <div class="gravatar">
+                <img src="{{ '/images/profile_512.jpg' | prepend: site.assetsurl }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+            </div>
+
+            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
+
+            <div class="author-text">
+                <p>I'm a creative coder, teacher and game developer. I love figuring out ways to use technology to create new and interesting experiences.</p>
+                <p>While you're here, checkout my <a href="{{ '/projects' | prepend: site.baseurl }}">projects</a>, <a href="{{ '/blog' | prepend: site.baseurl }}">blog</a> or <a href="https://sketchfab.com/john.sietsma/models">photogrammetry models</a></p>
+            </div>
+
+            {% include social_links.html %}
+          </div>
+          <div class="col-md-12 main content-panel">
+
+            <div class="articles">
+
+              <h2>Latest Articles</h2>
+
+              <ul>
+                  {% for post in site.posts | limit: site.post_limit %}
+
+                      <li>
+                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                      </li>
+
+                  {% endfor %}
+                  <li>
+                      <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
+                  </li>
+              </ul>
+
+            </div>
+
         </div>
-</section>
+
+    </div>
+</div>

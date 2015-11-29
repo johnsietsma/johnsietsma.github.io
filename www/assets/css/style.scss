@@ -1,0 +1,304 @@
+---
+---
+
+
+/* colours */
+$twitter:        #6dabda;
+$linkedin:       #2b77b1;
+$google-plus:    #c95644;
+$github:         #f6c2a4;
+$stack-overflow: #c98b3b;
+$rss:            #eea33a;
+
+$darker:         #21211E;
+$dark:           #2D2D29;
+$medium:         #3B3B35;
+$light-medium:   #969696;
+$dark-blue:      #215A6D;
+$light-blue:     #3CA2A2;
+$green:          #92C7A3;
+$light:          #DFECE6;
+$white:          #FFFFFF;
+$dark-purple:    #300030;
+$medium-purple:  #480048;
+$regular-purple: #601848;
+$red:            #C04848;
+$orange:         #F07241;
+
+$grandmas_pillow: #C44D58;
+$slate: #556270;
+$dark_slate: darken($slate, 15%);
+$highlight_color: darken(#B6E0CA,40%);
+$font_color:darken(#4ECDC4,20%);
+$body_color: #D6D0A3;
+$border_color: $highlight_color;
+$background_color: lighten(#E3D9C5,50%);
+
+/* Responsive sizes */
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$strong_font: 1.1em "Droid Sans";
+$header_font: 2em "Droid Sans";
+$nav_link_font: 0.6em "Droid Sans";
+$subheader_font: 1.5em "Droid Sans";
+$normal_font: 1.5em "Glegoo";
+$small_font: 1em "Glegoo";
+
+@mixin text-shadow($color) {
+  text-shadow: -1px -1px 0  $color, 1px -1px 0  $color, -1px 1px 0  $color, 1px 1px 0  $color;
+}
+
+body {
+  font: $normal_font;
+  color: $dark_slate;
+  background-color: $background_color;
+  height: 100%;
+  width: 100%;
+}
+
+.gravatar {
+  width: 100%;
+  margin-top: -80px;
+  text-align: center;
+}
+
+.index {
+  color: $light;
+  text-align: center;
+  
+  .author-header {
+    color: $light-blue;
+    margin-top: 0px;
+    padding-top: 15px;
+    font: $header_font;
+  }
+
+  .author-text {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+  
+  .fa {
+    color: $light;
+    font-size: 24px;
+	}
+}
+
+.articles {
+  text-align: center;
+  font-size: $normal_font;
+
+  ul {
+    padding: 0px;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 20px;
+      font-size: $normal_font;
+
+      a:hover {
+        color: $light-medium;
+      }
+
+      small {
+        font-size: $small_font;
+        margin-top: -10px;
+        padding-top: 0px;
+        color: $light-medium;
+      }
+
+    }
+
+    small {
+      font-size: $small_font
+    }
+  }
+
+  a, a:active {
+    color: $white;
+  }
+
+  a:hover {
+    color: $light-blue;
+  }
+}
+
+.section {
+  border-style: none;
+  border-width: none;
+}
+
+.navbar h1 {
+  color: #FFFFFF;
+  font: $header_font;
+  font-weight: 700;
+  font-stretch: ultra-condensed;
+  @include text-shadow( $dark_slate );
+}
+
+.navbar .nav {
+  font: $nav_link_font;
+}
+
+/*h1, h2 {
+  background-color: $highlight_color;
+  color: #FFFFFF;
+  font: $subheader_font;
+  font-weight: 700;
+  padding-left: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  @include text-shadow( $dark_slate );
+}*/
+
+hr {
+  margin: 0px 0px 20px 0px;
+}
+
+strong {
+  font: $strong_font;
+  font-weight: bold;
+}
+
+.intro {
+  text-align: justify;
+  .content {
+    padding: 0 0 1em 0;
+  }
+}
+
+/* Magic to update gutters without customising bootsrap */
+.neg-margin {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.content-panel {
+  background-color: $medium;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid $light-blue;
+}
+
+.project {
+  height: 12em;
+  margin: 6px 6px 24px 6px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-width: medium;
+  border-style: solid;
+  border-color: $border_color;
+  color: #FFFFFF;
+}
+
+.project-image {
+  overflow:hidden;
+  height: 12em;
+  margin: 6px 6px 24px 6px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-width: medium;
+  border-style: solid;
+  border-color: $border_color;
+  color: #FFFFFF;
+}
+
+
+.greyscale {
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(80%);  /* For Webkit browsers */
+  filter: gray;  /* For IE 6 - 9 */
+  -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+}
+
+.project:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.screen-shot img {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-style: solid;
+  border-width: medium;
+  border-color: $border_color;
+}
+
+.video iframe {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-style: solid;
+  border-width: medium;
+  border-color: $border_color;
+}
+
+
+.button {
+  background-color: red;
+  width: 10em;
+  //display: inline;
+  float: left;
+  padding: 0.5em;
+  margin: 1em;
+}
+
+cite {
+  font-style: italic;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+.icon {
+  color: $highlight_color;
+}
+
+.contact {
+  color: $highlight_color;
+}
+
+/* ==========================================================================
+   Navigation styles
+   ========================================================================== */
+.navbar-inverse {
+  background-color: $highlight_color;
+  border-color: transparent;
+}
+
+.nav > li > a {
+  color: #FFFFFF;
+  font: $normal_font;
+}
+
+.navbar .nav > li > a {
+  color: #FFFFFF;
+  float: none;
+  padding: 25px 16px;
+  text-decoration: none;
+  text-shadow: none;
+  letter-spacing: -0.7px;
+}
+
+.navbar .nav > li > a:hover {
+  color: rgba(49,54,58,0.9);
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}

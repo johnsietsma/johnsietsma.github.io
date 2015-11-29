@@ -3,7 +3,6 @@
 add-apt-repository ppa:brightbox/ruby-ng
 apt-get update
 
-apt-get -y install build-essential # to build 'therubyracer' gem
 apt-get -y install zlibc zlib1g-dev zlib1g # Dep of bundler/nokogiri
 
 # Make sure we're on ruby 2
