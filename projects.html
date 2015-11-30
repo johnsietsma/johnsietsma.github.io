@@ -5,8 +5,10 @@ title: John Sietsma
 
 
 <section id="projects" class="projects">
-    <h2>Projects</h2>
-        <div class="row neg-margin">
+        <div class="row">
+            <h2 class="col-md-12">Projects</h2>
+        </div>
+        <div class="row">
             {% assign sorted_pages = site.pages | sort:"order" %}
             {% for page in sorted_pages %}
             {% if page.categories contains 'project' %}

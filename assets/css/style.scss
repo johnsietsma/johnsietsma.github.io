@@ -9,9 +9,11 @@ $google-plus:    #c95644;
 $github:         #f6c2a4;
 $stack-overflow: #c98b3b;
 $rss:            #eea33a;
+$steam:          #215A6D;
 
 $darker:         #21211E;
-$dark:           #2D2D29;
+/*$dark:           #2D2D29;*/
+$dark:           #3B3B35;
 $medium:         #3B3B35;
 $light-medium:   #969696;
 $dark-blue:      #215A6D;
@@ -19,9 +21,6 @@ $light-blue:     #3CA2A2;
 $green:          #92C7A3;
 $light:          #DFECE6;
 $white:          #FFFFFF;
-$dark-purple:    #300030;
-$medium-purple:  #480048;
-$regular-purple: #601848;
 $red:            #C04848;
 $orange:         #F07241;
 
@@ -52,8 +51,8 @@ $small_font: 1em "Glegoo";
 
 body {
   font: $normal_font;
-  color: $dark_slate;
-  background-color: $background_color;
+  color: $light;
+  background-color: $light;
   height: 100%;
   width: 100%;
 }
@@ -92,7 +91,6 @@ body {
 
   ul {
     padding: 0px;
-    list-style-type: none;
 
     li {
       margin-bottom: 20px;
@@ -130,65 +128,99 @@ body {
   border-width: none;
 }
 
-.navbar h1 {
-  color: #FFFFFF;
-  font: $header_font;
-  font-weight: 700;
-  font-stretch: ultra-condensed;
-  @include text-shadow( $dark_slate );
-}
-
-.navbar .nav {
-  font: $nav_link_font;
-}
-
-/*h1, h2 {
-  background-color: $highlight_color;
-  color: #FFFFFF;
-  font: $subheader_font;
-  font-weight: 700;
-  padding-left: 6px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  @include text-shadow( $dark_slate );
-}*/
-
-hr {
-  margin: 0px 0px 20px 0px;
-}
-
-strong {
-  font: $strong_font;
-  font-weight: bold;
-}
-
-.intro {
-  text-align: justify;
-  .content {
-    padding: 0 0 1em 0;
-  }
-}
-
-/* Magic to update gutters without customising bootsrap */
-.neg-margin {
-  margin-left: -20px;
-  margin-right: -20px;
+.icon {
+  color: $highlight_color;
 }
 
 .content-panel {
   background-color: $medium;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 20px;
-  box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-  border-bottom: 5px solid $light-blue;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
+	border-bottom: 5px solid $light-blue;
 }
+
+.header {
+	font-size: $header-font;
+  background-color: $darker;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+  
+  .fa {
+    padding-left: 0px;
+  }
+
+	p {
+		margin-bottom: 5px;
+	}
+
+	a, a:active {
+		color: $white;
+	}
+
+	a:hover {
+		color: $light-blue;
+	}
+     
+	.pages {
+    margin: 0px;
+	}
+  
+  .links {
+  	text-align: right;
+  }
+}
+
+.links {
+  padding: 0px;
+  margin: 0px;
+
+	i {
+		padding-left: 5px;
+		padding-right: 5px;
+  }
+
+	.fa-twitter:hover {
+		color: $twitter;
+	}
+
+	.fa-linkedin:hover {
+		color: $linkedin;
+	}
+
+	.fa-google-plus:hover {
+		color: $google-plus;
+	}
+
+	.fa-github-alt:hover {
+		color: $github;
+	}
+
+	.fa-stack-overflow:hover {
+		color: $stack-overflow;
+	}
+  
+  .fa-steam-square:hover {
+		color: $steam;
+	}
+
+	.fa-rss:hover {
+		color: $rss;
+	}
+}
+
+
+/*
+ * Project styles
+ */ 
 
 .project {
   height: 12em;
-  margin: 6px 6px 24px 6px;
+  margin: 0px 6px 24px 0px;
   padding-top: 6px;
   padding-left: 6px;
   border-width: medium;
@@ -208,7 +240,6 @@ strong {
   border-color: $border_color;
   color: #FFFFFF;
 }
-
 
 .greyscale {
   filter: grayscale(50%);
@@ -242,63 +273,29 @@ strong {
   border-color: $border_color;
 }
 
-
-.button {
-  background-color: red;
-  width: 10em;
-  //display: inline;
-  float: left;
-  padding: 0.5em;
-  margin: 1em;
-}
-
+/*
+ * HTML styles
+ */
 cite {
   font-style: italic;
 }
 
+hr {
+  margin: 0px 0px 20px 0px;
+}
+
+strong {
+  font: $strong_font;
+  font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
 li {
-  margin-bottom: 12px;
-}
-
-.icon {
-  color: $highlight_color;
-}
-
-.contact {
-  color: $highlight_color;
-}
-
-/* ==========================================================================
-   Navigation styles
-   ========================================================================== */
-.navbar-inverse {
-  background-color: $highlight_color;
-  border-color: transparent;
-}
-
-.nav > li > a {
-  color: #FFFFFF;
-  font: $normal_font;
-}
-
-.navbar .nav > li > a {
-  color: #FFFFFF;
-  float: none;
-  padding: 25px 16px;
-  text-decoration: none;
-  text-shadow: none;
-  letter-spacing: -0.7px;
-}
-
-.navbar .nav > li > a:hover {
-  color: rgba(49,54,58,0.9);
-}
-
-.navbar .navbar-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: inline-block;
-  float: none;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
 }
