@@ -7,8 +7,6 @@ description: "A portfolio of John Sietsma's game development and design work. Jo
 language: en-au
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - README.md 
   - Vagrantfile
@@ -68,4 +66,4 @@ recent_posts_num: 10
 # Pagination.
 #
 paginate: 10
-paginate_path: page/:num
+paginate_path: "page/:num"

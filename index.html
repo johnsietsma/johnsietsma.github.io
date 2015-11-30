@@ -1,6 +1,5 @@
 ---
 layout: main
-title: John Sietsma
 ---
 
 <div class="container-fluid index">
@@ -14,7 +13,7 @@ title: John Sietsma
 
             <div class="author-text">
                 <p>I'm a creative coder, teacher and game developer. I love figuring out ways to use technology to create new and interesting experiences.</p>
-                <p>While you're here, checkout my <a href="{{ '/projects' | prepend: site.baseurl }}">projects</a>, <a href="{{ '/blog' | prepend: site.baseurl }}">blog</a> or <a href="https://sketchfab.com/john.sietsma/models">photogrammetry models</a></p>
+                <p>While you're here, checkout my <a href="{{ '/projects' | prepend: site.baseurl }}">projects</a>, <a href="{{ '/blog/index.html' | prepend: site.baseurl }}">blog</a> or <a href="https://sketchfab.com/john.sietsma/models">photogrammetry models</a></p>
             </div>
 
             {% include social_links.html %}
@@ -27,7 +26,6 @@ title: John Sietsma
 
               <ul>
                   {% for post in site.posts | limit: site.post_limit %}
-
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                           <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
