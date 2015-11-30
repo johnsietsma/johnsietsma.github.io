@@ -44,7 +44,8 @@
             {% endif %}
             {% for tag in page.tags %}
             <li>
-                <a class="tag" href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}">#{{ tag }}</a>
+                <div class="tag">#{{ tag }}</div>
+                <!-- Search not operational <a class="tag" href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}">#{{ tag }}</a> -->
             </li>
             {% endfor %}
         </ul>

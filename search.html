@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="container-fluid index">
+  <div class="row index all-posts">
+
+    <h1 class="header author-header">Search</h1>
+
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Type here...">
+      <div class="col-md-12 content-panel articles">
+        <ul id="results-container"><small>Start typing to see some results</small></ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="search-hr" />
+
+<script src="{{ site.assetsurl }}/js/jekyll-search.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+  
+  var search_input = getParameterByName('t');
+  alert(search_input);
+  
+  SimpleJekyllSearch.init({
+    searchInput: search_input,
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: true,
+  })
+</script>

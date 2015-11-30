@@ -1,4 +1,4 @@
-canonical_url: http://www.johnsietsma.com
+url: http://www.johnsietsma.com
 baseurl: "" # using the full domain here causes issues running Jekyll locally.
 assetsurl: /assets
 title: John Sietsma
