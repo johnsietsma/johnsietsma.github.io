@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Chocolate Liberation Front
 www: http://www.givemechocolate.me/
 categories: [project]
@@ -11,8 +11,6 @@ platforms: [Steam, iOS, Android]
 technologies: [Unity, C#, .NET, Shaders, Mechanim]
 splash: "/images/clf/splash.png"
 ---
-
-{% include project_header.md %}
 
 The CLF is a Melbourne based TV production and games development studio. I was the sole programmer on Oscura Lost Light and assisted on Oscura Second Shadow.
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Eons
 categories: [project]
 order: 2
@@ -10,8 +10,6 @@ platforms: [Oculus Rift]
 technologies: [Unity, C#/.NET, Shaders, VR]
 splash: "/images/eons/splash.jpg"
 ---
-
-{% include project_header.md %}
 
 Eons was a personal project to explore gaze interactions in Virtual Reality.
 

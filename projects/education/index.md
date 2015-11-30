@@ -1,6 +1,6 @@
 a
 ---
-layout: default
+layout: project
 title: Education
 categories: [project]
 order: 4

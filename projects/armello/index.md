@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Armello
 www: http://www.armello.com/
 categories: [project]
@@ -11,8 +11,6 @@ platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET]
 splash: "/images/armello/splash.jpeg"
 ---
-
-{% include project_header.md %}
 
 Armello is a swashbuckling adventure that combines RPG elements with the strategic play of card and board games, creating a personal, story-fuelled experience.
 

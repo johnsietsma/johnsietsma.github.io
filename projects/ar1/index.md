@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Augmented Reality Development
 categories: [project]
 order: 6
@@ -10,8 +10,6 @@ platforms: [Mobile]
 technologies: [Django, Python]
 splash: "/images/ar1/splash.jpg"
 ---
-
-{% include project_header.md %}
 
 An independent developer working on a number of augmented reality projects.
 

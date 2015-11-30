@@ -52,7 +52,7 @@ $small_font: 1em "Glegoo";
 
 body {
   font: $normal_font;
-  color: $dark_slate;
+  color: $light;
   background-color: $light;
   height: 100%;
   width: 100%;
@@ -76,14 +76,14 @@ body {
   }
 
   .author-text {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   
   .fa {
     color: $light;
     font-size: 24px;
-	}
+  }
 }
 
 .icon {
@@ -92,44 +92,44 @@ body {
 
 .content-panel {
   background-color: $medium;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-top: 20px;
-	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
-	border-bottom: 5px solid $light-blue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid $light-blue;
 }
 
 .header {
-	font-size: $header-font;
+  font-size: $header-font;
   background-color: $darker;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
   
   .fa {
     padding-left: 0px;
   }
 
-	p {
-		margin-bottom: 5px;
-	}
+  p {
+    margin-bottom: 5px;
+  }
 
-	a, a:active {
-		color: $white;
-	}
+  a, a:active {
+    color: $white;
+  }
 
-	a:hover {
-		color: $light-blue;
-	}
+  a:hover {
+    color: $light-blue;
+  }
      
-	.pages {
+  .pages {
     margin: 0px;
-	}
+  }
   
   .links {
-  	text-align: right;
+    text-align: right;
   }
 }
 
@@ -141,42 +141,42 @@ body {
     display: inline-block;
   }
 
-	i {
-		padding-left: 5px;
-		padding-right: 5px;
+  i {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
-	.fa-twitter:hover {
-		color: $twitter;
-	}
+  .fa-twitter:hover {
+    color: $twitter;
+  }
 
-	.fa-linkedin:hover {
-		color: $linkedin;
-	}
+  .fa-linkedin:hover {
+    color: $linkedin;
+  }
 
-	.fa-google-plus:hover {
-		color: $google-plus;
-	}
+  .fa-google-plus:hover {
+    color: $google-plus;
+  }
 
-	.fa-github:hover {
-		color: $github;
-	}
+  .fa-github:hover {
+    color: $github;
+  }
 
-	.fa-stack-overflow:hover {
-		color: $stack-overflow;
-	}
+  .fa-stack-overflow:hover {
+    color: $stack-overflow;
+  }
   
   .fa-steam-square:hover {
-		color: $steam;
-	}
+    color: $steam;
+  }
   
   .fa-envelope:hover {
-		color: $email;
-	}
+    color: $email;
+  }
 
-	.fa-rss:hover {
-		color: $rss;
-	}
+  .fa-rss:hover {
+    color: $rss;
+  }
 }
 
 
@@ -184,7 +184,7 @@ body {
  * Project styles
  */ 
 
-.project {
+.project-square {
   height: 12em;
   margin: 0px 6px 24px 0px;
   padding-top: 6px;
@@ -193,6 +193,10 @@ body {
   border-style: solid;
   border-color: $border_color;
   color: $dark_slate;
+}
+
+.project {
+  color: $light;
 }
 
 .project-image {
@@ -264,18 +268,29 @@ ul {
  * Blog styles
  */
  
-.articles {
+ .blog-header {
+  .tags {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    li {
+      display: inline-block;
+    }
+  }
+ }
+ 
+.article {
   text-align: center;
-  font-size: 20px;
+  font: $normal_font;
+  
 
-  h2 {
+  h1, h2 {
     margin-bottom: 30px;
     color: $light-blue;
-    font-size: 26px;
+    font: $header_font
   }
 
   ul {
-
     padding: 0px;
 
     li {
@@ -296,11 +311,9 @@ ul {
     }
 
     li:nth-last-of-type(1) {
-
       small {
         font-size: 16px;
       }
-
     }
   }
 
@@ -311,287 +324,31 @@ ul {
   a:hover {
     color: $light-blue;
   }
+
+  img {
+    max-width: 100%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  p, ul, ol {
+    code {
+      font-family: 'Anonymous Pro';
+      font-size: 15px;
+      padding: 0.5em;
+      vertical-align: middle;
+    }
+  }  
+
+  a, a:active {
+    color: $white;
+  }
+
+  a:hover {
+    color: $light-blue;
+  }
+
 }
 
-.section {
-  border-style: none;
-  border-width: none;
-}
-
-.single {
-	height:100%;
-	max-height: 100%;
-
-	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Montserrat', sans-serif;
-		margin-bottom: 10px;
-	}
-
-	h2 {
-		font-size: 36px;
-	}
-
-	h3 {
-		font-size: 28px;
-	}
-
-	p {
-		margin-bottom: 10px;
-
-		@media (min-width: $screen-sm-min) {
-			margin-bottom: 40px;
-		}
-	}
-
-	.menu {
-
-		background-color: $dark-blue;
-
-		a, a:active {
-			color: $white;
-		}
-
-		a:hover {
-			color: $light-blue;
-		}
-
-		h4 {
-			margin-top: 20px;
-		}
-
-		.share {
-			margin-top: 20px;
-
-			h4 {
-				margin-bottom: 10px;
-			}
-		}
-
-		.home {
-			margin-top: 10px;
-			font-size: 16px;
-
-			a {
-				color: $white;
-			}
-		}
-
-		.related {
-			ul {
-				padding: 0px;
-			}
-			li {
-				margin-bottom: 10px;
-			}
-		}
-	}
-
-	.article {
-		width: 100%;
-		margin-left: 0%;
-		padding: 0px;
-
-		@media (min-width: $screen-sm-min) {
-			width: 90%;
-			margin-left: 5%;
-		}
-
-		@media (min-width: $screen-md-min) {
-			width: 70%;
-			margin-left: 15%;
-		}
-
-		@media (min-width: $screen-lg-min) {
-			width: 50%;
-			margin-left: 25%;
-		}
-
-		.thumb {
-			margin-top: 20px;
-			margin-bottom: 0px;
-			text-align: center;
-
-			img {
-				height: 50px;
-				@media (min-width: $screen-sm-min) {
-					height: 70px;
-				}
-			}
-		}
-
-		.author {
-			font-size: 20px;
-			text-align: center;
-			margin-bottom: 0px;
-		}
-
-		.read-time {
-			font-size: 16px;
-			text-align: center;
-			margin-bottom: 10px;
-			font-weight: 400;
-			@media (min-width: $screen-sm-min) {
-				margin-bottom: 40px;
-			}
-		}
-
-		.content {
-			font-size: 18px;
-			line-height: 170%;
-			padding-left: 15px;
-			padding-right: 15px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-
-			@media (min-width: $screen-sm-min) {
-				font-size: 24px;
-				padding-left: 30px;
-				padding-right: 30px;
-				padding-top: 40px;
-				padding-bottom: 20px;
-			}
-
-			img {
-				max-width: 100%;
-				padding: 10px;
-    		display: block;
-    		margin-left: auto;
-    		margin-right: auto
-			}
-
-			li {
-				list-style-type: disc;
-			}
-
-			blockquote {
-				position: relative;
-				width: 100%;
-		    margin-left: -15px;
-				padding-right: 45px;
-				background-color: $darker;
-				color: white;
-				box-sizing: content-box;
-				border: none;
-				font-size: 28px;
-
-				@media (min-width: $screen-sm-min) {
-					margin-left: -30px;
-					padding-left: 45px;
-					padding-right: 15px;
-				}
-
-				p {
-			    margin: 0;
-			    padding: 15px;
-					z-index: 0;
-				}
-
-				:before {
-    			font-family: "Times New Roman";
-					color: $light-medium;
-			    content: "“";
-			    position: absolute;
-			    top: 15px;
-			    left: 15px;
-			    font-size: 65px;
-			    font-weight: bold;
-				}
-
-			}
-
-			.alignright {
-				float: right;
-			}
-
-			.aligncenter {
-			    display: block;
-			    margin: 5px auto 5px auto;
-			}
-
-			.highlight {
-				width: 100%;
-				margin-left: -15px;
-				padding-right: 45px;
-				box-sizing: content-box;
-
-				@media (min-width: $screen-sm-min) {
-					margin-left: -30px;
-					padding-right: 60px;
-				}
-
-				pre {
-					width: 100%;
-					font-family: 'Anonymous Pro';
-					background-color: $darker;
-					color: $white;
-					font-size: 12px;
-					border: none;
-					padding-left: 15px;
-					padding-top: 20px;
-					padding-bottom: 20px;
-					padding-right: 15px;
-					box-sizing: content-box;
-					border-radius: 0;
-					margin-bottom: 10px;
-					margin-top: 10px;
-
-					@media (min-width: $screen-sm-min) {
-						padding-left: 50px;
-						padding-right: 10px;
-						margin-bottom: 40px;
-						font-size: 15px;
-					}
-				}
-			}
-
-			p, ul, ol {
-
-				code {
-					font-family: 'Anonymous Pro';
-					font-size: 15px;
-					background-color: $darker;
-					color: $white;
-					padding: 0.5em;
-					vertical-align: middle;
-				}
-
-			}
-
-			.tags {
-				margin-top: 10px;
-				margin-bottom: 10px;
-				text-align: center;
-
-				a, a:active {
-					color: $white;
-				}
-
-				a:hover {
-					color: $light-blue;
-				}
-
-			}
-
-			.share {
-				margin-top: 20px;
-				margin-bottom: 10px;
-				text-align: center;
-
-			}
-
-		}
-
-		.feedback {
-			text-align: center;
-
-			.fa-heart {
-				color: $red;
-			}
-
-		}
-
-		.comments {
-		}
-
-	}
-}

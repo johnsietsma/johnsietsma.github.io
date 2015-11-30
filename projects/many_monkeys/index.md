@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Many Monkeys
 www: http://manymonkeysdev.com/
 categories: [project]
@@ -11,8 +11,6 @@ platforms: [Windows, Installation]
 technologies: [Unity, C#, .NET, C/C++, Kinect, Point Cloud Library, Image Processing]
 splash: "/images/many_monkeys/splash.png"
 ---
-
-{% include project_header.md %}
 
 Many Monkeys creates interactive installations and games.
 

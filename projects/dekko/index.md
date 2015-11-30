@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Dekko Augmented Reality
 www: http://www.dekko.co/
 categories: [project]
@@ -11,8 +11,6 @@ platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET, ObjectiveC, C]
 splash: "/images/dekko/dekko_splash.jpeg"
 ---
-
-{% include project_header.md %}
 
 Dekko developed augmented reality software which allows real and virtual objects to interact, without markers, on most surfaces.
 

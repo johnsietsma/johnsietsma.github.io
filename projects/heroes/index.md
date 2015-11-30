@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Heroes over Europe
 categories: [project]
 order: 8
@@ -10,8 +10,6 @@ platforms: [iPad]
 technologies: [C#, .NET, C/C++, Xbox360, PS3]
 splash: "/images/hoe/splash.jpg"
 ---
-
-{% include project_header.md %}
 
 Transmission Games was one of Australia’s largest independent game development studios. There were over 100 employees working on a number of different sports and flying games. I was brought on as tools programmer and quickly became lead of one the two internal technology teams.
 
