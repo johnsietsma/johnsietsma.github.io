@@ -83,6 +83,21 @@ ul {
 }
 
 
+/*
+ * Class styles
+ */
+
+.clearfix {
+  overflow: auto;
+}
+
+.nowrap {
+  overflow: auto;
+  white-space : nowrap;
+  overflow : hidden;
+  display : inline-block;
+}
+
 .gravatar {
   width: 100%;
   margin-top: -80px;
@@ -124,6 +139,11 @@ ul {
 .icon {
   color: $highlight_color;
 }
+
+code {
+  color: black;
+}
+
 
 .content-panel {
   background-color: $medium;
@@ -346,15 +366,6 @@ ul {
     margin-left: auto;
     margin-right: auto
   }
-
-  p, ul, ol {
-    code {
-      font-family: 'Anonymous Pro';
-      font-size: 15px;
-      padding: 0.5em;
-      vertical-align: middle;
-    }
-  }  
 
   a, a:active {
     color: $white;

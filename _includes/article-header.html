@@ -10,19 +10,7 @@
             {% endif %}
         </h1>
 
-        <ul class="tags">
-            {% assign tags_num = (page.tags | size) %}
-            {% if tags_num > 0 %}
-            <li><i class="fa fa-tags"></i></li>
-            {% endif %}
-            {% for tag in page.tags %}
-            <li>
-                <a class="tag" href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}">#{{ tag }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-
-        <div class="clearfix">
+        <div class="nowrap">
             <ul class="meta">
                 {% if page.date %}
                 <li>
@@ -48,6 +36,18 @@
                 {% endif %}
             </ul>
         </div>
+        
+        <ul class="tags nowrap">
+            {% assign tags_num = (page.tags | size) %}
+            {% if tags_num > 0 %}
+            <li><i class="fa fa-tags"></i></li>
+            {% endif %}
+            {% for tag in page.tags %}
+            <li>
+                <a class="tag" href="{{ '/search/?t=' | append: tag | prepend: site.baseurl }}">#{{ tag }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 
     {% if site.share_buttons and include.share != false %}
