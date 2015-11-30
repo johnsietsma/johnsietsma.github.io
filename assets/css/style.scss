@@ -178,6 +178,10 @@ body {
 .links {
   padding: 0px;
   margin: 0px;
+  
+  li {
+    display: inline-block;
+  }
 
 	i {
 		padding-left: 5px;
@@ -295,7 +299,4 @@ ul {
 }
 
 li {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: inline-block;
 }
