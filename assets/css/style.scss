@@ -64,6 +64,16 @@ body {
   text-align: center;
 }
 
+.pages {
+  li {
+    display: inline-block;
+    padding-right: 5px;
+    .fa {
+      padding-right: 3px;
+    }
+  }
+}
+
 .index {
   color: $light;
   text-align: center;
@@ -103,7 +113,7 @@ body {
 
 .header {
   font-size: $header-font;
-  background-color: $darker;
+  background-color: $dark;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
