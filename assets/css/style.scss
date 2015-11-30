@@ -10,6 +10,7 @@ $github:         #f6c2a4;
 $stack-overflow: #c98b3b;
 $rss:            #eea33a;
 $steam:          #215A6D;
+$email:          #3CA2A2;
 
 $darker:         #21211E;
 /*$dark:           #2D2D29;*/
@@ -51,7 +52,7 @@ $small_font: 1em "Glegoo";
 
 body {
   font: $normal_font;
-  color: $light;
+  color: $dark_slate;
   background-color: $light;
   height: 100%;
   width: 100%;
@@ -200,7 +201,7 @@ body {
 		color: $google-plus;
 	}
 
-	.fa-github-alt:hover {
+	.fa-github:hover {
 		color: $github;
 	}
 
@@ -210,6 +211,10 @@ body {
   
   .fa-steam-square:hover {
 		color: $steam;
+	}
+  
+  .fa-envelope:hover {
+		color: $email;
 	}
 
 	.fa-rss:hover {
@@ -230,7 +235,7 @@ body {
   border-width: medium;
   border-style: solid;
   border-color: $border_color;
-  color: #FFFFFF;
+  color: $dark_slate;
 }
 
 .project-image {
