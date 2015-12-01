@@ -92,7 +92,6 @@ ul {
 }
 
 .nowrap {
-  overflow: auto;
   white-space : nowrap;
   overflow : hidden;
   display : inline-block;
@@ -102,6 +101,11 @@ ul {
   width: 100%;
   margin-top: -80px;
   text-align: center;
+}
+
+.threejs {
+  display : inline-block;
+  *display:inline;
 }
 
 .pages {
