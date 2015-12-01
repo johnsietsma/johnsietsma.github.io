@@ -21,10 +21,6 @@
 </script>
 
 <script type="x-shader/x-fragment" id="magentaFragmentShader">
-    #ifdef GL_ES
-    precision highp float;
-    #endif
-    
     void main()
     {
         gl_FragColor = vec4(1.0,0.0,1.0,1.0);
@@ -40,12 +36,13 @@
     {
         this.canvas = document.getElementById( canvasName );
         this.size = this.canvas.clientWidth; // Assuming square canvases for now 
-        this.renderer = new THREE.WebGLRenderer( {canvas: this.canvas} );
+        this.renderer = new THREE.WebGLRenderer( {canvas: this.canvas, antialiasing: true } );
         this.uniforms = {};
         this.scene = new THREE.Scene();
         this.camera = null;
         
         this.renderer.setPixelRatio( window.devicePixelRatio );
+        this.renderer.setSize( this.size, this.size );
         
         window.addEventListener( 'resize', this.onWindowResize, false );
         
@@ -64,10 +61,10 @@
             this.size = this.canvas.clientWidth;
             this.canvas.height = this.canvas.width = this.size;
             
-            this.camera.aspect = 1;
-            this.camera.updateProjectionMatrix();
+            //this.camera.aspect = 1;
+            //this.camera.updateProjectionMatrix();
         
-            this.renderer.setSize( this.size, this.size );
+            //this.renderer.setSize( this.size, this.size );
         }
     }  
     

@@ -8,7 +8,7 @@ language: en-au
 markdown: redcarpet
 
 redcarpet:
-  extensions: ["autolink", "superscript", "underline", "no_intra_emphasis", "fenced_code_blocks", "quote"]
+  extensions: ["autolink", "superscript", "underline", "no_intra_emphasis", "fenced_code_blocks", "quote", "tables"]
 
 exclude:
   - LICENSE
