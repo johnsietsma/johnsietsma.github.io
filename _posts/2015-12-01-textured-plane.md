@@ -1,22 +1,53 @@
 ---
 layout: post
-title: Simple water flow effect
+title: Flow map in Three.js.
 tags: threejs, water
 ---
 
-A simple water effect using distortion and scolling uvs.
+Flow maps are a simple way to get some movement into your shader. [Valve](http://www.valvesoftware.com/publications/2010/siggraph2010_vlachos_waterflow.pdf)
+and [The Wild External](http://www.thewildeternal.com/2014/09/02/devlog-flowing-water/) have documented the process pretty throughly.
 
+I thought I'd try a GLSL/Three.js implmentation.
+
+The basic idea is to use a texture to move uvs over time. Lerping between two sets of flows allows flows to be reset before they become too distorted.
+
+I've used this flow map: ![Flow map]({{ '/images/textures/flowMap.png' | prepend: site.assetsurl }}) and this caustics texture for the water: ![Caustic texture]({{ '/images/textures/caustics.png' | prepend: site.assetsurl }})
+
+Finally I use vertex colors for the water color.
+
+Don't forget you can view source on this page for more implementation details.
+
+And here's the final result.
 
 <script type="x-shader/x-fragment" id="foamFragmentShader">
     uniform float time;
     uniform sampler2D texture;
+    uniform sampler2D flowMap;
+    uniform float flowSpeed;
     
     varying vec2 vUv;
+    varying vec3 vColor;
     
     void main()
     {
-        vec4 color = texture2D( texture, vUv ).rgba;
-        gl_FragColor = color;
+        // Look up the flow direction from the flow map.
+        vec2 flowDirection = (texture2D( flowMap, vUv ).rg - 0.5) * 2.0;
+        
+        // Use two cycles, offset by a half so we can blend between them
+        float t1 = time * flowSpeed;
+        float t2 = t1 + 0.5;
+        float cycleTime1 = t1 - floor(t1);
+        float cycleTime2 = t2 - floor(t2);
+        vec2 uv1 = vUv + flowDirection * cycleTime1;
+        vec2 uv2 = vUv + flowDirection * cycleTime2;
+        vec4 color1 = texture2D( texture, uv1 );
+        vec4 color2 = texture2D( texture, uv2 );
+        
+        // Ping pong between the two flows, showing the least distorted and allowing uv resets on both.
+        vec4 color = mix( color1, color2, abs(cycleTime1-0.5)*2.0 );
+        
+        // Color from the vertex colors
+        gl_FragColor = vec4(vColor,1.0) + color;
     }
 </script>
 
@@ -47,20 +78,30 @@ function initCanvas( threeContext )
     var color = new THREE.Color( 0x043A61 );
     setVertColors( planeGeo, color );
     
-    var foamTexture = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/lines.jpg');
+    // Load the textures
+    var linesTexture = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/caustics.png');
+    var flowMap = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/flowMap.png');
+    
+    // Setup uniforms for the shader
     threeContext.uniforms = {
         time: { type: "f", value: 1.0 },
-        texture: { type: "t", value: foamTexture }
+        texture: { type: "t", value: linesTexture },
+        flowMap: { type: "t", value: flowMap },
+        flowSpeed: { type: "f", value: 0.05 },
     };
+    threeContext.uniforms.texture.value.wrapS = threeContext.uniforms.texture.value.wrapT = THREE.RepeatWrapping;
+    threeContext.uniforms.flowMap.value.wrapS = threeContext.uniforms.flowMap.value.wrapT = THREE.RepeatWrapping;
     
+    // Create the material
     var vShader = document.getElementById( 'defaultVertexShader' );
     var fShader = document.getElementById( 'foamFragmentShader' );
     var shaderMaterial = new THREE.ShaderMaterial({
         uniforms: threeContext.uniforms,
         vertexShader: vShader.text,
-        fragmentShader: fShader.text
+        fragmentShader: fShader.text,
+        vertexColors: THREE.VertexColors,
     }); 
-    //var material = new THREE.ShaderMaterial( { map: foamTexture } );
+    
     threeContext.plane = new THREE.Mesh( planeGeo, shaderMaterial );
     threeContext.plane.position.z = -10;
     
@@ -71,4 +112,4 @@ function initCanvas( threeContext )
 </script>
 
 {% include threejs.html %}
-{% include threejs-canvas.html canvas-size='200px' canvas-name='Canvas1' init-function='initCanvas' %}
+{% include threejs-canvas.html canvas-size='400px' canvas-name='Canvas1' init-function='initCanvas' %}

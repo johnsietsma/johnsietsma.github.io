@@ -4,12 +4,20 @@
 <script type="x-shader/x-vertex" id="defaultVertexShader">
     varying vec2 vUv;
     
+    #ifdef USE_COLOR
+    varying vec3 vColor;
+    #endif
+    
     void main()
     {
         vUv = uv;
+        
+        #ifdef USE_COLOR
+        vColor = color;
+        #endif
+        
         gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
     }
-    
 </script>
 
 <script type="x-shader/x-fragment" id="magentaFragmentShader">
@@ -63,12 +71,13 @@
         }
     }  
     
-    var clock = new THREE.Clock();
+    var clock = new THREE.Clock( true );
 
     function render(threejsContext) {
         if( !threejsContext.camera ) return;
         requestAnimationFrame( function() { render(threejsContext); } );
         
+        clock.getDelta(); // Ticks the clock
         threejsContext.uniforms.time.value = clock.elapsedTime;
         
         threejsContext.renderer.render( threejsContext.scene, threejsContext.camera );
