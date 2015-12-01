@@ -60,11 +60,7 @@
         function onWindowResize( event ) {
             this.size = this.canvas.clientWidth;
             this.canvas.height = this.canvas.width = this.size;
-            
-            //this.camera.aspect = 1;
-            //this.camera.updateProjectionMatrix();
-        
-            //this.renderer.setSize( this.size, this.size );
+            this.renderer.setSize( this.size, this.size );
         }
     }  
     
