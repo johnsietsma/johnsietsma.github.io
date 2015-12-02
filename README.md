@@ -13,7 +13,3 @@ Alternatively run './start_server.sh' in the Vagrant shell.
 # Using Vagrant
 Run 'vag up' to get a virtual machine with all dependencies installed.
 Jekyll will be started automatically. 
-
-# Publishing
-Instal (Fab)[http://www.fabfile.org/]
-Run 'fab deploy'.
