@@ -1,7 +1,7 @@
 JohnSietsma.com
 ===============
 
-My portfolio site.
+My portfolio site. (http://johnsietsma.com)
 
 Use Jekyll with a Less plugin.
 
