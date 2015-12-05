@@ -22,9 +22,9 @@ var Detector = {
 	workers: !! window.Worker,
 	fileapi: window.File && window.FileReader && window.FileList && window.Blob,
 
-	getWebGLErrorMessage: function () {
-
-		var element = document.createElement( 'div' );
+	getWebGLErrorMessage: function ( canvas ) {
+        var parent = canvas==undefined ? document : canvas;
+		var element = parent.createElement( 'div' );
 		element.id = 'webgl-error-message';
 		element.style.fontFamily = 'monospace';
 		element.style.fontSize = '13px';

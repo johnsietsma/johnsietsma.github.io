@@ -6,6 +6,12 @@
 </div>
 
 <script>
-    var context{{name}} = new ThreeContext( "{{ name }}", {{ include.init-function }} );
-    render( context{{name}} );    
+    if ( Detector.webgl ) 
+    { 
+        var context{{name}} = new ThreeContext( "{{ name }}", {{ include.init-function }} );
+        context{{name}}.render();
+    }
+    else {
+        Detector.addGetWebGLMessage(); 
+    }    
 </script>
