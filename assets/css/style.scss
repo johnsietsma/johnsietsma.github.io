@@ -91,6 +91,13 @@ ul {
   overflow: auto;
 }
 
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+
 .nowrap {
   white-space : nowrap;
   overflow : hidden;

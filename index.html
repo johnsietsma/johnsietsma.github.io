@@ -4,7 +4,7 @@ layout: main
 
 <div class="container-fluid index">
     <div class="row">
-        <div class="col-md-12 main content-panel">
+        <div class="content-panel">
             <div class="gravatar">
                 <img src="{{ '/images/profile_512.jpg' | prepend: site.assetsurl }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
             </div>
@@ -18,7 +18,7 @@ layout: main
 
             {% include social_links.html %}
           </div>
-          <div class="col-md-12 main content-panel">
+          <div class="content-panel">
 
             <div class="articles">
 
@@ -43,3 +43,35 @@ layout: main
 
     </div>
 </div>
+
+{% include threejs.html %}
+{% include shaders/repeatVert.html %}
+{% include shaders/flowMapFrag.html %}
+
+<script>
+    
+var flowMap = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/flowMap.png');
+var waterTexture = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/japanese_wave.jpg');
+waterTexture.wrapS = waterTexture.wrapT = THREE.RepeatWrapping;
+waterTexture.repeat.set( 100, 100 );
+
+function initCanvas_FlowMap( threeContext )
+{
+    threeContext.uniforms = {
+        time: { type: "f", value: 1.0 },
+        texture: { type: "t", value: waterTexture },
+        texRepeat: { type: "f", value: 10 },
+        flowMap: { type: "t", value: flowMap },
+        flowSpeed: { type: "f", value: 30 },
+        cycleTime: { type: "f", value: 40 },
+    };
+
+    initFullScreenCanvas( threeContext, 'repeatVert', 'flowMapFrag' );
+    
+    threeContext.uniforms.texture.value.repeat.set(10,10);
+}
+
+var flowContext = new ThreeContext( "background", initCanvas_FlowMap );
+render( flowContext );
+</script>
+

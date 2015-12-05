@@ -1,29 +1,47 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js"></script>
 <script src="{{ '/js/Detector.js'' | prepend: site.assetsurl }}"></script>
 
-<script type="x-shader/x-vertex" id="defaultVertexShader">
-    varying vec2 vUv;
-    
-    #ifdef USE_COLOR
-    varying vec3 vColor;
-    #endif
-    
-    void main()
-    {
-        vUv = uv;
-        
-        #ifdef USE_COLOR
-        vColor = color;
-        #endif
-        
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
-    }
-</script>
+
 
 <script type="x-shader/x-fragment" id="magentaFragmentShader">
     void main()
     {
         gl_FragColor = vec4(1.0,0.0,1.0,1.0);
+    }
+</script>
+
+{% include shaders/defaultVert.html %}
+
+<script>
+    function initFullScreenCanvas( threeContext, vertShaderName, fragShaderName )
+    {
+        var size = threeContext.size;
+        var halfSize = size/2;
+    
+        // Setup camera
+        threeContext.camera = new THREE.OrthographicCamera( -halfSize, halfSize, halfSize, -halfSize, -1, 1000 );
+        threeContext.camera.position.z = 1;
+        
+        // Add the full screen quad
+        var planeGeo = new THREE.PlaneGeometry( size, size, 4, 4 );
+            
+        threeContext.uniforms.texture.value.wrapS = threeContext.uniforms.texture.value.wrapT = THREE.RepeatWrapping;
+        threeContext.uniforms.flowMap.value.wrapS = threeContext.uniforms.flowMap.value.wrapT = THREE.RepeatWrapping;
+        
+        // Create the material
+        var vShader = document.getElementById( vertShaderName );
+        var fShader = document.getElementById( fragShaderName );
+        var shaderMaterial = new THREE.ShaderMaterial({
+            uniforms: threeContext.uniforms,
+            vertexShader: vShader.text,
+            fragmentShader: fShader.text,
+        }); 
+        
+        threeContext.plane = new THREE.Mesh( planeGeo, shaderMaterial );
+        threeContext.plane.position.z = -10;
+        
+        threeContext.scene = new THREE.Scene();
+        threeContext.scene.add( threeContext.plane );
     }
 </script>
 
@@ -40,6 +58,7 @@
         this.uniforms = {};
         this.scene = new THREE.Scene();
         this.camera = null;
+        this.clock = new THREE.Clock( true );
         
         this.renderer.setPixelRatio( window.devicePixelRatio );
         this.renderer.setSize( this.size, this.size );
@@ -64,14 +83,16 @@
         }
     }  
     
-    var clock = new THREE.Clock( true );
+    
 
     function render(threejsContext) {
         if( !threejsContext.camera ) return;
         requestAnimationFrame( function() { render(threejsContext); } );
         
-        clock.getDelta(); // Ticks the clock
-        threejsContext.uniforms.time.value = clock.elapsedTime;
+        if( threejsContext.uniforms.time ) {
+            threejsContext.clock.getDelta(); // Ticks the clock
+            threejsContext.uniforms.time.value = threejsContext.clock.elapsedTime;
+        }
         
         threejsContext.renderer.render( threejsContext.scene, threejsContext.camera );
     }
