@@ -13,36 +13,47 @@
 {% include shaders/defaultVert.html %}
 
 <script>
-    function initFullScreenCanvas( threeContext, vertShaderName, fragShaderName )
-    {
-        var size = threeContext.size;
-        var halfSize = size/2;
+function initFullScreenCanvas( threeContext, vertShaderName, fragShaderName )
+{
+    var size = threeContext.size;
+    var halfSize = size/2;
+
+    // Setup camera
+    threeContext.camera = new THREE.OrthographicCamera( -halfSize, halfSize, halfSize, -halfSize, -1, 1000 );
+    threeContext.camera.position.z = 1;
     
-        // Setup camera
-        threeContext.camera = new THREE.OrthographicCamera( -halfSize, halfSize, halfSize, -halfSize, -1, 1000 );
-        threeContext.camera.position.z = 1;
+    // Add the full screen quad
+    var planeGeo = new THREE.PlaneGeometry( size, size, 4, 4 );
         
-        // Add the full screen quad
-        var planeGeo = new THREE.PlaneGeometry( size, size, 4, 4 );
-            
-        threeContext.uniforms.texture.value.wrapS = threeContext.uniforms.texture.value.wrapT = THREE.RepeatWrapping;
-        threeContext.uniforms.flowMap.value.wrapS = threeContext.uniforms.flowMap.value.wrapT = THREE.RepeatWrapping;
+    threeContext.uniforms.texture.value.wrapS = threeContext.uniforms.texture.value.wrapT = THREE.RepeatWrapping;
+    threeContext.uniforms.flowMap.value.wrapS = threeContext.uniforms.flowMap.value.wrapT = THREE.RepeatWrapping;
+    
+    // Create the material
+    var vShader = document.getElementById( vertShaderName );
+    var fShader = document.getElementById( fragShaderName );
+    var shaderMaterial = new THREE.ShaderMaterial({
+        uniforms: threeContext.uniforms,
+        vertexShader: vShader.text,
+        fragmentShader: fShader.text,
+        vertexColors: THREE.VertexColors,
+    }); 
+    
+    threeContext.plane = new THREE.Mesh( planeGeo, shaderMaterial );
+    threeContext.plane.position.z = -10;
         
-        // Create the material
-        var vShader = document.getElementById( vertShaderName );
-        var fShader = document.getElementById( fragShaderName );
-        var shaderMaterial = new THREE.ShaderMaterial({
-            uniforms: threeContext.uniforms,
-            vertexShader: vShader.text,
-            fragmentShader: fShader.text,
-        }); 
-        
-        threeContext.plane = new THREE.Mesh( planeGeo, shaderMaterial );
-        threeContext.plane.position.z = -10;
-        
-        threeContext.scene = new THREE.Scene();
-        threeContext.scene.add( threeContext.plane );
+    threeContext.scene = new THREE.Scene();
+    threeContext.scene.add( threeContext.plane );
+}
+    
+function setVertColors( mesh, color )
+{
+    for ( var i = 0; i < mesh.faces.length; i++ ) 
+    {
+        var face = mesh.faces[ i ];
+        face.vertexColors = [color, color, color];
     }
+}
+
 </script>
 
 <script>
@@ -88,11 +99,12 @@ ThreeContext.prototype.render = function () {
     var self = this;
     requestAnimationFrame( function() { self.render(); } );
     
-    if( this.uniforms.time ) {
+    if( this.uniforms.time ) 
+    {
         this.clock.getDelta(); // Ticks the clock
         this.uniforms.time.value = this.clock.elapsedTime;
     }
-    
+        
     this.renderer.render( this.scene, this.camera );
 }
   
