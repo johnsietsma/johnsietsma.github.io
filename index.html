@@ -54,14 +54,14 @@ layout: main
 var flowMap = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/flowMap.png');
 var waterTexture = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/maze.jpg');
 waterTexture.wrapS = waterTexture.wrapT = THREE.RepeatWrapping;
-waterTexture.repeat.set( 100, 100 );
+//waterTexture.repeat.set( 10, 10 );
 
 function initCanvas_FlowMap( threeContext )
 {
     threeContext.uniforms = {
         time: { type: "f", value: 1.0 },
         texture: { type: "t", value: waterTexture },
-        texRepeat: { type: "v2", value: new THREE.Vector2(10,10) },
+        texRepeat: { type: "v2", value: new THREE.Vector2(1,1) },
         flowMap: { type: "t", value: flowMap },
         flowSpeed: { type: "f", value: 3 },
         cycleTime: { type: "f", value: 40 },

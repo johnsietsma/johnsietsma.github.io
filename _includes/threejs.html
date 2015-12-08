@@ -16,14 +16,14 @@
 function initFullScreenCanvas( threeContext, vertShaderName, fragShaderName )
 {
     var size = threeContext.size;
-    var halfSize = size/2;
+    var halfSize = [size[0]/2, size[1]/2];
 
     // Setup camera
-    threeContext.camera = new THREE.OrthographicCamera( -halfSize, halfSize, halfSize, -halfSize, -1, 1000 );
+    threeContext.camera = new THREE.OrthographicCamera( -halfSize[0], halfSize[0], halfSize[1], -halfSize[1], -1, 1000 );
     threeContext.camera.position.z = 1;
     
     // Add the full screen quad
-    var planeGeo = new THREE.PlaneGeometry( size, size, 4, 4 );
+    var planeGeo = new THREE.PlaneGeometry( size[0], size[1], 4, 4 );
         
     threeContext.uniforms.texture.value.wrapS = threeContext.uniforms.texture.value.wrapT = THREE.RepeatWrapping;
     threeContext.uniforms.flowMap.value.wrapS = threeContext.uniforms.flowMap.value.wrapT = THREE.RepeatWrapping;
@@ -86,7 +86,6 @@ var ThreeContext = function( canvasName, initFunction )
 
 ThreeContext.prototype.onWindowResize = function (event) {
     this.size = [this.canvas.clientWidth, this.canvas.clientHeight]; 
-    //this.canvas.height = this.canvas.width = this.size;
     this.renderer.setSize( this.size[0], this.size[1] );
 } 
 
