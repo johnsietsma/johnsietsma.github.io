@@ -46,12 +46,13 @@ layout: main
 
 {% include threejs.html %}
 {% include shaders/repeatVert.html %}
-{% include shaders/flowMapFrag.html %}
+{% include shaders/circleFlowFrag.html %}
 
 <script>
+    // Thanks for the background image: https://www.flickr.com/photos/webtreatsetc/5213654617
     
 var flowMap = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/flowMap.png');
-var waterTexture = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/japanese_wave.jpg');
+var waterTexture = new THREE.TextureLoader().load('{{ site.assetsurl }}/images/textures/maze.jpg');
 waterTexture.wrapS = waterTexture.wrapT = THREE.RepeatWrapping;
 waterTexture.repeat.set( 100, 100 );
 
@@ -60,15 +61,17 @@ function initCanvas_FlowMap( threeContext )
     threeContext.uniforms = {
         time: { type: "f", value: 1.0 },
         texture: { type: "t", value: waterTexture },
-        texRepeat: { type: "f", value: 10 },
+        texRepeat: { type: "v2", value: new THREE.Vector2(10,10) },
         flowMap: { type: "t", value: flowMap },
         flowSpeed: { type: "f", value: 3 },
         cycleTime: { type: "f", value: 40 },
     };
 
-    initFullScreenCanvas( threeContext, 'repeatVert', 'flowMapFrag' );
+    initFullScreenCanvas( threeContext, 'defaultVert', 'circleFlowFrag' );
     
-    threeContext.uniforms.texture.value.repeat.set(10,10);
+    var color = new THREE.Color( 0x043A61 );
+    setVertColors( threeContext.plane.geometry, color );
+
 }
 
 var flowContext = new ThreeContext( "background", initCanvas_FlowMap );
