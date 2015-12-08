@@ -15,7 +15,7 @@
 <script>
     function initFullScreenCanvas( threeContext, vertShaderName, fragShaderName )
     {
-        var size = threeContext.size;
+        var size = threeContext.size[0];
         var halfSize = size/2;
     
         // Setup camera
@@ -53,7 +53,6 @@ if ( ! Detector.webgl ) { Detector.addGetWebGLMessage(); }
 var ThreeContext = function( canvasName, initFunction ) 
 {
     this.canvas = document.getElementById( canvasName );
-    this.size = this.canvas.clientWidth; // Assuming square canvases for now 
     this.renderer = new THREE.WebGLRenderer( {canvas: this.canvas, antialiasing: true } );
     this.uniforms = {};
     this.scene = new THREE.Scene();
@@ -61,27 +60,24 @@ var ThreeContext = function( canvasName, initFunction )
     this.clock = new THREE.Clock( true );
     
     this.renderer.setPixelRatio( window.devicePixelRatio );
-    this.renderer.setSize( this.size, this.size );
+    this.onWindowResize();
     
-    window.addEventListener( 'resize', this.onWindowResize, false );
+    window.onresize = this.onWindowResize.bind(this);
     
     if( initFunction != 'undefined' ) {
         initFunction( this );
     }
     else {
-        this.defaultInit();            
+        // Use a default camera
+        this.camera = new THREE.PerspectiveCamera( 45, 1, 0.1, 1000 );            
     }
-    
-    function defaultInit() {
-        this.camera = new THREE.PerspectiveCamera( 45, 1, 0.1, 1000 );
-    }
-    
-    function onWindowResize( event ) {
-        this.size = this.canvas.clientWidth;
-        this.canvas.height = this.canvas.width = this.size;
-        this.renderer.setSize( this.size, this.size );
-    }        
-}    
+}   
+
+ThreeContext.prototype.onWindowResize = function (event) {
+    this.size = [this.canvas.clientWidth, this.canvas.clientHeight]; 
+    //this.canvas.height = this.canvas.width = this.size;
+    this.renderer.setSize( this.size[0], this.size[1] );
+} 
 
 ThreeContext.prototype.render = function () {
     if( !this.camera ) return;
