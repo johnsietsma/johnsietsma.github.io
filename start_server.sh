@@ -1,2 +1,2 @@
 cd /vagrant/
-jekyll serve --watch --force_polling
+jekyll serve --watch --force_polling --drafts
