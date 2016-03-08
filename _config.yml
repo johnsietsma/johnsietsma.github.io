@@ -5,7 +5,7 @@ title: John Sietsma
 description: "A portfolio of John Sietsma's game development and design work. John Sietsma has experience with Unity 3D, C#, .NET, Mono, Python, Django and C/C++."
 #avatar: /assets/img/ogp.png
 language: en-au
-markdown: redcarpet
+markdown: kramdown
 
 redcarpet:
   extensions: ["autolink", "superscript", "underline", "no_intra_emphasis", "fenced_code_blocks", "quote", "tables"]
