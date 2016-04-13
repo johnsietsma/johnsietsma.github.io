@@ -4,7 +4,7 @@ title: A fluid sim with flow map ShaderToy experiment.
 tags: fluidsim,shadertoy,flowmap,shader
 ---
 
-Following on from the previous [Flow Map post]({% 2015-12-01-flow-maps.md %}), I wanted to see what flow maps would look like with maps generated in real time using a fluid sim.
+Following on from my previous [Flow Map post]({% post_url 2015-12-01-flow-maps.md %}), I wanted to see what flow maps would look like with maps generated in real time using a fluid sim.
 
 Using the well known [GPU Gems fluid sim article](http.developer.nvidia.com/GPUGems/gpugems_ch38.html) and a [ShaderToy implmentation](https://www.shadertoy.com/view/ldd3WS) as reference I added my flow map shader over the top and got this result.
 
