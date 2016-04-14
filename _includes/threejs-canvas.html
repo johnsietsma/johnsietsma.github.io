@@ -1,5 +1,6 @@
 {% capture size %}{% if include.canvas-size %}{{ include.canvas-size }}{% else %}100%{% endif %}{% endcapture %}
 {% capture name %}{% if include.canvas-name %}{{ include.canvas-name }}{% else %}myCanvas{% endif %}{% endcapture %}
+{% capture render-function %}{% if include.render-function %}{{ include.render-function }}{% else %}null{% endif %}{% endcapture %}
 
 <div class="threejs">
     <canvas id="{{ name }}" width="{{ size }}" height="{{ size }}" style="background-color: #aaaaaa"></canvas>
@@ -8,7 +9,7 @@
 <script>
     if ( Detector.webgl ) 
     { 
-        var context{{name}} = new ThreeContext( "{{ name }}", {{ include.init-function }} );
+        var context{{name}} = new ThreeContext( "{{ name }}", {{ include.init-function }}, {{ render-function }} );
         context{{name}}.render();
     }
     else {
