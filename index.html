@@ -67,7 +67,7 @@ function initCanvas_FlowMap( threeContext )
         cycleTime: { type: "f", value: 40 },
     };
 
-    initFullScreenCanvas( threeContext, 'defaultVert', 'circleFlowFrag' );
+    threeContext.initFullScreenCanvas( 'defaultVert', 'circleFlowFrag' );
     
     var color = new THREE.Color( 0x043A61 );
     setVertColors( threeContext.plane.geometry, color );
