@@ -66,11 +66,13 @@ function initCanvas_FlowMap( threeContext )
         flowSpeed: { type: "f", value: 3 },
         cycleTime: { type: "f", value: 40 },
     };
-
-    threeContext.initFullScreenCanvas( 'defaultVert', 'circleFlowFrag' );
+    
+    threeContext.initFullScreenCanvas( 'passthroughVert', 'circleFlowFrag', true );
     
     var color = new THREE.Color( 0x043A61 );
-    setVertColors( threeContext.plane.geometry, color );
+    var plane = threeContext.scene.getObjectByName("FullScreenQuad");
+    console.assert(plane);
+    setVertColors( plane.geometry, color );
 
 }
 

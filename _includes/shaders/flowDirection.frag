@@ -9,6 +9,6 @@
     {
         vec2 flowDirection = (texture2D( flowMap, vUv ).rg - 0.5) * 2.0;
         vec2 uv = vUv + flowDirection;
-        gl_FragColor = texture2D( texture, uv );
+        gl_FragColor = texture2D( texture, vUv );
     }
 </script>

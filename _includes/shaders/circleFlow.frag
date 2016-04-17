@@ -33,6 +33,7 @@
         lerpTime = min( lerpTime, 1.0 );
         vec3 lerpedColor = mix( vec3(0), vColor, lerpTime );
         
+        
         // Ping pong between the two flows, showing the least distorted and allowing uv resets on both.
         gl_FragColor = vec4(1) - vec4(color * lerpedColor, 1);
     }

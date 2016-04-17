@@ -1,4 +1,5 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.js"></script>
 <script src="{{ '/js/Detector.js'' | prepend: site.assetsurl }}"></script>
 <script src="{{ '/js/stats.min.js'' | prepend: site.assetsurl }}"></script>
 
@@ -12,6 +13,16 @@
 {% include shaders/passthrough.vert %}
 
 <script>
+
+Object.clone = function(source) {
+    var destination = {};
+    for (var property in source) {
+        if (source.hasOwnProperty(property)) {
+            destination[property] = source[property];
+        }
+    }
+    return destination;
+};
     
 Object.extend = function(destination, source) {
     for (var property in source) {
@@ -21,33 +32,36 @@ Object.extend = function(destination, source) {
     }
     return destination;
 };
-    
-function createFullScreenQuad(vertShaderName, fragShaderName, uniforms)
+
+function createMaterial(vertShaderName, fragShaderName, uniforms, useVertColors)
 {
     var vShader = document.getElementById( vertShaderName );
-    if( vShader==null ) document.write( "Couldn't find vert shader: " + vertShaderName );
+    if( vShader==null ) console.error( "Couldn't find vert shader: " + vertShaderName );
     
     var fShader = document.getElementById( fragShaderName );
-    if( fShader==null ) document.write( "Couldn't find frag shader: " + fragShaderName );
+    if( fShader==null ) console.error( "Couldn't find frag shader: " + fragShaderName );
     
-    
-    
-    var shaderMaterial = new THREE.ShaderMaterial({
-        uniforms: uniforms,
+    return new THREE.ShaderMaterial({
+        uniforms: uniforms || {},
         vertexShader: vShader.text,
         fragmentShader: fShader.text,
-        vertexColors: THREE.NoColors,
-        //vertexColors: THREE.VertexColors,
-    }); 
+        vertexColors: useVertColors ? THREE.VertexColors: THREE.NoColors
+    });
+}
     
+function createFullScreenQuad(vertShaderName, fragShaderName, uniforms, useVertColors)
+{
+    var shaderMaterial = createMaterial(vertShaderName, fragShaderName, uniforms, useVertColors);
     var planeGeo = new THREE.PlaneGeometry( 2, 2, 1, 1 );
-    return new THREE.Mesh( planeGeo, shaderMaterial );
+    var mesh = new THREE.Mesh( planeGeo, shaderMaterial );
+    mesh.name = "FullScreenQuad";
+    return mesh;
 }
 
-function createFullScreenQuadScene(vertShaderName, fragShaderName, uniforms)
+function createFullScreenQuadScene(vertShaderName, fragShaderName, uniforms, useVertColors)
 {
     
-    var plane = createFullScreenQuad(vertShaderName, fragShaderName, uniforms );
+    var plane = createFullScreenQuad( vertShaderName, fragShaderName, uniforms, useVertColors );
     var scene = new THREE.Scene();
     scene.add(plane);
     return scene;
@@ -97,7 +111,7 @@ var ThreeContext = function( canvasName, initFunction, renderFunction )
     }
     else {
         // Use a default camera
-        this.camera = new THREE.PerspectiveCamera( 45, 1, 0.1, 1000 );            
+        this.camera = new THREE.PerspectiveCamera( 45, 1, 0.1, 1000 );
     }
 }   
 
@@ -106,7 +120,7 @@ ThreeContext.prototype.onWindowResize = function (event) {
     this.renderer.setSize( this.size[0], this.size[1] );
 } 
 
-ThreeContext.prototype.initFullScreenCanvas = function( vertShaderName, fragShaderName )
+ThreeContext.prototype.initFullScreenCanvas = function( vertShaderName, fragShaderName, useVertColors )
 {
     var halfSize = [this.size[0]/2, this.size[1]/2];
 
@@ -117,17 +131,21 @@ ThreeContext.prototype.initFullScreenCanvas = function( vertShaderName, fragShad
     var defaultUniforms = {
         time: { type: "f", value: 0.0 },
         timeDelta: { type: "f", value: 0.0 },
+        texelSize: { type: "v2", value: new THREE.Vector2(1.0/500, 1.0/500) },
     };
     this.uniforms = Object.extend(defaultUniforms, this.uniforms || {});
-    this.scene = createFullScreenQuadScene( vertShaderName, fragShaderName, this.uniforms );
+    this.scene = createFullScreenQuadScene( vertShaderName, fragShaderName, this.uniforms, useVertColors );
 }
 
 ThreeContext.prototype.updateDefaultUniforms = function (uniforms)
 {
     var timeDelta = this.clock.getDelta();
-    if( this.uniforms.timeDelta!=null ) this.uniforms.timeDelta.value = timeDelta;
-    if( this.uniforms.time!=null )  this.uniforms.time.value = this.clock.elapsedTime;
-    //this.uniforms.texelSize = new THREE.Vector2(1/this.canvas.width, 1/this.canvas.height );
+    if( uniforms.timeDelta!=null ) uniforms.timeDelta.value = timeDelta;
+    if( uniforms.time!=null )  uniforms.time.value = this.clock.elapsedTime;
+    if( uniforms.texelSize!=null ) {
+        uniforms.texelSize.value.x = 1.0/this.canvas.width;
+        uniforms.texelSize.value.y = 1.0/this.canvas.height;
+    }
 }
 
 

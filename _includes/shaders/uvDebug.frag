@@ -1,4 +1,4 @@
-<script type="x-shader/x-fragment" id="uvDebug">
+<script type="x-shader/x-fragment" id="uvDebugFrag">
 
 varying vec2 vUv;
     
