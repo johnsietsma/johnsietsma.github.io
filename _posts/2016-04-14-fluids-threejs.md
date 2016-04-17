@@ -27,8 +27,8 @@ function initCanvas_FluidFlowMap( threeContext )
 
     threeContext.velocity1Target = new THREE.WebGLRenderTarget( 512, 512 );
     threeContext.velocity2Target = new THREE.WebGLRenderTarget( 512, 512 );
-    threeContext.pressure1Target = new THREE.WebGLRenderTarget( 512, 512 );
-    threeContext.pressure2Target = new THREE.WebGLRenderTarget( 512, 512 );
+    threeContext.pressureTargets = [ new THREE.WebGLRenderTarget( 512, 512 ), new THREE.WebGLRenderTarget( 512, 512 )];
+    threeContext.currentPressureTarget = 0;
     threeContext.divergenceTarget = new THREE.WebGLRenderTarget( 512, 512 );
     threeContext.fluidTarget = new THREE.WebGLRenderTarget(512, 512 );
     
@@ -57,35 +57,26 @@ function initCanvas_FluidFlowMap( threeContext )
     threeContext.divergenceUniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
     threeContext.divergenceScene = createFullScreenQuadScene( "passthroughVert", "divergenceFrag", threeContext.velocityUniforms );
 
-    // Pressure 1
+    // Pressure
     var uniforms = {
       velocityField: { type: "t", value: threeContext.velocity2Target.texture },
       divergenceField: { type: "t", value: threeContext.divergenceTarget.texture },
-      pressureField: { type: "t", value: threeContext.pressure1Target.texture },
+      pressureField: { type: "t", value: null },
     };
-    threeContext.pressure1Uniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
-    threeContext.pressure1Scene = createFullScreenQuadScene( "passthroughVert", "pressureFrag", threeContext.pressure1Uniforms );
-
-    // Pressure 2
-    var uniforms = {
-      velocityField: { type: "t", value: threeContext.velocity2Target.texture },
-      divergenceField: { type: "t", value: threeContext.divergenceTarget.texture },
-      pressureField: { type: "t", value: threeContext.pressure2Target.texture },
-    };
-    threeContext.pressure2Uniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
-    threeContext.pressure2Scene = createFullScreenQuadScene( "passthroughVert", "pressureFrag", threeContext.pressure2Uniforms );
+    threeContext.pressureUniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
+    threeContext.pressureScene = createFullScreenQuadScene( "passthroughVert", "pressureFrag", threeContext.pressureUniforms );
 
     // Projection
     var uniforms = {
       velocityField: { type: "t", value: threeContext.velocity2Target.texture },
       divergenceField: { type: "t", value: threeContext.divergenceTarget.texture },
-      pressureField: { type: "t", value: threeContext.pressure1Target.texture },
+      pressureField: { type: "t", value: null },
     };
     threeContext.projectionUniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
     threeContext.projectionScene = createFullScreenQuadScene( "passthroughVert", "projectionFrag", threeContext.projectionUniforms );
     
     threeContext.uniforms = {
-      velocityField: { type: "t", value: threeContext.velocity2Target.texture },
+      velocityField: { type: "t", value: threeContext.velocity1Target.texture },
       texture: { type: "t", value: waterTexture },
       minFilter: THREE.LinearFilter,
       magFilter: THREE.LinearFilter,
@@ -113,10 +104,18 @@ function renderCanvas_FluidFlowMap( threeContext )
         null );*/
     
     this.updateDefaultUniforms( this.advectionUniforms );
+    this.updateDefaultUniforms( this.divergenceUniforms );
+    this.updateDefaultUniforms( this.pressureUniforms );
+    this.updateDefaultUniforms( this.projectionUniforms );
+    
     threeContext.renderer.render( threeContext.advectionScene, threeContext.camera, threeContext.velocity2Target, true );
     threeContext.renderer.render( threeContext.divergenceScene, threeContext.camera, threeContext.divergenceTarget, true );
-    threeContext.renderer.render( threeContext.pressure1Scene, threeContext.camera, threeContext.pressure2Target, true );
-    threeContext.renderer.render( threeContext.pressure2Scene, threeContext.camera, threeContext.pressure1Target, true );
+    var pressureSourceIndex = threeContext.currentPressureTarget;
+    var pressureTargetIndex = (pressureSourceIndex+1)%2;
+    this.pressureUniforms.pressureField.value = threeContext.pressureTargets[pressureSourceIndex].texture;
+    threeContext.renderer.render( threeContext.pressureScene, threeContext.camera, threeContext.pressureTargets[pressureTargetIndex], true );
+    threeContext.currentPressureTarget = pressureTargetIndex;
+    this.projectionUniforms.pressureField.value = threeContext.pressureTargets[pressureTargetIndex].texture;
     threeContext.renderer.render( threeContext.projectionScene, threeContext.camera, threeContext.velocity1Target, true );
 }
 
