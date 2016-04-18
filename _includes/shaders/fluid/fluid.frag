@@ -14,7 +14,8 @@ void main()
     vec3 velocity = texture2D(velocityField,vUv).xyz;
     vec2 flowDirection = velocity.xy;
 
-    gl_FragColor = vec4( flowDirection, 0.0, 1.0 );
+    gl_FragColor = vec4( abs(flowDirection), 0.0, 1.0 );
+    //gl_FragColor = vec4( abs(texture2D(pressureField, vUv).x), 0.0, 0.0, 1.0 );
     
     if( velocity.z > 0.0 ) gl_FragColor = vec4(0.0, 0.0, 1.0, 1.0);
     
@@ -35,7 +36,7 @@ void main()
         vec4 color2 = texture2D( texture, uv2 );
 
         // Ping pong between the two flows, showing the least distorted and allowing uv resets on both.
-        // gl_FragColor = mix( color1, color2, abs(cycleTime1-0.5)*2.0 );
+        gl_FragColor = mix( color1, color2, abs(cycleTime1-0.5)*2.0 );
     }
 }
 
