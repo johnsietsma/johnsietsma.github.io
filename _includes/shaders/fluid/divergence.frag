@@ -2,9 +2,10 @@
 
 // Divergence
 
-uniform vec2 vUv;
 uniform vec2 texelSize;
 uniform sampler2D velocityField;
+
+varying vec2 vUv;
 
 
 float calcDivergence()

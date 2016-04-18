@@ -45,9 +45,9 @@ float calcPressure()
 
 void main()
 {
-    gl_FragColor = vec4(1);
+    gl_FragColor = vec4(0.0, 0.0, 1.0, 1.0);
     if( !isObstacle() ) {
-    	gl_FragColor = vec4( calcPressure(), 0.0, 0.0, 1.0 );
+        gl_FragColor = vec4( calcPressure(), 0.0, 0.0, 1.0 );
     }
 }
 

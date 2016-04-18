@@ -131,7 +131,6 @@ ThreeContext.prototype.initFullScreenCanvas = function( vertShaderName, fragShad
     var defaultUniforms = {
         time: { type: "f", value: 0.0 },
         timeDelta: { type: "f", value: 0.0 },
-        texelSize: { type: "v2", value: new THREE.Vector2(1.0/500, 1.0/500) },
     };
     this.uniforms = Object.extend(defaultUniforms, this.uniforms || {});
     this.scene = createFullScreenQuadScene( vertShaderName, fragShaderName, this.uniforms, useVertColors );
@@ -139,21 +138,16 @@ ThreeContext.prototype.initFullScreenCanvas = function( vertShaderName, fragShad
 
 ThreeContext.prototype.updateDefaultUniforms = function (uniforms)
 {
-    var timeDelta = this.clock.getDelta();
-    if( uniforms.timeDelta!=null ) uniforms.timeDelta.value = timeDelta;
+    if( uniforms.timeDelta!=null ) uniforms.timeDelta.value = this.timeDelta;
     if( uniforms.time!=null )  uniforms.time.value = this.clock.elapsedTime;
-    if( uniforms.texelSize!=null ) {
-        uniforms.texelSize.value.x = 1.0/this.canvas.width;
-        uniforms.texelSize.value.y = 1.0/this.canvas.height;
-    }
 }
-
 
 ThreeContext.prototype.render = function () {
     if( !this.camera ) return;
     var self = this;
     requestAnimationFrame( function() { self.render(); } );
     
+    this.timeDelta = this.clock.getDelta();
     this.updateDefaultUniforms( this.uniforms );
     
     this.renderer.clear();

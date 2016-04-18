@@ -3,3 +3,4 @@
 .vscode
 *.lock
 _site
+.jekyll-metadata

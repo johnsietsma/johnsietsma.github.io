@@ -33,7 +33,6 @@ vec2 calcProjection()
 void main()
 {
     gl_FragColor = vec4(calcProjection(), 0.0, 1.0);
-    //gl_FragColor = texture2D(velocityField, vUv);
 }
 
 </script>
