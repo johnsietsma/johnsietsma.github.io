@@ -6,7 +6,7 @@ uniform float timeDelta;
 uniform vec2 texelSize;
 uniform sampler2D velocityField;
 
-const float ForceStrength = 1.0;
+const float ForceStrength = 10.0;
 const vec2 ForcePos = vec2(0.2, 0.5);
 const float ForceRadius = 0.15;
 
@@ -34,10 +34,10 @@ vec2 calcAdvection()
 vec2 clampBorder( vec2 value )
 {
     // Clamp value at borders to zero.
-    if( vUv.x>1.0       ||
-      	vUv.y>1.0       ||
-        vUv.x<0.0       ||
-        vUv.y<0.0 )
+    if( vUv.x>1.0-texelSize.x ||
+        vUv.y>1.0-texelSize.y ||
+        vUv.x<texelSize.x     ||
+        vUv.y<texelSize.y )
     {
         return vec2(0.0, 0.0);
     }

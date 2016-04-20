@@ -12,6 +12,7 @@ tags: threejs, fluidsim
 {% include shaders/flowMap.frag %}
 {% include shaders/uvDebug.frag %}
 {% include shaders/fluid/advection.frag %}
+{% include shaders/fluid/diffusion.frag %}
 {% include shaders/fluid/divergence.frag %}
 {% include shaders/fluid/pressure.frag %}
 {% include shaders/fluid/projection.frag %}
@@ -28,6 +29,7 @@ function initCanvas_FluidFlowMap( threeContext )
     threeContext.velocityTargets = [ new THREE.WebGLRenderTarget( 512, 512, targetOptions ), new THREE.WebGLRenderTarget( 512, 512, targetOptions ) ];
     threeContext.pressureTargets = [ new THREE.WebGLRenderTarget( 512, 512, targetOptions ), new THREE.WebGLRenderTarget( 512, 512, targetOptions ) ];
     threeContext.currentPressureTarget = 0;
+    threeContext.currentVelocityTarget = 0;
     threeContext.divergenceTarget = new THREE.WebGLRenderTarget( 512, 512, targetOptions );
     threeContext.fluidTarget = new THREE.WebGLRenderTarget(512, 512, targetOptions );
     
@@ -48,6 +50,13 @@ function initCanvas_FluidFlowMap( threeContext )
     };
     threeContext.advectionUniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
     threeContext.advectionScene = createFullScreenQuadScene( "passthroughVert", "advectionFrag", threeContext.advectionUniforms );
+    
+    // Diffusion
+    var uniforms = {
+      velocityField: { type: "t", value: null },
+    };
+    threeContext.diffusionUniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
+    threeContext.diffusionScene = createFullScreenQuadScene( "passthroughVert", "diffusionFrag", threeContext.diffusionUniforms );
         
     // Divergence
     var uniforms = {
@@ -95,20 +104,43 @@ function initCanvas_FluidFlowMap( threeContext )
 function renderCanvas_FluidFlowMap( threeContext )
 {
     threeContext.updateDefaultUniforms( this.advectionUniforms );
+    threeContext.updateDefaultUniforms( this.diffusionUniforms );
     threeContext.updateDefaultUniforms( this.divergenceUniforms );
     threeContext.updateDefaultUniforms( this.pressureUniforms );
     threeContext.updateDefaultUniforms( this.projectionUniforms );
     
-    var pressureSourceIndex = threeContext.currentPressureTarget;
-    var pressureTargetIndex = (pressureSourceIndex+1)%2;
     
     threeContext.advectionUniforms.velocityField.value = threeContext.velocityTargets[0].texture;
     threeContext.renderer.render( threeContext.advectionScene, threeContext.camera, threeContext.velocityTargets[1], false );
+    
+    var velocitySourceIndex;
+    var velocityTargetIndex;
+        
+    for( i=0; i<20; i++ ) {
+        velocitySourceIndex = threeContext.currentVelocityTarget;
+        velocityTargetIndex = (velocitySourceIndex+1)%2;
+
+        this.diffusionUniforms.velocityField.value = threeContext.velocityTargets[velocitySourceIndex].texture;
+        threeContext.renderer.render( threeContext.diffusionScene, threeContext.camera, threeContext.velocityTargets[velocityTargetIndex], false );
+    }
+    
+    threeContext.currentVelocityTarget = velocityTargetIndex;
+    
+    
     threeContext.renderer.render( threeContext.divergenceScene, threeContext.camera, threeContext.divergenceTarget, false );
     
     this.pressureUniforms.velocityField.value = threeContext.velocityTargets[1].texture;
-    this.pressureUniforms.pressureField.value = threeContext.pressureTargets[pressureSourceIndex].texture;
-    threeContext.renderer.render( threeContext.pressureScene, threeContext.camera, threeContext.pressureTargets[pressureTargetIndex], false );
+    
+    var pressureSourceIndex;
+    var pressureTargetIndex;
+        
+    for( i=0; i<20; i++ ) {
+        pressureSourceIndex = threeContext.currentPressureTarget;
+        pressureTargetIndex = (pressureSourceIndex+1)%2;
+
+        this.pressureUniforms.pressureField.value = threeContext.pressureTargets[pressureSourceIndex].texture;
+        threeContext.renderer.render( threeContext.pressureScene, threeContext.camera, threeContext.pressureTargets[pressureTargetIndex], false );
+    }
     
     this.projectionUniforms.velocityField.value = threeContext.velocityTargets[1].texture;
     this.projectionUniforms.pressureField.value = threeContext.pressureTargets[pressureTargetIndex].texture;
