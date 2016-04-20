@@ -1,14 +1,10 @@
 <script type="x-shader/x-fragment" id="advectionFrag">
-// Advection + Force
+// Advection
 
 uniform float time;
 uniform float timeDelta;
 uniform vec2 texelSize;
 uniform sampler2D velocityField;
-
-const float ForceStrength = 10.0;
-const vec2 ForcePos = vec2(0.2, 0.5);
-const float ForceRadius = 0.15;
 
 const vec2 ObstaclePos = vec2(0.5,0.5);
 const float ObstacleRadius = 0.1;
@@ -16,13 +12,6 @@ const float ObstacleRadius = 0.1;
 
 varying vec2 vUv;
 
-
-vec2 calcForce()
-{
-    float forceDist = distance(vUv, ForcePos);
-    float forceValue = (1.0-step(ForceRadius,forceDist)) * ForceStrength;
-    return vec2(forceValue, 0.0) * timeDelta;
-}
 
 vec2 calcAdvection()
 {
@@ -50,8 +39,8 @@ void main()
     gl_FragColor = vec4(0.0 ,0.0, 1.0, 1.0);
     vec2 movingObstaclePosition = vec2(ObstaclePos.x, ObstaclePos.y+sin(time*0.2)*0.2);
     if( distance(vUv, movingObstaclePosition) > ObstacleRadius ) {
-        vec2 newVel = calcAdvection() + calcForce();
-        //newVel = clampBorder( newVel );
+        vec2 newVel = calcAdvection();
+        newVel = clampBorder( newVel );
         gl_FragColor = vec4(newVel, 0.0, 1.0);
     }
 }

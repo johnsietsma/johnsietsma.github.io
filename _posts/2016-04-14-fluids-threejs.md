@@ -13,6 +13,7 @@ tags: threejs, fluidsim
 {% include shaders/uvDebug.frag %}
 {% include shaders/fluid/advection.frag %}
 {% include shaders/fluid/diffusion.frag %}
+{% include shaders/fluid/force.frag %}
 {% include shaders/fluid/divergence.frag %}
 {% include shaders/fluid/pressure.frag %}
 {% include shaders/fluid/projection.frag %}
@@ -57,6 +58,13 @@ function initCanvas_FluidFlowMap( threeContext )
     };
     threeContext.diffusionUniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
     threeContext.diffusionScene = createFullScreenQuadScene( "passthroughVert", "diffusionFrag", threeContext.diffusionUniforms );
+    
+    // Force
+    var uniforms = {
+      velocityField: { type: "t", value: null },
+    };
+    threeContext.forceUniforms = Object.extend( Object.clone(defaultUniforms), uniforms );
+    threeContext.forceScene = createFullScreenQuadScene( "passthroughVert", "forceFrag", threeContext.forceUniforms );
         
     // Divergence
     var uniforms = {
@@ -105,6 +113,7 @@ function renderCanvas_FluidFlowMap( threeContext )
 {
     threeContext.updateDefaultUniforms( this.advectionUniforms );
     threeContext.updateDefaultUniforms( this.diffusionUniforms );
+    threeContext.updateDefaultUniforms( this.forceUniforms );
     threeContext.updateDefaultUniforms( this.divergenceUniforms );
     threeContext.updateDefaultUniforms( this.pressureUniforms );
     threeContext.updateDefaultUniforms( this.projectionUniforms );
@@ -126,10 +135,14 @@ function renderCanvas_FluidFlowMap( threeContext )
     
     threeContext.currentVelocityTarget = velocityTargetIndex;
     
+    threeContext.forceUniforms.velocityField.value = threeContext.velocityTargets[velocitySourceIndex].texture;
+    threeContext.renderer.render( threeContext.forceScene, threeContext.camera, threeContext.velocityTargets[velocityTargetIndex], false );
+    velocitySourceIndex = threeContext.currentVelocityTarget;
+    velocityTargetIndex = (velocitySourceIndex+1)%2;
     
     threeContext.renderer.render( threeContext.divergenceScene, threeContext.camera, threeContext.divergenceTarget, false );
     
-    this.pressureUniforms.velocityField.value = threeContext.velocityTargets[1].texture;
+    this.pressureUniforms.velocityField.value = threeContext.velocityTargets[velocitySourceIndex].texture;
     
     var pressureSourceIndex;
     var pressureTargetIndex;
@@ -142,14 +155,17 @@ function renderCanvas_FluidFlowMap( threeContext )
         threeContext.renderer.render( threeContext.pressureScene, threeContext.camera, threeContext.pressureTargets[pressureTargetIndex], false );
     }
     
-    this.projectionUniforms.velocityField.value = threeContext.velocityTargets[1].texture;
+    this.projectionUniforms.velocityField.value = threeContext.velocityTargets[velocitySourceIndex].texture;
     this.projectionUniforms.pressureField.value = threeContext.pressureTargets[pressureTargetIndex].texture;
-    threeContext.renderer.render( threeContext.projectionScene, threeContext.camera, threeContext.velocityTargets[0], false );
+    threeContext.renderer.render( threeContext.projectionScene, threeContext.camera, threeContext.velocityTargets[velocityTargetIndex], false );
+    velocitySourceIndex = threeContext.currentVelocityTarget;
+    velocityTargetIndex = (velocitySourceIndex+1)%2;
     
-    threeContext.uniforms.velocityField.value = threeContext.velocityTargets[0].texture;
+    threeContext.uniforms.velocityField.value = threeContext.velocityTargets[velocitySourceIndex].texture;
     threeContext.uniforms.pressureField.value = threeContext.pressureTargets[pressureTargetIndex].texture;
     
     threeContext.currentPressureTarget = pressureTargetIndex;
+    threeContext.currentVelocityTarget = velocityTargetIndex;
 }
 
 </script>
