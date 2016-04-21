@@ -1,4 +1,4 @@
-<script type="x-shader/x-fragment" id="fluidFrag">
+<script type="x-shader/x-fragment" id="flowFluidFrag">
 
 uniform float time;
 uniform vec2 texelSize;
@@ -12,11 +12,13 @@ varying vec2 vUv;
 void main()
 {
     vec3 velocity = texture2D(velocityField,vUv).xyz;
-    vec2 flowDirection = velocity.xy * -0.02;
+    vec2 flowDirection = velocity.xy * -0.005;
     
     if( gl_FragColor.z == 0.0 ) {
-        const float cycleTime = 10.0;
-        const float flowSpeed = 0.5;
+        if( length(flowDirection) > 0.2 ) flowDirection = normalize(flowDirection) * 0.2;
+        
+        const float cycleTime = 20.0;
+        const float flowSpeed = 0.4;
 
         // Use two cycles, offset by a half so we can blend between them
         float t1 = time / cycleTime;

@@ -7,7 +7,7 @@ uniform sampler2D velocityField;
 
 varying vec2 vUv;
 
-const float Viscosity = 0.000000001;
+const float Viscosity = 0.1;
 const float DiffusionAlpha = 1.0 / Viscosity;
 const float DiffusionBetaReciprocal = 1.0 / (4.0 + DiffusionAlpha);
 

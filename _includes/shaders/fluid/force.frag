@@ -4,7 +4,7 @@
 uniform float timeDelta;
 uniform sampler2D velocityField;
 
-const float ForceStrength = 10.0;
+const float ForceStrength = 30.0;
 const vec2 ForcePos = vec2(0.2, 0.5);
 const float ForceRadius = 0.15;
 

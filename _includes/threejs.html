@@ -61,7 +61,6 @@ function createFullScreenQuad(vertShaderName, fragShaderName, uniforms, useVertC
 
 function createFullScreenQuadScene(vertShaderName, fragShaderName, uniforms, useVertColors)
 {
-    
     var plane = createFullScreenQuad( vertShaderName, fragShaderName, uniforms, useVertColors );
     var scene = new THREE.Scene();
     scene.add(plane);
@@ -97,10 +96,10 @@ var ThreeContext = function( canvasName, initFunction, renderFunction )
     this.renderFunction = renderFunction;
     
     
-    this.stats = new Stats();
-    this.stats.domElement.style.position = 'absolute';
+    //this.stats = new Stats();
+    //this.stats.domElement.style.position = 'absolute';
     //this.stats.domElement.style.top = '0px';
-    this.canvas.parentNode.appendChild( this.stats.domElement );
+    //this.canvas.parentNode.appendChild( this.stats.domElement );
     
     this.renderer.setPixelRatio( window.devicePixelRatio );
     this.onWindowResize();
@@ -158,7 +157,7 @@ ThreeContext.prototype.render = function () {
     }
         
     this.renderer.render( this.scene, this.camera );
-    this.stats.update();
+    //this.stats.update();
 }
   
     

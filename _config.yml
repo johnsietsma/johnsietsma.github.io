@@ -2,10 +2,11 @@ url: http://johnsietsma.com
 baseurl: "" # using the full domain here causes issues running Jekyll locally.
 assetsurl: /assets
 title: John Sietsma
-description: "A portfolio of John Sietsma's game development and design work. John Sietsma has experience with Unity 3D, C#, .NET, Mono, Python, Django and C/C++."
+description: "A portfolio of John Sietsma's game development and design work. John Sietsma has experience with Unity 3D, C#, .NET, Mono, WebGL, JavaScript, Python, Django and C/C++."
 #avatar: /assets/img/ogp.png
 language: en-au
 markdown: kramdown
+excerpt_separator: <!--more-->
 
 redcarpet:
   extensions: ["autolink", "superscript", "underline", "no_intra_emphasis", "fenced_code_blocks", "quote", "tables"]
@@ -23,7 +24,7 @@ exclude:
 icons:
   rss: true
   email:
-  github: notoes
+  github: johnsietsma
   bitbucket:
   twitter: johnsietsma
   facebook:
@@ -66,8 +67,3 @@ disqus: johnsietsma
 #
 recent_posts_num: 10
 
-#
-# Pagination.
-#
-paginate: 10
-paginate_path: "page/:num"
