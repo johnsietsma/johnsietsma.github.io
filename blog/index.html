@@ -21,6 +21,7 @@ title: John Sietsma's Blog
 
           <li>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {{ post.excerpt }}
             <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
           </li>
       {% if forloop.last %}

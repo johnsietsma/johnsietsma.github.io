@@ -10,7 +10,7 @@ tags: threejs, fluidsim, flowmap
 
 Here is a proof of concept of using a 2D fluid simluation to generate a [Flow Map]({% post_url 2015-12-01-flow-maps %}). This follows on from my [Fluid/Flow Map ShaderToy experiment]({% post_url 2016-04-13-fluid-flow-shadertoy %}) to do the same thing, except here I have a much better fluid simulation.
 
-Press the 'f' key to swap between the fluid simulation and the flow map. When the flow map is being displayed the fluid simulation stops. 
+**Press the 'f' key to swap between the fluid simulation and the flow map**. When the flow map is being displayed the fluid simulation stops. 
 
 This could be used in a game to deal with dynamic obstacles in water or smoke, without having to run a full fluid simulation all the time. The fluid simulation could be amortised over many frames, leading to a cheap fluid effect.
 
@@ -59,17 +59,18 @@ document.addEventListener('keydown', onKeyDown, false);
 
 function initCanvas_FluidFlowMap( threeContext )
 {
+    var fluidSimSize = 256;
     var targetOptions = { type: THREE.FloatType }; 
     threeContext.velocityTargets = new DoubleBufferedRenderTarget();
     threeContext.pressureTargets = new DoubleBufferedRenderTarget();
-    threeContext.divergenceTarget = new THREE.WebGLRenderTarget( 512, 512, targetOptions );
-    threeContext.fluidTarget = new THREE.WebGLRenderTarget(512, 512, targetOptions );
+    threeContext.divergenceTarget = new THREE.WebGLRenderTarget( fluidSimSize, fluidSimSize, targetOptions );
+    threeContext.fluidTarget = new THREE.WebGLRenderTarget( fluidSimSize, fluidSimSize, targetOptions );
     
     
     var defaultUniforms = {
       time: { type: "f", value: 0.0 },
       timeDelta: { type: "f", value: 0.0 },
-      texelSize: { type: "v2", value: new THREE.Vector2(1.0/512.0,1.0/512.0) },
+      texelSize: { type: "v2", value: new THREE.Vector2(1.0/fluidSimSize,1.0/fluidSimSize) },
       minFilter: THREE.LinearFilter,
       magFilter: THREE.LinearFilter,
       depthBuffer: false,
@@ -171,7 +172,7 @@ function renderCanvas_FluidFlowMap( threeContext )
     // ---- Pressure ----
     this.pressureUniforms.velocityField.value = threeContext.velocityTargets.getSource().texture;
            
-    for( i=0; i<50; i++ ) {
+    for( i=0; i<40; i++ ) {
         this.pressureUniforms.pressureField.value = threeContext.pressureTargets.getSource().texture;
         threeContext.renderer.render( threeContext.pressureScene, threeContext.camera, threeContext.pressureTargets.getTarget(), false );
         threeContext.pressureTargets.swap();

@@ -12,8 +12,14 @@ varying vec2 vUv;
 void main()
 {
     vec3 velocity = texture2D(velocityField,vUv).xyz;
-    vec2 flowDirection = velocity.xy * -0.01;
-    gl_FragColor = vec4( vec3(0.5 * length(flowDirection)), 1.0);
+    if( velocity.z == 0.0 ) {
+        vec2 flowDirection = velocity.xy * -0.02;
+        gl_FragColor = vec4( vec3(0.5 * length(flowDirection)), 1.0);
+    }
+    else {
+        gl_FragColor = vec4( vec3(0.25), 1 );
+    }
+        
 }
 
 </script>

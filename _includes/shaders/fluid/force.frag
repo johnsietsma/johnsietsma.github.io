@@ -20,6 +20,9 @@ vec2 calcForce()
 
 void main()
 {
-    gl_FragColor = texture2D( velocityField, vUv ) + vec4( calcForce(), 0.0, 1.0 );
+    gl_FragColor = texture2D( velocityField, vUv );
+    if( gl_FragColor.z == 0.0 ) { // Check for obstacles 
+        gl_FragColor += vec4( calcForce(), 0.0, 1.0 );
+    }
 }
 </script>
