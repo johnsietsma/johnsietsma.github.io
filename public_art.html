@@ -1,0 +1,53 @@
+<html>
+    
+<head>
+    <title>Melbourne's Public Art</title>
+    <style>
+        html, body { height: 100%; }
+        .angular-google-map-container { height: 100vh; }
+    </style>
+    
+    <script src="assets/js/lodash.min.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-simple-logger.min.js"></script>    
+    <script src="assets/js/angular-google-maps.js"></script>    
+    
+    <script>
+        var myApp = angular.module('myApp', ['uiGmapgoogle-maps']);
+
+
+
+myApp.controller( "gMap",function( $scope, $http, uiGmapGoogleMapApi ) {
+    uiGmapGoogleMapApi
+    .then(function(maps) {
+        $scope.map = { 
+            center: { latitude: -37.8141, longitude: 144.9633 }, 
+            zoom: 14 
+        };
+        $http.get("https://data.melbourne.vic.gov.au/api/views/6fzs-45an/rows.json?accessType=DOWNLOAD")
+        .then(function(response) {
+            var marker = response.data.data[0];
+            $scope.markers = response.data.data;
+        });
+    });
+});
+</script>
+</head>
+
+
+
+<div ng-app="myApp" ng-controller="gMap">
+  <ui-gmap-google-map 
+    center='map.center' 
+    zoom='map.zoom' aria-label="Google map">
+    
+    <ui-gmap-marker ng-repeat="marker in markers"
+        coords="{ 'latitude': marker[19][1], 'longitude': marker[19][2] }" idkey="marker[0]">
+      <ui-gmap-window>
+        <div>{{marker[9]}}</div>
+      </ui-gmap-window>
+    </ui-gmap-marker>
+  </ui-gmap-google-map>
+</div>
+
+</html>

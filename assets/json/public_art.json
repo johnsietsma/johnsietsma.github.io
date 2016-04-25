@@ -1,0 +1,1312 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "6fzs-45an",
+      "name" : "Melbourne Public Artwork",
+      "attribution" : "City of Melbourne, Australia",
+      "averageRating" : 0,
+      "category" : "Assets & Infrastructure",
+      "createdAt" : 1398813038,
+      "description" : "The City of Melbourne maintains a register of all public artwork, fountains and monuments located within the City. This dataset contains various information regarding the type, category and geographical location of the artwork.",
+      "downloadCount" : 161,
+      "indexUpdatedAt" : 1444700009,
+      "licenseId" : "CC_30_BY_AUS",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 7897262,
+      "publicationAppendEnabled" : true,
+      "publicationDate" : 1399000428,
+      "publicationGroup" : 1563691,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1398999731,
+      "rowsUpdatedBy" : "qa5p-yqk6",
+      "tableId" : 1566551,
+      "totalTimesRated" : 0,
+      "viewCount" : 743,
+      "viewLastModified" : 1444691966,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : 146171663,
+        "name" : "Asset Type",
+        "dataTypeName" : "text",
+        "description" : "Type of the Asset.",
+        "fieldName" : "asset_typ",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465472,
+        "width" : 208,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "Art",
+          "null" : 0,
+          "largest" : "Monument",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Fountain"
+          }, {
+            "count" : 19,
+            "item" : "Art"
+          }, {
+            "count" : 18,
+            "item" : "Monument"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171664,
+        "name" : "Name",
+        "dataTypeName" : "text",
+        "description" : "Name of the Asset.",
+        "fieldName" : "name",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465476,
+        "width" : 148,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "Adam Lindsay Gordan Memorial",
+          "null" : 0,
+          "largest" : "Zoo Paving",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Blowhole"
+          }, {
+            "count" : 19,
+            "item" : "Federation Bells"
+          }, {
+            "count" : 18,
+            "item" : "Threaded Field"
+          }, {
+            "count" : 17,
+            "item" : "Silence"
+          }, {
+            "count" : 16,
+            "item" : "Scar - A Stolen Vision"
+          }, {
+            "count" : 15,
+            "item" : "Birrarung Wilam"
+          }, {
+            "count" : 14,
+            "item" : "Constellation"
+          }, {
+            "count" : 13,
+            "item" : "Painted Poles"
+          }, {
+            "count" : 12,
+            "item" : "Ned and Dan"
+          }, {
+            "count" : 11,
+            "item" : "Art Wall"
+          }, {
+            "count" : 10,
+            "item" : "IOU"
+          }, {
+            "count" : 9,
+            "item" : "Weathervanes"
+          }, {
+            "count" : 8,
+            "item" : "Commonwealth Games Aquatic Sculptures - Eels"
+          }, {
+            "count" : 7,
+            "item" : "Poise"
+          }, {
+            "count" : 6,
+            "item" : "Pastor Sir Doug and Lady Gladys Nicholls"
+          }, {
+            "count" : 5,
+            "item" : "John Batman Memorial (1)"
+          }, {
+            "count" : 4,
+            "item" : "Man with the Donkey"
+          }, {
+            "count" : 3,
+            "item" : "Macpherson Robertson Fountain"
+          }, {
+            "count" : 2,
+            "item" : "Chinese Lion Guardians"
+          }, {
+            "count" : 1,
+            "item" : "Island Wave"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171665,
+        "name" : "Xorg",
+        "dataTypeName" : "text",
+        "fieldName" : "xorg",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465477,
+        "width" : 148,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "AAMHatch",
+          "null" : 0,
+          "largest" : "VicUrban (Docklands)",
+          "top" : [ {
+            "count" : 20,
+            "item" : "City of Melbourne"
+          }, {
+            "count" : 19,
+            "item" : "Beveridge Williams Surveyors"
+          }, {
+            "count" : 18,
+            "item" : "VicUrban (Docklands)"
+          }, {
+            "count" : 17,
+            "item" : "AAMHatch"
+          }, {
+            "count" : 16,
+            "item" : "Qasco"
+          }, {
+            "count" : 15,
+            "item" : "Owned by National Gallery of Victoria"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171666,
+        "name" : "Xsource",
+        "dataTypeName" : "text",
+        "fieldName" : "xsource",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465478,
+        "width" : 184,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "AAM Hatch Photogrammetry - March 2005",
+          "null" : 0,
+          "largest" : "MCC - Ortho Image March 2008 - Final",
+          "top" : [ {
+            "count" : 20,
+            "item" : "MCC - Ortho Image March 2005 - Final"
+          }, {
+            "count" : 19,
+            "item" : "Field Survey"
+          }, {
+            "count" : 18,
+            "item" : "MCC - Ground Ortho Image March 2008"
+          }, {
+            "count" : 17,
+            "item" : "AAM Hatch Photogrammetry - March 2005"
+          }, {
+            "count" : 16,
+            "item" : "MCC - Ortho Image March 2008 - Final"
+          }, {
+            "count" : 15,
+            "item" : "MCC - Ground Ortho Image March 2007"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171667,
+        "name" : "Address Point",
+        "dataTypeName" : "text",
+        "description" : "Address point of the asset.",
+        "fieldName" : "addresspt",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465484,
+        "width" : 208,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "100 Swanston Street, MELBOURNE",
+          "null" : 0,
+          "largest" : "Sidney Myer Music Bowl, Alexandra Avenue, MELBOURNE",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Birrarung Marr, MELBOURNE"
+          }, {
+            "count" : 19,
+            "item" : "Queen Victoria Gardens, St Kilda Road, MELBOURNE"
+          }, {
+            "count" : 18,
+            "item" : "55B Newquay Promenade, DOCKLANDS"
+          }, {
+            "count" : 17,
+            "item" : "Enterprize Park, MELBOURNE"
+          }, {
+            "count" : 16,
+            "item" : "Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE"
+          }, {
+            "count" : 15,
+            "item" : "469 Flinders Street, MELBOURNE"
+          }, {
+            "count" : 14,
+            "item" : "435 Docklands Drive, DOCKLANDS"
+          }, {
+            "count" : 13,
+            "item" : "15 Batmans Hill Drive, DOCKLANDS"
+          }, {
+            "count" : 12,
+            "item" : "331 Lygon Street, CARLTON"
+          }, {
+            "count" : 11,
+            "item" : "9 Nicholson Street, CARLTON"
+          }, {
+            "count" : 10,
+            "item" : "Kings Domain, Alexandra Avenue, MELBOURNE"
+          }, {
+            "count" : 9,
+            "item" : "78 Swanston Street, MELBOURNE"
+          }, {
+            "count" : 8,
+            "item" : "Birrarung Marr"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171668,
+        "name" : "Artist",
+        "dataTypeName" : "text",
+        "description" : "Name of the artist.",
+        "fieldName" : "artist",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465485,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "Adrian Mauriks",
+          "null" : 0,
+          "largest" : "Yrsa Von Leister",
+          "top" : [ {
+            "count" : 20,
+            "item" : "unknown"
+          }, {
+            "count" : 19,
+            "item" : "Duncan Stemler"
+          }, {
+            "count" : 18,
+            "item" : "Designers Neil McLachlan and Anton Hasell"
+          }, {
+            "count" : 17,
+            "item" : "Simon Perry"
+          }, {
+            "count" : 16,
+            "item" : "Loretta Quinn"
+          }, {
+            "count" : 15,
+            "item" : "Charles Douglas Richardson"
+          }, {
+            "count" : 14,
+            "item" : "Adrian Mauriks"
+          }, {
+            "count" : 13,
+            "item" : "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm"
+          }, {
+            "count" : 12,
+            "item" : "Vicki Couzens, Lee Darroch and Treahna Hamm"
+          }, {
+            "count" : 11,
+            "item" : "Daniel Jenkins"
+          }, {
+            "count" : 10,
+            "item" : "Bruce Armstrong and Geoffrey Bartlett"
+          }, {
+            "count" : 9,
+            "item" : "Alexander Knox"
+          }, {
+            "count" : 8,
+            "item" : "Mikala Dwyer"
+          }, {
+            "count" : 7,
+            "item" : "Peter Cortlett and Jamie Cooper"
+          }, {
+            "count" : 6,
+            "item" : "Jennifer McCarthy"
+          }, {
+            "count" : 5,
+            "item" : "Patricia Piccinini"
+          }, {
+            "count" : 4,
+            "item" : "Alexander McDonald & Co"
+          }, {
+            "count" : 3,
+            "item" : "Hugh Linaker"
+          }, {
+            "count" : 2,
+            "item" : "Maree Clarke and Sonja Hodge"
+          }, {
+            "count" : 1,
+            "item" : "Deborah Halpern"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171669,
+        "name" : "Alternate Name",
+        "dataTypeName" : "text",
+        "fieldName" : "altname",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465486,
+        "width" : 184,
+        "cachedContents" : {
+          "non_null" : 12,
+          "smallest" : "Boy with Serpent, and Ornamental Fountain",
+          "null" : 249,
+          "largest" : "Yellow Peril",
+          "top" : [ {
+            "count" : 20,
+            "item" : "The Hammer Thrower"
+          }, {
+            "count" : 19,
+            "item" : "Rabbit"
+          }, {
+            "count" : 18,
+            "item" : "The Black Gate"
+          }, {
+            "count" : 17,
+            "item" : "Memorial to Fallen Soldiers, and Monument to the 5th Victorian Contingent"
+          }, {
+            "count" : 16,
+            "item" : "Hochgurtel Fountain"
+          }, {
+            "count" : 15,
+            "item" : "Old Man Fountain; Neptune"
+          }, {
+            "count" : 14,
+            "item" : "Yellow Peril"
+          }, {
+            "count" : 13,
+            "item" : "Hotham Ornamental Fountain"
+          }, {
+            "count" : 12,
+            "item" : "Boy with Serpent, and Ornamental Fountain"
+          }, {
+            "count" : 11,
+            "item" : "Seated Figure"
+          }, {
+            "count" : 10,
+            "item" : "Temperance"
+          }, {
+            "count" : 9,
+            "item" : "Private John Simpson and His Little Donkey"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171670,
+        "name" : "Art Date",
+        "dataTypeName" : "text",
+        "description" : "Date of the artwork.",
+        "fieldName" : "artdate",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465487,
+        "width" : 184,
+        "cachedContents" : {
+          "non_null" : 259,
+          "smallest" : "1780",
+          "null" : 2,
+          "largest" : "various",
+          "top" : [ {
+            "count" : 20,
+            "item" : "2005"
+          }, {
+            "count" : 19,
+            "item" : "1995"
+          }, {
+            "count" : 18,
+            "item" : "2002"
+          }, {
+            "count" : 17,
+            "item" : "1992"
+          }, {
+            "count" : 16,
+            "item" : "1999"
+          }, {
+            "count" : 15,
+            "item" : "1993"
+          }, {
+            "count" : 14,
+            "item" : "2006"
+          }, {
+            "count" : 13,
+            "item" : "1973"
+          }, {
+            "count" : 12,
+            "item" : "2003"
+          }, {
+            "count" : 11,
+            "item" : "unknown"
+          }, {
+            "count" : 10,
+            "item" : "2001"
+          }, {
+            "count" : 9,
+            "item" : "1994"
+          }, {
+            "count" : 8,
+            "item" : "1996"
+          }, {
+            "count" : 7,
+            "item" : "1981"
+          }, {
+            "count" : 6,
+            "item" : "2000"
+          }, {
+            "count" : 5,
+            "item" : "1907"
+          }, {
+            "count" : 4,
+            "item" : "1950"
+          }, {
+            "count" : 3,
+            "item" : "1931"
+          }, {
+            "count" : 2,
+            "item" : "c. 1888"
+          }, {
+            "count" : 1,
+            "item" : "1934"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171671,
+        "name" : "Mel way Ref",
+        "dataTypeName" : "text",
+        "fieldName" : "melwayref",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465488,
+        "width" : 208,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "1A_J12",
+          "null" : 0,
+          "largest" : "42, J3",
+          "top" : [ {
+            "count" : 20,
+            "item" : "2E_G8"
+          }, {
+            "count" : 19,
+            "item" : "2F_ K6"
+          }, {
+            "count" : 18,
+            "item" : "2F_F4"
+          }, {
+            "count" : 17,
+            "item" : "2E_G4"
+          }, {
+            "count" : 16,
+            "item" : "2E_E4"
+          }, {
+            "count" : 15,
+            "item" : "2E_C7"
+          }, {
+            "count" : 14,
+            "item" : "2F_ H6"
+          }, {
+            "count" : 13,
+            "item" : "2G_B2"
+          }, {
+            "count" : 12,
+            "item" : "2F_F3"
+          }, {
+            "count" : 11,
+            "item" : "2F_D7"
+          }, {
+            "count" : 10,
+            "item" : "2G_C3"
+          }, {
+            "count" : 9,
+            "item" : "2E_H7"
+          }, {
+            "count" : 8,
+            "item" : "2F_E1"
+          }, {
+            "count" : 7,
+            "item" : "2F_H8"
+          }, {
+            "count" : 6,
+            "item" : "2E_H8"
+          }, {
+            "count" : 5,
+            "item" : "2F, K6"
+          }, {
+            "count" : 4,
+            "item" : "2F_J10"
+          }, {
+            "count" : 3,
+            "item" : "2F_C5"
+          }, {
+            "count" : 2,
+            "item" : "2E_D4"
+          }, {
+            "count" : 1,
+            "item" : "2E_J6"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171672,
+        "name" : "Respective Author",
+        "dataTypeName" : "text",
+        "fieldName" : "respauthor",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465489,
+        "width" : 220,
+        "cachedContents" : {
+          "non_null" : 259,
+          "smallest" : "City of Melbourne",
+          "null" : 2,
+          "largest" : "VicUrban",
+          "top" : [ {
+            "count" : 20,
+            "item" : "City Of Melbourne"
+          }, {
+            "count" : 19,
+            "item" : "City of Melbourne"
+          }, {
+            "count" : 18,
+            "item" : "VicUrban"
+          }, {
+            "count" : 17,
+            "item" : "National Gallery of Victoria"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171673,
+        "name" : "Structure",
+        "dataTypeName" : "text",
+        "description" : "Structure of the asset.",
+        "fieldName" : "structure_",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19465491,
+        "width" : 220,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "3D Installation",
+          "null" : 0,
+          "largest" : "Wooden pier post and metal sculptures",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Stainless-steel and aluminium sculpture"
+          }, {
+            "count" : 19,
+            "item" : "Bronze-alloy bells on galvanised-steel poles"
+          }, {
+            "count" : 18,
+            "item" : "Sculpture"
+          }, {
+            "count" : 17,
+            "item" : "Bronze sculpture"
+          }, {
+            "count" : 16,
+            "item" : "Wooden pier post and metal sculptures"
+          }, {
+            "count" : 15,
+            "item" : "Bronze statue with granite pedestal"
+          }, {
+            "count" : 14,
+            "item" : "Stone, wood, stainless steel, bronze, nickel and audio installation"
+          }, {
+            "count" : 13,
+            "item" : "Bronze statue"
+          }, {
+            "count" : 12,
+            "item" : "Stainless steel, copper and Cyrpus-pine sculpture"
+          }, {
+            "count" : 11,
+            "item" : "Metal poles"
+          }, {
+            "count" : 10,
+            "item" : "Three-dimensional frieze"
+          }, {
+            "count" : 9,
+            "item" : "Stainless steel and toughened glass"
+          }, {
+            "count" : 8,
+            "item" : "Cast bronze statue on granite pedestal"
+          }, {
+            "count" : 7,
+            "item" : "Hand-beaten copper sculpture with gold-leaf detail"
+          }, {
+            "count" : 6,
+            "item" : "Bronze statue and plaques"
+          }, {
+            "count" : 5,
+            "item" : "Sculptural forms"
+          }, {
+            "count" : 4,
+            "item" : "Photographic images"
+          }, {
+            "count" : 3,
+            "item" : "Metal platform"
+          }, {
+            "count" : 2,
+            "item" : "Stone drinking fountain"
+          }, {
+            "count" : 1,
+            "item" : "White marble and granite sculpture"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 146171674,
+        "name" : "Co-ordinates",
+        "dataTypeName" : "location",
+        "description" : "Co-ordinates of the asset.",
+        "fieldName" : "geom",
+        "position" : 12,
+        "renderTypeName" : "location",
+        "tableColumnId" : 19465492,
+        "width" : 148,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : {
+            "longitude" : "144.973483976518",
+            "latitude" : "-37.8097706189194"
+          },
+          "null" : 0,
+          "largest" : {
+            "longitude" : "144.959477986287",
+            "latitude" : "-37.8201046430242"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "longitude" : "144.943688304136",
+              "latitude" : "-37.8088169283775"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "longitude" : "144.96931423372",
+              "latitude" : "-37.7855912646095"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "longitude" : "144.972479044613",
+              "latitude" : "-37.8218411817137"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "longitude" : "144.97275207638",
+              "latitude" : "-37.8267733497848"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "longitude" : "144.974100167285",
+              "latitude" : "-37.8186666064737"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "longitude" : "144.97374504876",
+              "latitude" : "-37.8123635338167"
+            }
+          }, {
+            "count" : 14,
+            "item" : {
+              "longitude" : "144.967306467399",
+              "latitude" : "-37.7975991142625"
+            }
+          }, {
+            "count" : 13,
+            "item" : {
+              "longitude" : "144.973417274498",
+              "latitude" : "-37.8050913081625"
+            }
+          }, {
+            "count" : 12,
+            "item" : {
+              "longitude" : "144.976076213311",
+              "latitude" : "-37.8251147378564"
+            }
+          }, {
+            "count" : 11,
+            "item" : {
+              "longitude" : "144.95952896712",
+              "latitude" : "-37.8200950553396"
+            }
+          }, {
+            "count" : 10,
+            "item" : {
+              "longitude" : "144.949142099572",
+              "latitude" : "-37.8217401147159"
+            }
+          }, {
+            "count" : 9,
+            "item" : {
+              "longitude" : "144.959593881825",
+              "latitude" : "-37.820084055671"
+            }
+          }, {
+            "count" : 8,
+            "item" : {
+              "longitude" : "144.966836246828",
+              "latitude" : "-37.8157410618987"
+            }
+          }, {
+            "count" : 7,
+            "item" : {
+              "longitude" : "144.972959186532",
+              "latitude" : "-37.8189542313538"
+            }
+          }, {
+            "count" : 6,
+            "item" : {
+              "longitude" : "144.959477986287",
+              "latitude" : "-37.8201046430242"
+            }
+          } ]
+        },
+        "format" : {
+          "view" : "address_coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 146171675,
+        "name" : "Easting",
+        "dataTypeName" : "number",
+        "description" : "Eastward distance of the asset on the map.",
+        "fieldName" : "easting",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 19465466,
+        "width" : 184,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "315771.745",
+          "sum" : "83666305.0821975",
+          "null" : 0,
+          "average" : "320560.5558704885",
+          "largest" : "323043.869",
+          "top" : [ {
+            "count" : 20,
+            "item" : "318983.89"
+          }, {
+            "count" : 19,
+            "item" : "321183.961"
+          }, {
+            "count" : 18,
+            "item" : "321549.962"
+          }, {
+            "count" : 17,
+            "item" : "321585.875"
+          }, {
+            "count" : 16,
+            "item" : "321685.0173"
+          }, {
+            "count" : 15,
+            "item" : "321638.585"
+          }, {
+            "count" : 14,
+            "item" : "321036.125"
+          }, {
+            "count" : 13,
+            "item" : "321592.225"
+          }, {
+            "count" : 12,
+            "item" : "321874.468"
+          }, {
+            "count" : 11,
+            "item" : "320405.82177"
+          }, {
+            "count" : 10,
+            "item" : "319495.522"
+          }, {
+            "count" : 9,
+            "item" : "320411.50925"
+          }, {
+            "count" : 8,
+            "item" : "321038.531"
+          }, {
+            "count" : 7,
+            "item" : "321585.273"
+          }, {
+            "count" : 6,
+            "item" : "320401.35741"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "right",
+          "noCommas" : "false"
+        }
+      }, {
+        "id" : 146171676,
+        "name" : "Northing",
+        "dataTypeName" : "number",
+        "description" : "Northward distance of the asset on the map.",
+        "fieldName" : "northing",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 19465467,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 261,
+          "smallest" : "5810846.87",
+          "sum" : "1517141479.8429500",
+          "null" : 0,
+          "average" : "5812802.604762261",
+          "largest" : "5816762.533",
+          "top" : [ {
+            "count" : 20,
+            "item" : "5813405.02"
+          }, {
+            "count" : 19,
+            "item" : "5816031.622"
+          }, {
+            "count" : 18,
+            "item" : "5812015.171"
+          }, {
+            "count" : 17,
+            "item" : "5811468.389"
+          }, {
+            "count" : 16,
+            "item" : "5812370.53722"
+          }, {
+            "count" : 15,
+            "item" : "5813069.286"
+          }, {
+            "count" : 14,
+            "item" : "5814695.319"
+          }, {
+            "count" : 13,
+            "item" : "5813875.629"
+          }, {
+            "count" : 12,
+            "item" : "5811658.785"
+          }, {
+            "count" : 11,
+            "item" : "5812184.10688"
+          }, {
+            "count" : 10,
+            "item" : "5811981.535"
+          }, {
+            "count" : 9,
+            "item" : "5812185.4523"
+          }, {
+            "count" : 8,
+            "item" : "5812681.28"
+          }, {
+            "count" : 7,
+            "item" : "5812336.4415625"
+          }, {
+            "count" : 6,
+            "item" : "5812182.94492"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "right",
+          "noCommas" : "false"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons Attribution 3.0 Australia",
+        "logoUrl" : "images/licenses/cc30by.png",
+        "termsLink" : "http://creativecommons.org/licenses/by/3.0/au/deed.en"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Melbourne Metadata" : {
+            "Original upload date" : "30/04/2014",
+            "Spatial dataset" : "Yes",
+            "Last Updated" : "30/04/2014",
+            "Version number" : "1",
+            "Data Completeness statement: Has the full dataset been included, or has a subset been excluded? Why?" : "All data held by the City of Melbourne has been included",
+            "Update Frequency" : "As Required",
+            "Data Quality" : "4 Star"
+          }
+        },
+        "rowLabel" : "Row",
+        "rdfSubject" : "0",
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "xcv7-86fp",
+        "displayName" : "City of Melbourne",
+        "profileImageUrlLarge" : "/api/users/xcv7-86fp/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/xcv7-86fp/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/xcv7-86fp/profile_images/TINY",
+        "roleName" : "administrator",
+        "screenName" : "City of Melbourne",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "xcv7-86fp",
+        "displayName" : "City of Melbourne",
+        "profileImageUrlLarge" : "/api/users/xcv7-86fp/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/xcv7-86fp/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/xcv7-86fp/profile_images/TINY",
+        "roleName" : "administrator",
+        "screenName" : "City of Melbourne",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs" ]
+      },
+      "tags" : [ "art", "street art", "artwork", "fountain", "monument", "eventsplanner" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "AB1D94CF-8FF1-4DF2-9BA1-9295EECAE0A3", 1, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Coles Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "517 Albert Street, EAST MELBOURNE", "Robert Woodward", null, "1981", "2F_J1", "City Of Melbourne", "Stainless-steel fountain on bluestone paving", [ null, "-37.8097706189194", "144.973483976518", null, false ], "321609.36", "5813356.512" ]
+, [ 2, "5C2257FE-9463-47AD-88DC-256971E14AB6", 2, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Port Phillip Monument", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "178 Sims Street, WEST MELBOURNE", "unknown", null, "1941", "2S_K11", "City Of Melbourne", "Basalt monument", [ null, "-37.8056957854241", "144.907291041632", null, false ], "315771.745", "5813680.208" ]
+, [ 3, "7CEF8ADC-1E44-40FA-B03E-BF661C972029", 3, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Black Swan Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Alexandra Gardens, St Kilda Road, MELBOURNE", "Raymond B. Ewers", null, "1974", "2F_J6", "City Of Melbourne", "Bluestone drinking fountain with bronze plaque", [ null, "-37.8195705617737", "144.971824407255", null, false ], "321486.867", "5812265.881" ]
+, [ 4, "CB892802-6660-470F-BA95-EAA1C5A8BA3B", 4, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "13 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8220182164578", "144.946871022845", null, false ], "319296.292", "5811946.283" ]
+, [ 5, "E4FA6C5C-EA7F-45E8-A25A-CA49F4B52817", 5, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Bird Panels", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "76 Canning Street", "Di Christensen and Bernice McPherson", null, "1995", "2A_E5", "City Of Melbourne", "Stainless-steel panels", [ null, "-37.7953526839703", "144.940687314302", null, false ], "318686.757", "5814893.278" ]
+, [ 6, "842F7757-8B58-47E5-9383-32DD16CB1463", 6, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Bandstand", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "200 Little Collins Street, MELBOURNE", "George Dodd", null, "1864", "2F_G3", "City Of Melbourne", "Concrete bandstand", [ null, "-37.8140548689972", "144.96733868317", null, false ], "321078.689", "5812869.353" ]
+, [ 7, "3D2FABCC-2DD8-4BB0-8F1B-B6CC77A6CF1D", 7, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8186973319473", "144.974158800684", null, false ], "321690.25256", "5812367.23968" ]
+, [ 8, "B67B1A68-1ED4-42A1-A311-5F1222D4C0F9", 8, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8186738864394", "144.974167165492", null, false ], "321690.93246", "5812369.85732" ]
+, [ 9, "52E09F25-F37F-4706-8526-C20C1022CD54", 9, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8186882333343", "144.974128540287", null, false ], "321687.56694", "5812368.19155" ]
+, [ 10, "23462F05-145F-4332-A1B3-A2FE5CFC0963", 10, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "15 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8219107218802", "144.946765134735", null, false ], "319286.709", "5811958.006" ]
+, [ 11, "F97E849D-74FC-41EF-A5D1-4B30DE3BAEA1", 11, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Coat of Arms", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "98 Swanston Street, MELBOURNE", "City of Melbourne", null, "1992", "2F_F4", "City Of Melbourne", "Brass pavement inlay", [ null, "-37.8151582937289", "144.966495940551", null, false ], "321007.165", "5812745.295" ]
+, [ 12, "E92E8744-26F9-4CFC-8FB0-95E19C5EDB5F", 12, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Edmund Fitzgibbon Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "208 St Kilda Road, SOUTHBANK", "James White", null, "1908", "2F_H9", "City Of Melbourne", "Bronze statue with Harcourt granite pedestal", [ null, "-37.8236122113264", "144.970418561306", null, false ], "321372.863", "5811814.707" ]
+, [ 13, "74EE48ED-374B-4C00-A49B-70442EFA6698", 13, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Threaded Field", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "687 La Trobe Street, DOCKLANDS", "Simon Perry", null, "1999", "2E_G4", "VicUrban", "Sculpture", [ null, "-37.8155239604994", "144.946828976445", null, false ], "319276.75", "5812666.846" ]
+, [ 14, "39428B81-B843-4671-927B-C749C3A2433D", 14, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Threaded Field", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "157 Wurundjeri Way, DOCKLANDS", "Simon Perry", null, "1999", "2E_G4", "VicUrban", "Sculpture", [ null, "-37.8152979137773", "144.947771877035", null, false ], "319359.203", "5812693.754" ]
+, [ 15, "0171B85F-A948-4F40-A6AC-0F01CC7998DF", 15, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Threaded Field", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "687 La Trobe Street, DOCKLANDS", "Simon Perry", null, "1999", "2E_G4", "VicUrban", "Sculpture", [ null, "-37.8153623400158", "144.946876084269", null, false ], "319280.502", "5812684.872" ]
+, [ 16, "75946F21-6E46-47B0-8A4C-97AF64CC9886", 16, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Beyond the Ocean of Existence", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "44 Swanston Street, MELBOURNE", "Loretta Quinn", null, "1993", "2F_F5", "City Of Melbourne", "Bronze sculpture on granite plinth", [ null, "-37.8164236569551", "144.967061542145", null, false ], "321060.012", "5812605.967" ]
+, [ 17, "FA1A45BD-A97C-4396-BEA2-2BBD44EABAA1", 17, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "15 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8219308131053", "144.946798545611", null, false ], "319289.699", "5811955.841" ]
+, [ 18, "BC0E9746-8084-4D58-BD14-BB8BC50CDE3C", 18, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Cow Up A Tree", "AAMHatch", "AAM Hatch Photogrammetry - March 2005", "135 Harbour Esplanade, DOCKLANDS", "John Kelly", null, "2000", "2E,_G5", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8171223164672", "144.945279753599", null, false ], "319144.272", "5812486.484" ]
+, [ 19, "6B6409D5-F03D-4CC5-AC56-B31A11A66099", 19, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Coat of Arms", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "104 Swanston Street, MELBOURNE", "City of Melbourne", null, "1992", "2F_F4", "City Of Melbourne", "Brass pavement inlay", [ null, "-37.8150481212229", "144.966444170774", null, false ], "321002.342", "5812757.421" ]
+, [ 20, "8276DDBB-8D09-4673-963E-D44C9029BB83", 20, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Coat of Arms", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "102 Swanston Street, MELBOURNE", "City of Melbourne", null, "1992", "2F_F4", "City Of Melbourne", "Brass pavement inlay", [ null, "-37.815081401373", "144.966458869013", null, false ], "321003.716", "5812753.757" ]
+, [ 21, "1D5F93B4-72AF-46E8-ABE1-224DE0B4E9BC", 21, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Coat of Arms", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "100 Swanston Street, MELBOURNE", "City of Melbourne", null, "1992", "2F_F4", "City Of Melbourne", "Brass pavement inlay", [ null, "-37.8151225543656", "144.966479473485", null, false ], "321005.63", "5812749.23" ]
+, [ 22, "15F5EE95-42B3-44DE-8290-8A78AF77627D", 22, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187207058813", "144.974110660022", null, false ], "321686.07115", "5812364.55406" ]
+, [ 23, "1CABC48E-2720-446C-A346-AA148BDE8B15", 23, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187157253887", "144.974141691478", null, false ], "321688.79077", "5812365.16598" ]
+, [ 24, "7674578C-0A73-4E3D-907A-46E7980AC6E4", 24, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Thomas Ferguson Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "179 Leicester Street, CARLTON", "unknown", null, "1912", "2B_C9", "City Of Melbourne", "Stone drinking fountain", [ null, "-37.8015394618203", "144.960227228018", null, false ], "320422.328", "5814244.492" ]
+, [ 25, "7CD6C485-A52E-4610-BB7E-364E322CCF29", 25, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Water Nymph", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "Paul Montford", null, "1925", "2F_H8", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8222098236425", "144.971335339413", null, false ], "321450.178", "5811972.078" ]
+, [ 26, "C7184B99-F909-40C1-8B27-0228B4B4816B", 26, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Wave", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "12 Georgiana Street, DOCKLANDS", "Vashti Gonda", null, "2006", "2E_H7", "VicUrban", "Media installation", [ null, "-37.821493403054", "144.950437271721", null, false ], "319608.927", "5812011.414" ]
+, [ 27, "5552BCD3-53BA-4CB2-888A-804383EE92F6", 27, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Public Purse", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "348 Bourke Street, MELBOURNE", "Simon Perry", null, "1994", "2F_E3", "City Of Melbourne", "Calca red-granite and stainless-steel sculpture", [ null, "-37.8140976855607", "144.963400769342", null, false ], "320732.128", "5812857.051" ]
+, [ 28, "3EF7DB0A-1E4B-43FD-B8A9-A658D1A58A90", 28, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "15 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8219524131263", "144.946745954515", null, false ], "319285.122", "5811953.343" ]
+, [ 29, "915AC06E-2C5C-4BAB-92F3-103FF738AA89", 29, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "15 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8218628257359", "144.947009412249", null, false ], "319308.094", "5811963.794" ]
+, [ 30, "15676238-A44B-45F2-9DAA-36F8464F0B9E", 30, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Captain Cook", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Cook's Cottage, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE", "Marc Clark", null, "1973", "2G_B4", "City Of Melbourne", "Bronze statue", [ null, "-37.8145792919449", "144.979494361804", null, false ], "322150.04", "5812834.375" ]
+, [ 31, "C7E26C82-7B9B-496C-9F3B-F29126A2CC9A", 31, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Edward George Honey Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Old Observatory Site, Birdwood Avenue, MELBOURNE", "unknown", null, "1965", "2F_K12", "City Of Melbourne", "Stone boulder with bronze and aluminium plaque", [ null, "-37.8297554405406", "144.974419726206", null, false ], "321739.835", "5811140.663" ]
+, [ 32, "25AC6FBE-6228-49E1-AF2C-34DAB141FB1B", 32, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187628091159", "144.974136155999", null, false ], "321688.41682", "5812359.93072" ]
+, [ 33, "AA969574-E625-476D-8507-1AD3D805FC4E", 33, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187508719706", "144.974172398306", null, false ], "321691.57837", "5812361.32452" ]
+, [ 34, "2B2F24A3-2826-4FB9-86F9-B646E033C892", 34, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Phoenix", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "Yrsa Von Leister", null, "1973", "2F_H8", "City Of Melbourne", "Bronze and sheet copper statue", [ null, "-37.8221532701427", "144.97095067818", null, false ], "321416.183", "5811977.618" ]
+, [ 35, "58DCC7AF-0FED-404A-B351-ADEB66A24BB5", 35, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Statue of Meditation", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE", "Robert Delandere", null, "1933", "2G_B3", "City Of Melbourne", "Marble statue", [ null, "-37.813953837555", "144.978577485077", null, false ], "322067.824", "5812902.033" ]
+, [ 36, "15D3E954-F4A3-41E4-BFB4-6447ED0976FC", 36, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Separation Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "401 King Street, WEST MELBOURNE", "unknown", null, "1950", "2E_K2", "City Of Melbourne", "Mixed stone sculpture", [ null, "-37.810695135969", "144.953685908935", null, false ], "319868.634", "5813215.929" ]
+, [ 37, "78A64F93-55C1-4EFD-992B-84EC9659D091", 37, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "John Batman Memorial (2)", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "443 Collins Street, MELBOURNE", "Stanley Hammond", null, "1978", "2F_C5", "City Of Melbourne", "Bronze statue", [ null, "-37.8176597509552", "144.959772957148", null, false ], "320421.396", "5812454.813" ]
+, [ 38, "86B6C80C-1D3D-4D4C-8891-360F40A5752B", 38, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "13 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8219554500409", "144.947041997573", null, false ], "319311.189", "5811953.579" ]
+, [ 39, "BADB9FE7-258F-4261-906A-41588FA5B7A1", 39, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Bust of Sir Samuel Gillott", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "37 Collins Street, MELBOURNE", "Charles Douglas Richardson", null, "1905", "2F_J3", "City Of Melbourne", "Marble statue", [ null, "-37.8137257454688", "144.972615474", null, false ], "321542.425", "5812915.969" ]
+, [ 40, "45DE3D6C-2F0A-4CAF-86EF-63089681D388", 40, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Tilly Aston Bell", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Kings Domain, Alexandra Avenue, MELBOURNE", "Anton Hasell", null, "1999", "2F_K10", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8253717117323", "144.975900201821", null, false ], "321859.594", "5811629.933" ]
+, [ 41, "196EC124-1037-4AC1-8228-4BFA87550095", 41, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.815142895306", "144.941571658474", null, false ], "318813.011", "5812698.946" ]
+, [ 42, "F6C71A81-EEA2-4CF0-BAD5-96176920547F", 42, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8150960305524", "144.941483193022", null, false ], "318805.108", "5812703.975" ]
+, [ 43, "AA9BA675-A9F3-48F8-8B81-456F4FB64015", 43, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8151070586048", "144.941546516146", null, false ], "318810.71", "5812702.874" ]
+, [ 44, "7D1187BC-6671-4991-B2AC-32E6DC26D563", 44, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187745168339", "144.974175613725", null, false ], "321691.91832", "5812358.70689" ]
+, [ 45, "AF9598B9-837A-482D-AB37-1BC08EE3969A", 45, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Zoo Paving", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "11 Old Poplar Road, PARKVILLE", "Tanya Court and Kate Cullity", null, "1995", "29_F12", "City Of Melbourne", "Coloured concrete paving", [ null, "-37.7825613531513", "144.953293881649", null, false ], "319765.746", "5816337.066" ]
+, [ 46, "7E94C892-B443-4466-8F0A-3D642A1E5A95", 46, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Pathfinder", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "John Edward Robinson", "The Hammer Thrower", "1974", "2F_H8", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8220280738117", "144.970355228248", null, false ], "321363.468", "5811990.372" ]
+, [ 47, "9D16A238-4E1C-4196-8464-EF02BF626841", 47, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Stapley Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Birrarung Marr, Batman Avenue, MELBOURNE", "unknown", null, "1936", "2F_J6", "City Of Melbourne", "Granite drinking fountain", [ null, "-37.8189109575006", "144.973021274734", null, false ], "321590.634", "5812341.362" ]
+, [ 48, "7E124425-A498-4836-97C8-D7829ACD0BF7", 48, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Three Businessmen Who Brought Their Own Lunch", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "173 Swanston Street, MELBOURNE", "Alison Weaver and Paul Quinn", null, "1993", "2F_F3", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8136854004532", "144.965574539781", null, false ], "320922.494", "5812906.97" ]
+, [ 49, "9DF85737-619B-4FD6-9620-0EC0C3F058B7", 49, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187404835153", "144.974102781582", null, false ], "321685.42524", "5812362.34438" ]
+, [ 50, "EA0247A4-6241-4B4A-9E57-942669465C6D", 50, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Sundial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "392 William Street, MELBOURNE", "unknown", null, "unknown", "2F_A1", "City Of Melbourne", "Bronze sundial on sandstone plinth", [ null, "-37.8103161768399", "144.954937553695", null, false ], "319977.904", "5813260.393" ]
+, [ 51, "B77C6E1F-AD50-4A65-BC23-61FE0996DB4A", 51, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Lake Waterfall", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "unknown", null, "1973", "2F_J8", "City Of Melbourne", "Stone waterfall", [ null, "-37.822086065767", "144.971811018826", null, false ], "321491.75", "5811986.72" ]
+, [ 52, "979EC446-4557-4075-89C8-565AE6E3044D", 52, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Within Three Worlds", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "684 Park Street, CARLTON NORTH", "Loretta Quinn", null, "1995", "29_G10", "City Of Melbourne", "Bronze sculpture", [ null, "-37.7788722549869", "144.961103719498", null, false ], "320444.63", "5816761.46" ]
+, [ 53, "383BBF46-2A18-43EF-B153-30F46F0867F9", 53, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Councillor William Cook Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "266 Macpherson Street", "Charles Douglas Richardson", null, "1910", "29_J12", "City Of Melbourne", "Granite, marble and bluestone drinking fountain", [ null, "-37.7852874613137", "144.966190055728", null, false ], "320908.093", "5816059.351" ]
+, [ 54, "A1E76ED1-F361-4B2E-BE8F-3E67D9FDE5EA", 54, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200765201921", "144.959699691425", null, false ], "320420.80492", "5812186.49195" ]
+, [ 55, "BF8D8BC0-A548-42E5-928C-6FDF66EB6466", 55, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "King George V", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Kings Domain, Alexandra Avenue, MELBOURNE", "Sculptor William Leslie Bowles; founder John Galizia; stonemason G.B. Edwards & Sons", null, "1952", "2F_J9", "City Of Melbourne", "Bronze, sandstone and granite sculpture with bluestone base", [ null, "-37.8242726516388", "144.973213430025", null, false ], "321620.46", "5811746.763" ]
+, [ 56, "518D9471-7743-4C46-A234-57AAC5B602E5", 56, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Threaded Field", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "685 La Trobe Street, DOCKLANDS", "Simon Perry", null, "1999", "2E_G4", "VicUrban", "Sculpture", [ null, "-37.815324414746", "144.9470729338", null, false ], "319297.739", "5812689.461" ]
+, [ 57, "2DA3E6F0-0CAC-42FE-A4C6-E98104E252E8", 57, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Threaded Field", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "683 La Trobe Street, DOCKLANDS", "Simon Perry", null, "1999", "2E_G4", "VicUrban", "Sculpture", [ null, "-37.8152785788316", "144.947248109473", null, false ], "319313.048", "5812694.886" ]
+, [ 58, "D9EE07F0-76A4-4FED-B6DC-D8E91C050053", 58, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Threaded Field", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "689 La Trobe Street, DOCKLANDS", "Simon Perry", null, "1999", "2E_G4", "VicUrban", "Sculpture", [ null, "-37.8154836225539", "144.946712125445", null, false ], "319266.365", "5812671.096" ]
+, [ 59, "21525DEA-74C9-453E-8EFE-BB335C85E97F", 59, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Sir William John Clarke", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "18 Spring Street, EAST MELBOURNE", "Edgar Bertram Mackennal", null, "1902", "2F_K3", "City Of Melbourne", "Marble statue", [ null, "-37.8136729461963", "144.97434487547", null, false ], "321694.541", "5812925.131" ]
+, [ 60, "39B126C5-BE67-4492-B5B3-43F3D6502422", 60, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "City Living", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "5 Jeffcott Street, WEST MELBOURNE", "Andrew Rogers", null, "1995", "2E_K2", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8114750198729", "144.953165492089", null, false ], "319824.714", "5813128.384" ]
+, [ 61, "CB936FF0-C1BD-4EDF-9146-7D6E414680AB", 61, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Clayton Reserve Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "241 Macaulay Road, NORTH MELBOURNE", "unknown", null, "1935", "2A_D5", "City Of Melbourne", "Granite drinking fountain", [ null, "-37.7956635739188", "144.938934811008", null, false ], "318533.201", "5814855.378" ]
+, [ 62, "2F8DD28E-1CEC-4D19-A547-9E22B81DDA2B", 62, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Ceremony and Vehicle for Conveying Spirit", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "114 Russell Street, MELBOURNE", "Maurie Hughes", null, "1996", "2F_G3", "City Of Melbourne", "Silicon bronze, galvanized and mild steel sculpture", [ null, "-37.8136957980367", "144.968513035861", null, false ], "321181.203", "5812911.446" ]
+, [ 63, "3B5834D3-EF0E-4417-8CB9-9CD3F7D182A5", 63, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Fairies Tree", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "88 Clarendon Street, EAST MELBOURNE", "Ola Cohn", null, "1934", "2G_C3", "City Of Melbourne", "Red Gum carving", [ null, "-37.8134099807547", "144.98110228888", null, false ], "322288.784", "5812967.189" ]
+, [ 64, "72D6080C-4DA9-459F-8151-E6331F032E34", 64, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Farnex Hercules", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "90 St Kilda Road, SOUTHBANK", "unknown", null, "1780", "2F_H7", "City Of Melbourne", "Marble bust with granite pedestal", [ null, "-37.8211093204271", "144.969673137809", null, false ], "321301.212", "5812091.017" ]
+, [ 65, "5E85D83B-27CA-4565-A311-2CFFDBE54ED3", 65, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Water Children", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "John Edward Robinson", null, "c. 1970", "2F_H8", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8221241223436", "144.970661980986", null, false ], "321390.701", "5811980.3" ]
+, [ 66, "49DFE8F0-DDDC-4FC7-ABF4-17CDF4B15856", 66, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Mockridge Fountain", "City of Melbourne", "MCC - Ortho Image March 2008 - Final", "City Square, Collins St, MELBOURNE", "Ron Jones, Simon Perry and Darryl Cowie", null, "c. 2000", "2F_4F", "City Of Melbourne", "Concrete fountain", [ null, "-37.8155224156707", "144.966994359113", null, false ], "321051.9211875", "5812705.8450625" ]
+, [ 67, "DBF3FE9F-3541-4941-A4A9-F257311FAFDB", 67, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.820111630197", "144.959404150284", null, false ], "320394.87491", "5812182.02759" ]
+, [ 68, "4AB65714-7A65-4B2A-8360-0C48C8430E0C", 68, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200614090425", "144.959718171092", null, false ], "320422.39497", "5812188.20431" ]
+, [ 69, "863BC7B8-698C-4A19-8FCC-49342A0B8A2E", 69, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200953335", "144.959704036718", null, false ], "320421.23301", "5812184.41266" ]
+, [ 70, "6B8AD89A-9056-435D-9F9F-D98AA3F72357", 70, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "General Charles Gordon Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "74 Spring Street, EAST MELBOURNE", "Sculptor Hamo Thornycroft; founder J. Moore", null, "1887", "2F_K3", "City Of Melbourne", "Limestone, Harcourt granite and bronze memorial", [ null, "-37.8127260372375", "144.973942531552", null, false ], "321656.843", "5813029.437" ]
+, [ 71, "B18F67C1-C6E5-470B-8D31-7F6F177957F4", 71, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Horse Hitching Post", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "2 Spring Street, EAST MELBOURNE", "unknown", null, "c. 1900", "2F_K4", "City Of Melbourne", "Stone post", [ null, "-37.8150299769363", "144.974931527616", null, false ], "321749.451", "5812775.666" ]
+, [ 72, "1A890F66-B14C-46FB-B841-D873E50EAA6A", 72, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200830248455", "144.959725218101", null, false ], "320423.06768", "5812185.81924" ]
+, [ 73, "CFFDD408-4E46-4C46-B0E9-70E384CB06CE", 73, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201002457889", "144.959733080966", null, false ], "320423.80155", "5812183.92341" ]
+, [ 74, "C4A90BA5-39BA-4803-BE17-07FE2DCEF58D", 74, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200785738744", "144.959627380846", null, false ], "320414.44473", "5812186.12502" ]
+, [ 75, "0B80719A-D69C-4700-9E2B-B6DE8BCD0AAB", 75, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Pioneer Monument", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "395 King Street, WEST MELBOURNE", "Samuel Craven", null, "1871", "2F_A2", "City Of Melbourne", "Sandstone obelisk", [ null, "-37.810801327848", "144.953954497374", null, false ], "319892.537", "5813204.663" ]
+, [ 76, "FCA43021-470D-4EA1-B961-BE19134A0671", 76, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Court Favourite", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "394 William Street, MELBOURNE", "Paul Montford", null, "unknown", "2F_A1", "City Of Melbourne", "Bronze statue with granite pedestal", [ null, "-37.81026401562", "144.955039032582", null, false ], "319986.711", "5813266.377" ]
+, [ 77, "761ECA60-A9E8-481C-BCFE-34D75BBDB469", 77, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Signature Work", "Beveridge Williams Surveyors", "Field Survey", "22 Waterview Walk, DOCKLANDS", "Emily Floyd", "Rabbit", "2004", "2E_H6", "VicUrban", "Painted aluminium sculpture", [ null, "-37.8192431329106", "144.947246784778", null, false ], "319322.6", "5812254.951" ]
+, [ 78, "F354E066-BA02-40D0-9ED6-8C3361731AE4", 78, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Eight Hour Day Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "399 Russell Street, MELBOURNE", "Percival Ball (?)", null, "1900-1903", "2B_F12", "City Of Melbourne", "Granite, bronze and gold-leaf monument with stone pedestal", [ null, "-37.8071550195592", "144.965588387005", null, false ], "320907.932", "5813631.647" ]
+, [ 79, "3DFDEE84-94FA-4C20-B114-8200C278C1CC", 79, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Birrarung Wilam", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Vicki Couzens, Lee Darroch and Treahna Hamm", null, "2006", "2F_ H6", "City of Melbourne", "Stone, wood, stainless steel, bronze, nickel and audio installation", [ null, "-37.8185922758306", "144.971796362269", null, false ], "321482.04145", "5812374.38429" ]
+, [ 80, "369E8DE3-0609-4886-8C16-57B0684D9117", 80, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Birrarung Wilam", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Vicki Couzens, Lee Darroch and Treahna Hamm", null, "2006", "2F_ H6", "City of Melbourne", "Stone, wood, stainless steel, bronze, nickel and audio installation", [ null, "-37.8185872210924", "144.971784281509", null, false ], "321480.96584", "5812374.9221" ]
+, [ 81, "52BD1025-1C08-4D79-8ECC-588BF967BF52", 81, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Within Three Worlds", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "684 Park Street, CARLTON NORTH", "Loretta Quinn", null, "1995", "29_G10", "City Of Melbourne", "Bronze sculpture", [ null, "-37.7789311799623", "144.961158146237", null, false ], "320449.566", "5816755.026" ]
+, [ 82, "A1A597BC-6F91-41B1-A837-37288F9A0955", 82, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Stanford Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "88 Spring Street, EAST MELBOURNE", "William Stanford", null, "c. 1870", "2F_K3", "City Of Melbourne", "Bluestone fountain", [ null, "-37.8124342889143", "144.973955482708", null, false ], "321657.281", "5813061.836" ]
+, [ 83, "EB6CDE14-BDA9-40BB-B906-DD81FE8F980A", 83, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Spray Lake", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "46 Nicholson Street", "unknown", null, "1965", "2B_J11", "City Of Melbourne", "Steel and bluestone fountain", [ null, "-37.8058096647951", "144.972528813493", null, false ], "321515.732", "5813794.219" ]
+, [ 84, "3F62785B-DA19-48C8-AA24-F2502B76DB86", 84, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Sir Thomas Blamey Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "262 St Kilda Road, SOUTHBANK", "Raymond B. Ewers", null, "1960", "2F_J10", "City Of Melbourne", "Bronze statue with granite pedestal", [ null, "-37.8263011410214", "144.972818912121", null, false ], "321590.621", "5811520.916" ]
+, [ 85, "3DAFA0BB-8AAD-4D11-A52A-190AF65E2658", 85, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "William Ievers Senior Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "155 Lygon Street, CARLTON", "Charles Douglas Richardson", null, "1915", "2B_F9", "City Of Melbourne", "Granite, marble and bluestone drinking fountain", [ null, "-37.8028341939653", "144.966385536842", null, false ], "320967.678", "5814112.64" ]
+, [ 86, "1ED8543D-B813-4A05-8AB5-D7435B58C9F9", 86, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Lynch's Bridge Mosaic Mural", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Epsom Road Underpass, KENSINGTON", "Elizabeth MacKinnon", "The Black Gate", "1998", "42,_J2", "City of Melbourne", "Ceramic tile mural", [ null, "-37.7902053576258", "144.92393918587", null, false ], "317199.30985", "5815431.82841" ]
+, [ 87, "0CF7F504-8330-463B-920D-48AFE4447D4C", 87, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Resting Place", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "335 Swanston Street, MELBOURNE", "Bronwyn Snow", null, "1994", "2F_E1", "City Of Melbourne", "Steel and jarrah seat", [ null, "-37.8103720817164", "144.964076502567", null, false ], "320782.604", "5813271.763" ]
+, [ 88, "D4657077-50B6-49B5-A863-1F3221FB7008", 88, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Bali Memorial", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Lincoln Square, Swanston Street, CARLTON", "Unknown", null, "2003", "2B_E9", "City of Melbourne", "Granite, concrete and stainless steel", [ null, "-37.8024246248361", "144.963256124373", null, false ], "320691.15562", "5814152.08636" ]
+, [ 89, "3A3E31A9-E581-4CC7-8516-F62383C9044D", 89, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Bali Memorial", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Lincoln Square, Swanston Street, CARLTON", "Unknown", null, "2003", "2B_E9", "City of Melbourne", "Granite, concrete and stainless steel", [ null, "-37.8024840905196", "144.963242826387", null, false ], "320690.12861", "5814145.46216" ]
+, [ 90, "F0B0FDBE-356C-4330-8AE0-5B0A29D436F3", 90, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Another View, Site 1", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "152 Spring Street, EAST MELBOURNE", "Ray Thomas", null, "1994", "2F_J2", "City Of Melbourne", "Red granite and brass paving inlay", [ null, "-37.8112942929369", "144.973168986334", null, false ], "321585.298", "5813186.835" ]
+, [ 91, "D4025B73-7845-4E98-9608-0170B9C53619", 91, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "A History Apparatus - Vessel, Craft & Beacon", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "147 Russell Street, MELBOURNE", "Chris Reynolds", null, "1993", "2F_G3", "City Of Melbourne", "Steel and fibreglass sculpture on bitumen, concrete and bluestone foundation", [ null, "-37.8130493620338", "144.968210969062", null, false ], "321153.051", "5812982.6" ]
+, [ 92, "4D0E7DD5-D443-43B8-B23D-79E3898E05E3", 92, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Apollo Belvedere", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "90 St Kilda Road, SOUTHBANK", "unknown", null, "unknown", "2F_H7", "City Of Melbourne", "Marble and granite bust", [ null, "-37.8210593434182", "144.969757432433", null, false ], "321308.511", "5812096.724" ]
+, [ 93, "EFB5FE8E-578A-4AB3-B67D-7DDB6C6FD8B5", 93, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Another View, Site 17", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "154 Collins Street, MELBOURNE", "Ray Thomas", null, "1994-1995", "2F_G4", "City Of Melbourne", "Bluestone paver with brass inlay", [ null, "-37.8148051249324", "144.968381003481", null, false ], "321172.257", "5812788.096" ]
+, [ 94, "6495A431-A944-4A9F-B172-448F579BC78D", 94, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Another View, Site 8", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "422 Flinders Street, MELBOURNE", "Ray Thomas", null, "1994", "2F_D6", "City Of Melbourne", "Stone and brass paving inlay", [ null, "-37.8194133196692", "144.960198717453", null, false ], "320463.125", "5812261.044" ]
+, [ 95, "73817F97-91CA-46A5-A683-D521C9C9FD20", 95, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Anchor", "Qasco", "MCC - Ground Ortho Image March 2007", "760 Bourke Street, DOCKLANDS", "Neil Dawson", null, "2005", "2E_H6", "VicUrban", "Decorative rope work", [ null, "-37.8182323264616", "144.947444643152", null, false ], "319337.552", "5812367.5" ]
+, [ 96, "D7AD7CDB-A1E4-411F-91BE-CED13EE9402F", 96, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Aurora", "Qasco", "MCC - Ground Ortho Image March 2007", "96 Harbour Esplanade, DOCKLANDS", "Geoffrey Bartlett", null, "2005", "2E_G6", "VicUrban", "Stainless steel", [ null, "-37.8186937927645", "144.946856332947", null, false ], "319286.89", "5812315.154" ]
+, [ 97, "4271298E-5CFB-4CF2-8EF8-6242C75D9546", 97, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Aqualung", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "15 Victoria Harbour Promenade, DOCKLANDS", "John Mead", null, "2006", "2E_G6", "VicUrban", "Abstract sculpture", [ null, "-37.8188433297473", "144.945067618085", null, false ], "319129.799", "5812295.098" ]
+, [ 98, "90D59AFD-F152-4B13-ABDE-C127B01E935D", 98, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Australia Today and Tomorrow", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "152 Clarendon Street, EAST MELBOURNE", "Karl Duldig", null, "1970", "2G_C2", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8118220481066", "144.982657048965", null, false ], "322421.849", "5813146.352" ]
+, [ 99, "69265812-876A-4137-A903-FAD2FC590A97", 99, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Architectural Fragment", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "324 Swanston Street, MELBOURNE", "Petrus Spronk", null, "1992", "2F_E1", "City Of Melbourne", "Bluestone sculpture", [ null, "-37.8098275629139", "144.96404608881", null, false ], "320778.61", "5813332.128" ]
+, [ 100, "F95BE61E-BF1C-40CF-B7D0-E0F83BFCE020", 100, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Australian Hellenic War Memorial", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Kings Domain, Birdwood Ave, MELBOURNE", "Evangelos Sakaris; RBA Architects and Conservation Consultants", null, "2001", "2F_J11", "City of Melbourne", "Granite and basalt memorial", [ null, "-37.8272124550956", "144.972973880253", null, false ], "321606.4556", "5811420.08663" ]
+, [ 101, "0144D763-9E7E-4442-A47E-5D9FA2E1BA9A", 101, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "William Ievers Junior Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "80 Rathdowne Street, CARLTON", "Charles Douglas Richardson", null, "1916", "2B_H7", "City Of Melbourne", "Granite, marble and bluestone drinking fountain", [ null, "-37.7982578658973", "144.970564664826", null, false ], "321324.603", "5814628.456" ]
+, [ 102, "0DFB94F9-2755-4341-ACBB-99CE030FA31A", 102, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Reed Vessel", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "67 Harbour Esplanade, DOCKLANDS", "Virginia King", null, "2002", "2E_G7", "VicUrban", "Sculpture", [ null, "-37.8202323424168", "144.946325127609", null, false ], "319243.883", "5812143.399" ]
+, [ 103, "1F99572D-2E31-495C-A7C2-8C737DD05070", 103, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "South African War Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "254 St Kilda Road, SOUTHBANK", "Architect - G. De Lacy-Evans Sculptor - Joseph Hamilton", "Memorial to Fallen Soldiers, and Monument to the 5th Victorian Contingent", "1904", "2F_J10", "City Of Melbourne", "Sandstone and bluestone sculpture", [ null, "-37.8259414951225", "144.971856818756", null, false ], "321505.073", "5811558.986" ]
+, [ 104, "1E2AE1F6-D8A7-4EBF-AD29-1CA4AC122E01", 104, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Burke and Wills Monument", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "84 Swanston Street, MELBOURNE", "Charles Summers", null, "1865", "2F_F4", "City Of Melbourne", "Bronze statue with granite pedestal", [ null, "-37.8156337321238", "144.966703993713", null, false ], "321026.629", "5812692.936" ]
+, [ 105, "4B056C3C-F9E8-4A2E-B77D-A33749D39250", 105, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Burke and Wills Cairn", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "6 The Avenue, PARKVILLE", "unknown", null, "1890", "2B_B2", "City Of Melbourne", "Stone cairn", [ null, "-37.7889280817664", "144.956058081184", null, false ], "320024.638", "5815635.904" ]
+, [ 176, "C57C573F-7F49-43B0-A8FF-EFDC1941AF5B", 176, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Peter Pan", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Melbourne Zoological Gardens, Elliott Avenue, PARKVILLE", "Paul Montford", null, "1925", "29_E12", "City Of Melbourne", "Bronze statue", [ null, "-37.784773009033", "144.95236482558", null, false ], "319689.3", "5816089.856" ]
+, [ 106, "B46B9D09-5D32-4422-8065-95DC05E4331F", 106, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8186610069437", "144.97413082954", null, false ], "321687.70292", "5812371.21712" ]
+, [ 107, "54BC1310-80D3-4DD8-AE4B-B6C3BDB73F4F", 107, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Exhibition Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "9 Nicholson Street, CARLTON", "Josef Hochgurtel", "Hochgurtel Fountain", "1880", "2B_H11", "City Of Melbourne", "Portland cement fountain", [ null, "-37.805456726498", "144.971368298725", null, false ], "321412.707", "5813831.165" ]
+, [ 108, "804011DA-98DC-4694-A79C-F1A8D0BDF676", 108, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Wind Contrivance", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "64 Therry Street, MELBOURNE", "Pauline Fraser", null, "1995", "2B_C12", "City Of Melbourne", "Bronze, Red Gum and Harcourt granite sculpture", [ null, "-37.8072519167223", "144.959230533317", null, false ], "320348.417", "5813608.687" ]
+, [ 109, "ABA4025F-CF7F-40D5-A4E7-78C230A0FC63", 109, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "River God Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "304 Albert Street, EAST MELBOURNE", "Charles Summers", "Old Man Fountain; Neptune", "1862", "2G_C1", "City Of Melbourne", "Stone and cement fountain", [ null, "-37.8104167138709", "144.980882423414", null, false ], "322262.25", "5813298.921" ]
+, [ 110, "2D7FC235-CEEF-4373-8DDA-33DB7FFCC0B5", 110, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Reynold's Reserve Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Princes Park, Royal Parade, CARLTON NORTH", "unknown", null, "c. 1935", "29_G11", "City Of Melbourne", "Red-granite and brick drinking fountain", [ null, "-37.7836612081103", "144.960004054347", null, false ], "320359.374", "5816227.938" ]
+, [ 111, "F53C96C4-47D1-4E14-97AC-2970A04217EB", 111, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Captain Matthew Flinders Statue", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "30 Swanston Street, MELBOURNE", "Sculptor Charles Web Gilbert; founder F. Barbedienne", null, "1923", "2F_G5", "City Of Melbourne", "Bronze statue with granite plinth", [ null, "-37.8169633123315", "144.967487606224", null, false ], "321098.821", "5812546.899" ]
+, [ 112, "17FEE6FC-CE8D-4FA2-B155-EC3E6FB9DA45", 112, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Vault", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "51 Grant Street, SOUTHBANK", "Ron Roberston-Swann", "Yellow Peril", "1980", "2F_G10", "City Of Melbourne", "Steel plate sculpture", [ null, "-37.8260714214476", "144.967732756918", null, false ], "321142.394", "5811536.677" ]
+, [ 113, "337C642E-93D0-47B5-A2DB-37C846C06310", 113, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Ned and Dan", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "41 Caravel Lane, DOCKLANDS", "Alexander Knox", null, "2006", "2E_E4", "VicUrban", "Three-dimensional frieze", [ null, "-37.81464277494", "144.940402722846", null, false ], "318708.884", "5812752.174" ]
+, [ 114, "3D7AD0D0-B8DA-4D5E-BF54-750641383A3D", 114, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "HeartLand", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "52 River Esplanade, DOCKLANDS", "Karen Casey", null, "2003", "2E_H9", "VicUrban", "Animated Image", [ null, "-37.8243371974094", "144.947619116755", null, false ], "319367.797", "5811690.401" ]
+, [ 115, "B6C4E15A-749E-4507-B111-B0DFD6138DD6", 115, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Feng Shui", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "698 Collins Street, DOCKLANDS", "Guan Wei", null, "2003", "2E_H7", "VicUrban", "Multi-panel painting", [ null, "-37.8198227493892", "144.951104886543", null, false ], "319663.626", "5812198.09" ]
+, [ 116, "CD03E9EE-A015-475C-BA88-13FB81C1B2AC", 116, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Grant's Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "353 Exhibition Street, MELBOURNE", "unknown", null, "1901", "2B_G12", "City Of Melbourne", "Stone fountain", [ null, "-37.8074703867589", "144.968593306036", null, false ], "321173.248", "5813602.409" ]
+, [ 117, "66F8AC6F-4EA5-4808-AF90-C42B2F641B40", 117, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "James C. Roberts", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "4 The Avenue, PARKVILLE", "unknown", null, "unknown", "2B_B2", "City Of Melbourne", "Granite obelisk", [ null, "-37.7891381500076", "144.957053809565", null, false ], "320112.833", "5815614.511" ]
+, [ 118, "39A1B281-338B-4AF9-A8F7-B74E867F65B6", 118, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Hotham Hill Paving Inlay", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "76 Canning Street", "Bernice McPherson", null, "1995", "2A_E5", "City Of Melbourne", "Ceramic tiles and asphalt", [ null, "-37.7949047942895", "144.940383521588", null, false ], "318658.911", "5814942.389" ]
+, [ 119, "B12503BE-69F3-4558-A177-77218B14C348", 119, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Art Wall", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "160 Harbour Esplanade, DOCKLANDS", "Peter D. Cole", null, "2000", "2E_G4", "VicUrban", "3D Installation", [ null, "-37.8155779391708", "144.946321235909", null, false ], "319232.184", "5812659.874" ]
+, [ 120, "E33F68E9-4207-4F4B-AD62-CB737901779E", 120, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Lie of the Land", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "IMAX Theatre, Rathdowne Street, CARLTON", "Fiona Foley and Chris Knowles", null, "1997", "2B-J10", "City Of Melbourne", "Sandstone sculpture", [ null, "-37.8037692024891", "144.972134286246", null, false ], "321476.083", "5814019.886" ]
+, [ 121, "C3BD0276-36EE-46D2-A91E-C40B390F0F4B", 121, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201003379632", "144.959547579868", null, false ], "320407.47298", "5812183.55648" ]
+, [ 122, "4878EDF1-841A-485F-903C-26C143881F0D", 122, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201540531024", "144.959283942501", null, false ], "320384.39644", "5812177.08889" ]
+, [ 177, "7B072500-F623-4FFD-9C1B-56933A91F22F", 177, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "15 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8219335169736", "144.946938744265", null, false ], "319302.046", "5811955.813" ]
+, [ 123, "9B9B96E1-4A53-4ADE-A63E-9977F5462EE1", 123, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.820149525359", "144.959318134551", null, false ], "320387.39523", "5812177.65708" ]
+, [ 124, "541590BD-F3F6-4105-A983-98D0CFFAFC40", 124, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8202412036118", "144.959153249799", null, false ], "320373.10348", "5812167.16675" ]
+, [ 125, "24BAB9F4-9323-47BC-8F67-C43EF6FB9E56", 125, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Passage", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "92 Therry Street, MELBOURNE", "Mark Stoner", null, "1994", "2B_C12", "City Of Melbourne", "Bluestone sculpture", [ null, "-37.8074524440917", "144.958306664206", null, false ], "320267.565", "5813584.658" ]
+, [ 126, "89FE6C97-A588-4C89-8F11-E33ED6779DA0", 126, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Henderson Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "76 Errol Street, NORTH MELBOURNE", "Walter MacFarlane", "Hotham Ornamental Fountain", "1877", "2A_J10", "City Of Melbourne", "Cast-iron drinking fountain", [ null, "-37.8033418056724", "144.949739183347", null, false ], "319503.271", "5814024.282" ]
+, [ 127, "F85A842F-B9F4-4FFB-9E2C-077BA8150109", 127, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Shoal Fly By", "AAMHatch", "AAM Hatch Photogrammetry - March 2005", "125 Harbour Esplanade, DOCKLANDS", "Cat McCleod and Michael Bellemo", null, "2003", "2E_G5", "VicUrban", "Sculpture", [ null, "-37.8176052348949", "144.945539402201", null, false ], "319168.307", "5812433.399" ]
+, [ 128, "5E855288-CE84-4564-8394-4397F2B9C405", 128, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Grey Street Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "162 Clarendon Street, EAST MELBOURNE", "unknown", null, "1863", "2G_D2", "City Of Melbourne", "Cement fountain", [ null, "-37.8115435409616", "144.982950898766", null, false ], "322447.051", "5813177.816" ]
+, [ 129, "1FCA5C3B-9DFA-4081-A13B-7946C85B3EA3", 129, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Georges Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "152 Collins Street, MELBOURNE", "Peter Staughton", null, "1981", "2F_G4", "City Of Melbourne", "Bluestone and concrete fountain", [ null, "-37.8147653368517", "144.968373912562", null, false ], "321171.537", "5812792.497" ]
+, [ 130, "6F15156D-AFCA-48B1-98EF-E253A479869B", 130, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Larry LaTrobe", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "215 Collins Street, MELBOURNE", "Pamela Irving", null, "1992 and 1996", "2F_F4", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8155485668529", "144.966892078324", null, false ], "321042.98", "5812702.747" ]
+, [ 131, "DB8E20A9-34DA-400A-BA41-4AB9971F23E7", 131, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "People's Path", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "4 Lansdowne Street, EAST MELBOURNE", "Ian Sprague et al", null, "1978-1979", "2G_B2", "City Of Melbourne", "Terracotta bricks (tiles)", [ null, "-37.8110235407409", "144.978389216138", null, false ], "322044.214", "5813226.837" ]
+, [ 132, "973B3180-B676-43A7-964E-4D9EBE2443A9", 132, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Grollo Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "169 Rathdowne Street, CARLTON", "unknown", null, "2001", "2B_H9", "City Of Melbourne", "Bluestone and granite fountain", [ null, "-37.8031427973572", "144.969874326021", null, false ], "321275.595", "5814085.075" ]
+, [ 133, "B3F24813-6DFC-4CF3-8FF4-621934208A49", 133, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Continuum", "Beveridge Williams Surveyors", "Field Survey", "17 Waterview Walk, DOCKLANDS", "Michael Snape", null, "2005", "2E_H6", "VicUrban", "Sculpture", [ null, "-37.8191896959513", "144.946998425444", null, false ], "319300.607", "5812260.4" ]
+, [ 134, "9F766864-4E13-4E63-9605-ED77DE52F1BB", 134, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "45 Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8151113421446", "144.941618390681", null, false ], "318817.048", "5812702.538" ]
+, [ 135, "AA5A66C7-7501-4A06-8663-10C0AA99A36C", 135, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "50 Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8150603527985", "144.941593770341", null, false ], "318814.756", "5812708.148" ]
+, [ 136, "B81CDC2F-A012-4446-B2AD-3C696B21E7C5", 136, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "50 Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8150519675867", "144.941598936717", null, false ], "318815.19", "5812709.089" ]
+, [ 137, "704D9557-DC37-4711-81E2-84C19C7ED463", 137, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8150889597275", "144.941472613193", null, false ], "318804.16", "5812704.739" ]
+, [ 138, "9DE0D7F0-EEB2-45FE-83AF-250D0EDDB747", 138, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8151593795233", "144.941509412449", null, false ], "318807.572", "5812696.996" ]
+, [ 139, "E371A510-670D-4624-B16C-EAECA5C17F42", 139, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Samuel Mauger Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "110 Victoria Parade, EAST MELBOURNE", "unknown", null, "1937", "2B_K12", "City Of Melbourne", "Granite drinking fountain", [ null, "-37.8082489459354", "144.975315385075", null, false ], "321766.934", "5813528.862" ]
+, [ 140, "E394975E-6EB5-46C0-8F19-E72D29A5C22D", 140, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Fault Line", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "8 Riverside Quay, SOUTHBANK", "Hossein Valamesh", null, "1996", "1A_J12", "City Of Melbourne", "Sandstone, wood and bronze sculpture", [ null, "-37.8211525582271", "144.964238031747", null, false ], "320822.896", "5812075.805" ]
+, [ 141, "831293A4-1CA6-4910-8586-E1E366A0FABB", 141, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Robert Burns Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "10 Spring Street, EAST MELBOURNE", "George Anderson Lawson", null, "1903", "2F_K4", "City Of Melbourne", "Bronze statue and plinth with granite pedestal", [ null, "-37.814373582353", "144.974720032667", null, false ], "321729.253", "5812848.1" ]
+, [ 142, "AC00B8A5-C099-4AEC-B2D7-98E564F4FA95", 142, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Genie", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "Sculptor Tom Bass; founder F.J. & I. Lemon", null, "1973", "2F_J7", "City Of Melbourne", "Bronze sculpture", [ null, "-37.8214877401729", "144.971194700662", null, false ], "321436.058", "5812051.936" ]
+, [ 143, "C0C1EF61-7753-4998-BB0E-88F97389AB07", 143, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Echo", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "219 Swanston Street, MELBOURNE", "Edward Ginger", null, "1996", "2F_F3", "City Of Melbourne", "Steel plate sculpture with polyurethane paint", [ null, "-37.812705684744", "144.965153944033", null, false ], "320883.1", "5813014.879" ]
+, [ 144, "47668F0F-B36C-4E7F-98EA-4DFE9FED6D95", 144, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8151345502614", "144.941464635494", null, false ], "318803.569", "5812699.664" ]
+, [ 145, "EB264EF1-0969-4B1E-8D94-762508529125", 145, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8150877523684", "144.941573967784", null, false ], "318813.079", "5812705.07" ]
+, [ 146, "9D5A626C-AF28-472A-AD35-E28F4D7116B5", 146, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "55B Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.81508276715", "144.941482783904", null, false ], "318805.04", "5812705.446" ]
+, [ 147, "96754C41-889A-4EB8-9D4A-238AE10FF329", 147, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "50 Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8150528491189", "144.94158776112", null, false ], "318814.208", "5812708.969" ]
+, [ 148, "2A524AE4-5ED3-4B68-8D28-97AEF0E5CD57", 148, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Silence", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "45 Newquay Promenade, DOCKLANDS", "Adrian Mauriks", null, "2003", "2E_E4", "VicUrban", "Sculpture", [ null, "-37.8151131017782", "144.941629273114", null, false ], "318818.01", "5812702.364" ]
+, [ 149, "A5D25217-5DEC-47BC-892D-C9577C832FB5", 149, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Within Three Worlds", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "684 Park Street, CARLTON NORTH", "Loretta Quinn", null, "1995", "29_G10", "City Of Melbourne", "Bronze sculpture", [ null, "-37.7788688464994", "144.961128357193", null, false ], "320446.792", "5816761.886" ]
+, [ 150, "0EE8ADEF-4C47-42BE-ADE8-143FBE546782", 150, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Birrarung Wilam", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Vicki Couzens, Lee Darroch and Treahna Hamm", null, "2006", "2F_ H6", "City of Melbourne", "Stone, wood, stainless steel, bronze, nickel and audio installation", [ null, "-37.8185907034456", "144.971834942502", null, false ], "321485.43376", "5812374.63251" ]
+, [ 151, "E83C9564-B34D-4CC5-AE75-CEA40C5CD97C", 151, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Birrarung Wilam", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Vicki Couzens, Lee Darroch and Treahna Hamm", null, "2006", "2F_ H6", "City of Melbourne", "Stone, wood, stainless steel, bronze, nickel and audio installation", [ null, "-37.818595693813", "144.971821646868", null, false ], "321484.27541", "5812374.05334" ]
+, [ 152, "06B9E97C-86E0-41B4-9A06-A77B6D453868", 152, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Birrarung Wilam", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Vicki Couzens, Lee Darroch and Treahna Hamm", null, "2006", "2F_ H6", "City of Melbourne", "Stone, wood, stainless steel, bronze, nickel and audio installation", [ null, "-37.8185954753426", "144.971808963839", null, false ], "321483.15843", "5812374.05334" ]
+, [ 153, "B267AF93-99D5-477E-9283-51F9A91F80D0", 153, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Bust of Dr Louis Smith", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "9 Nicholson Street, CARLTON", "Edgar Bertram Mackennal", null, "1914", "2B_J10", "City Of Melbourne", "Bronze bust with granite pedestal", [ null, "-37.8047443111517", "144.972452056885", null, false ], "321506.409", "5813912.29" ]
+, [ 154, "0CFFDD39-F040-4644-9BC2-8B009D459832", 154, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Boy on a Turtle", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Cook's Cottage, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE", "unknown", null, "c. 1850", "2G_B4", "City Of Melbourne", "Bronze statue", [ null, "-37.8143892616922", "144.979910150531", null, false ], "322186.187", "5812856.254" ]
+, [ 155, "AC00F47E-4041-4E77-8C94-4AF85AF2D204", 155, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Boy and Urn", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "4 Lansdowne Street, EAST MELBOURNE", "unknown", null, "unknown", "2G_B2", "City Of Melbourne", "Bronze fountain", [ null, "-37.8121217645873", "144.97970321858", null, false ], "322162.529", "5813107.474" ]
+, [ 156, "D20BFCE9-F7FC-4899-8A44-15CC71A4ECB2", 156, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187023628084", "144.974201916576", null, false ], "321694.06002", "5812366.76375" ]
+, [ 157, "D24B1D64-1207-4986-9754-FA9C84B04477", 157, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Threaded Field", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "750 Bourke Street, DOCKLANDS", "Simon Perry", null, "1999", "2E_G4", "VicUrban", "Sculpture", [ null, "-37.8179724438437", "144.947887016093", null, false ], "319375.859", "5812397.194" ]
+, [ 158, "53EB27F9-8806-4D0E-819A-340C4219485F", 158, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Weathervanes", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "184 Swanston Street, MELBOURNE", "Daniel Jenkins", null, "1993", "2F_F3", "City Of Melbourne", "Hand-beaten copper sculpture with gold-leaf detail", [ null, "-37.8134422577685", "144.965689009116", null, false ], "320931.983", "5812934.17" ]
+, [ 159, "A22232B9-F65F-46FF-8CF3-A7A0D4379B48", 159, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Conservatory Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE", "unknown", "Boy with Serpent, and Ornamental Fountain", "c. 1900", "2G_B3", "City Of Melbourne", "Cast-iron and granite drinking fountain", [ null, "-37.8138743431045", "144.978595506099", null, false ], "322069.22", "5812910.888" ]
+, [ 160, "30A7A957-EFC9-4A27-A523-3F0677A1F1E0", 160, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Constellation", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "469 Flinders Street, MELBOURNE", "Bruce Armstrong and Geoffrey Bartlett", null, "1996", "2F_D7", "City Of Melbourne", "Stainless steel, copper and Cyrpus-pine sculpture", [ null, "-37.8202715915496", "144.960597777255", null, false ], "320500.332", "5812166.572" ]
+, [ 161, "0CAD000E-9E90-4480-8A3F-F44EB5B79BDE", 161, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Constellation", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "469 Flinders Street, MELBOURNE", "Bruce Armstrong and Geoffrey Bartlett", null, "1996", "2F_D7", "City Of Melbourne", "Stainless steel, copper and Cyrpus-pine sculpture", [ null, "-37.8202460956887", "144.960662536874", null, false ], "320505.971", "5812169.526" ]
+, [ 162, "ABC4BC4D-E431-426E-B7A5-8A0842A31608", 162, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Constellation", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "469 Flinders Street, MELBOURNE", "Bruce Armstrong and Geoffrey Bartlett", null, "1996", "2F_D7", "City Of Melbourne", "Stainless steel, copper and Cyrpus-pine sculpture", [ null, "-37.8202185496201", "144.96072531937", null, false ], "320511.43", "5812172.703" ]
+, [ 163, "EDD99E31-A83D-43AB-B4C4-DD8D2AA53F6F", 163, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Constellation", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "399 Flinders Street, MELBOURNE", "Bruce Armstrong and Geoffrey Bartlett", null, "1996", "2F_D7", "City Of Melbourne", "Stainless steel, copper and Cyrpus-pine sculpture", [ null, "-37.8201898206677", "144.960789659507", null, false ], "320517.024", "5812176.015" ]
+, [ 164, "96DB02F9-D946-4076-94DB-76E2C12DD229", 164, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Constellation", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "469 Flinders Street, MELBOURNE", "Bruce Armstrong and Geoffrey Bartlett", null, "1996", "2F_D7", "City Of Melbourne", "Stainless steel, copper and Cyrpus-pine sculpture", [ null, "-37.8202999349125", "144.960534464342", null, false ], "320494.827", "5812163.305" ]
+, [ 165, "A31B591A-9BE5-4EEF-B8A5-9CCF8E50AD69", 165, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Motorcycle", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "10 Wellington Parade, EAST MELBOURNE", "unknown", null, "1923", "2G_G5", "City Of Melbourne", "Granite and marble memorial", [ null, "-37.8170400389729", "144.989581102887", null, false ], "323043.869", "5812580.475" ]
+, [ 166, "8F421A75-A249-4FC2-A04E-B58D100ACE58", 166, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Maxims of Behaviour", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Royal Mail House, cnr Bourke & Swanston Sts, MELBOURNE", "Alexander Knox", null, "2008", "2F_F3", "City of Melbourne", "Kinetic light installation", [ null, "-37.8136024551412", "144.965808885624", null, false ], "320942.92361", "5812916.62363" ]
+, [ 167, "9BCC800F-8C9D-4118-BE3F-22CEB87F89B8", 167, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Speakers Corner", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Evangelos Sakaris", null, "c. 2000", "2F_ K7", null, "Earthwork and pink-granite memorial", [ null, "-37.8200825876335", "144.975716740604", null, false ], "321830.7245", "5812216.49672" ]
+, [ 168, "8E4BA5A9-DD3A-43DC-A83B-28C4FC47F324", 168, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201325090472", "144.959336879083", null, false ], "320389.00396", "5812179.58136" ]
+, [ 169, "FC4E7A59-A29C-41DC-8C97-EE6EAB36DE6E", 169, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200555636082", "144.959698879153", null, false ], "320420.68261", "5812188.81587" ]
+, [ 170, "11D73F22-BC7E-4253-9C2E-79000861F22C", 170, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Painted Poles", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "78 Swanston Street, MELBOURNE", "Maree Clarke and Sonja Hodge", null, "1992", "2F_F5", "City Of Melbourne", "Metal poles", [ null, "-37.815760994936", "144.966773537312", null, false ], "321033.058", "5812678.948" ]
+, [ 171, "CC45DB34-E788-41FE-811D-CBF3EF021B69", 171, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Miraggio", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Sidney Myer Music Bowl, Alexandra Avenue, MELBOURNE", "Pino Conte", "Seated Figure", "1964", "2F_K9", "City Of Melbourne", "Bronze statue", [ null, "-37.8240134693642", "144.974151500782", null, false ], "321702.405", "5811777.315" ]
+, [ 172, "72C4B009-7E94-4675-9405-A8523CD6AC87", 172, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Painted Poles", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "50 Swanston Street, MELBOURNE", "Maree Clarke and Sonja Hodge", null, "1992", "2F_F5", "City Of Melbourne", "Metal poles", [ null, "-37.8162685331984", "144.967006461765", null, false ], "321054.789", "5812623.074" ]
+, [ 173, "21030F9E-5A73-4A10-A285-5AC0BBC97FE7", 173, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.82012299082", "144.959360068025", null, false ], "320391.0221", "5812180.68216" ]
+, [ 174, "ABCDAE93-AA94-4123-AE4D-C6E56A3F3630", 174, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Grotto Waterfall", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Kings Domain, Alexandra Avenue, MELBOURNE", "unknown", null, "1981", "2G_A10", "City Of Melbourne", "Basalt and cement", [ null, "-37.8256393190193", "144.976761073829", null, false ], "321936.01", "5811601.88" ]
+, [ 175, "FE0D3C1F-1F4A-4E32-B790-AC64ED10AD7D", 175, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Personal Islands", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "201 Swanston Street, MELBOURNE", "Robert Jacks", null, "1992", "2F_F3", "City Of Melbourne", "Brass and bluestone", [ null, "-37.8129540664935", "144.965264917067", null, false ], "320893.469", "5812987.53" ]
+, [ 178, "B6E46B4F-E353-441F-A874-E2E277896F78", 178, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Boy and Pelican", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "84 Clarendon Street, EAST MELBOURNE", "William Leslie Bowles", null, "1936", "2G_D3", "City Of Melbourne", "Pyrmont sandstone sculpture", [ null, "-37.8137675376712", "144.982771754404", null, false ], "322436.609", "5812930.688" ]
+, [ 179, "DA7A6265-C587-4551-BF0E-0617E1A2B81B", 179, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Blowhole", "Beveridge Williams Surveyors", "Field Survey", "13 Harbour Esplanade, DOCKLANDS", "Duncan Stemler", null, "2005", "2E_G8", "City of Melbourne", "Stainless-steel and aluminium sculpture", [ null, "-37.8219853561923", "144.946774675143", null, false ], "319287.731", "5811949.743" ]
+, [ 180, "A62E5A19-6D61-456A-BABD-1D1E83A2DD96", 180, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Temple of the Winds", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "116 Clarendon Street, EAST MELBOURNE", "Thomas Jones & Co", null, "1873", "2G_C3", "City Of Melbourne", "Masonry and bluestone rotunda", [ null, "-37.8128096374869", "144.981735857931", null, false ], "322343.12", "5813035.012" ]
+, [ 181, "A002849C-597C-4046-9AA2-B511C2C7D7B5", 181, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Sir Edward \"Weary\" Dunlop", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "242 St Kilda Road, SOUTHBANK", "Peter Corlett", null, "1995", "2F_J10", "City Of Melbourne", "Bronze statue with granite pedestal", [ null, "-37.8253098347073", "144.971594300075", null, false ], "321480.444", "5811628.577" ]
+, [ 182, "0EAA5A40-50AC-40D5-8DB6-0DCEF07BD81C", 182, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8187182202074", "144.974179856228", null, false ], "321692.15629", "5812364.96201" ]
+, [ 183, "5BF72162-2D3D-45D0-BF9F-4378B7768665", 183, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Birrarung Wilam", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Vicki Couzens, Lee Darroch and Treahna Hamm", null, "2006", "2F_ H6", "City of Melbourne", "Stone, wood, stainless steel, bronze, nickel and audio installation", [ null, "-37.8185914278651", "144.971866175309", null, false ], "321488.18484", "5812374.61183" ]
+, [ 184, "3716A823-E741-4144-B486-64E028C83CE9", 184, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Lady Janet Clarke Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "Herbert Black", null, "1913", "2F_J8", "City Of Melbourne", "Concrete and stamped copper rotunda", [ null, "-37.8223354912272", "144.971835332477", null, false ], "321494.492", "5811959.089" ]
+, [ 185, "8481C672-B381-4E41-8CCE-37A0191757FC", 185, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Ned and Dan", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "20 Doepel Way, DOCKLANDS", "Alexander Knox", null, "2006", "2E_E4", "VicUrban", "Three-dimensional frieze", [ null, "-37.8149351757693", "144.940308036389", null, false ], "318701.264", "5812719.544" ]
+, [ 186, "F6358983-BBC6-43A1-8602-93AA54C961A3", 186, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "French Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "9 Nicholson Street, CARLTON", "unknown", null, "c. 1880", "2B_J10", "City Of Melbourne", "Bronze fountain with granite plinth", [ null, "-37.8049009757854", "144.972849834667", null, false ], "321541.808", "5813895.665" ]
+, [ 187, "745FD8F0-4099-45D5-9ECE-069ADDDF83DA", 187, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "George Hawkins Ievers Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "147 Royal Parade, PARKVILLE", "Charles Douglas Richardson", null, "1916", "2B_B3", "City Of Melbourne", "Granite, marble and bluestone drinking fountain", [ null, "-37.7921729538839", "144.958090253028", null, false ], "320211.462", "5815279.746" ]
+, [ 188, "6F226A30-C5EE-42E3-9D3F-2A104A7735BA", 188, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Within Three Worlds", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "684 Park Street, CARLTON NORTH", "Loretta Quinn", null, "1995", "29_G10", "City Of Melbourne", "Bronze sculpture", [ null, "-37.7788627462445", "144.961112677408", null, false ], "320445.396", "5816762.533" ]
+, [ 189, "8EFED40D-EB1D-4CED-AF52-AD5F11C927FE", 189, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201019944052", "144.959452353426", null, false ], "320399.09465", "5812183.18954" ]
+, [ 190, "D7B90DBD-A5F3-4D73-9EF2-CCC925D833F8", 190, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201736797154", "144.959200268537", null, false ], "320377.0786", "5812174.75006" ]
+, [ 191, "3B5F2BB7-410A-4696-A247-2F5CB45BCB4D", 191, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Art Wall", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "156 Harbour Esplanade, DOCKLANDS", "Peter D. Cole", null, "2000", "2E_G4", "VicUrban", "3D Installation", [ null, "-37.8158205285983", "144.946136474106", null, false ], "319216.512", "5812632.597" ]
+, [ 192, "D67A8838-1C87-4361-9E36-2F390218DC8F", 192, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Hotham Hill Seat", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "76 Canning Street", "Bernice McPherson, Di Christensen and Craig Perry", null, null, "2A_E5", "City Of Melbourne", "Steel seat", [ null, "-37.7949351874639", "144.940340735749", null, false ], "318655.218", "5814938.934" ]
+, [ 193, "E5DD38E1-011E-4084-AB5F-16E29CCE7503", 193, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "IOU", "Beveridge Williams Surveyors", "Field Survey", "7 Waterview Walk, DOCKLANDS", "Mikala Dwyer", null, "2005", "2E_H7", "VicUrban", "Stainless steel and toughened glass", [ null, "-37.820112083979", "144.947923460104", null, false ], "319384.284", "5812159.836" ]
+, [ 194, "F2431946-BB72-42AA-9209-51698B5B31A8", 194, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Art Wall", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "160 Harbour Esplanade, DOCKLANDS", "Peter D. Cole", null, "2000", "2E_G4", "VicUrban", "3D Installation", [ null, "-37.8156948270259", "144.946202651563", null, false ], "319222.03", "5812646.674" ]
+, [ 195, "0958289B-F44E-466E-A544-3AC7659B9B7F", 195, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "IOU", "Beveridge Williams Surveyors", "Field Survey", "9 Waterview Walk, DOCKLANDS", "Mikala Dwyer", null, "2005", "2E_H7", "VicUrban", "Stainless steel and toughened glass", [ null, "-37.8200830017644", "144.947894374833", null, false ], "319381.652", "5812163.007" ]
+, [ 196, "F650FAC2-830C-41D9-9BD1-1ED3D1671B26", 196, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "IOU", "Beveridge Williams Surveyors", "Field Survey", "7 Waterview Walk, DOCKLANDS", "Mikala Dwyer", null, "2005", "2E_H7", "VicUrban", "Stainless steel and toughened glass", [ null, "-37.8201338075104", "144.947948917363", null, false ], "319386.577", "5812157.474" ]
+, [ 197, "4C933D6E-AFC7-4191-9B08-1098DAE1BE36", 197, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Ned and Dan", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "21 Rakaia Way, DOCKLANDS", "Alexander Knox", null, "2006", "2E_E4", "VicUrban", "Three-dimensional frieze", [ null, "-37.8146994633064", "144.940838425061", null, false ], "318747.378", "5812746.73" ]
+, [ 198, "897B18C3-DF21-4E49-9108-2D2B0E131927", 198, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Ned and Dan", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "16 Doepel Way, DOCKLANDS", "Alexander Knox", null, "2006", "2E_E4", "VicUrban", "Three-dimensional frieze", [ null, "-37.8148030334672", "144.940223820648", null, false ], "318693.527", "5812734.044" ]
+, [ 199, "D746972A-169C-4399-9BA4-E663F2EC0FB5", 199, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Ned and Dan", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "37 Caravel Lane, DOCKLANDS", "Alexander Knox", null, "2006", "2E_E4", "VicUrban", "Three-dimensional frieze", [ null, "-37.81452427966", "144.940608832218", null, false ], "318726.738", "5812765.723" ]
+, [ 200, "8B3C3867-A175-4A85-B2FA-1D6C71ABDCC7", 200, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201043033663", "144.959426584028", null, false ], "320396.83189", "5812182.88377" ]
+, [ 201, "0B4972E0-D777-456B-911A-BF8FF39D068B", 201, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Nurse Edith Cavell", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "294 St Kilda Road, SOUTHBANK", "Margaret Baskerville", null, "1926", "2F_K11", "City Of Melbourne", "Marble bust with cast-bronze panels on granite pedestal", [ null, "-37.8279878719975", "144.973699196119", null, false ], "321672.163", "5811335.427" ]
+, [ 202, "A461F0CF-71FD-45B7-ABC9-E4B1BCA68AF2", 202, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Diana and the Hounds", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE", "Sculptor William Leslie Bowles; founder A.B. Brunton", null, "1940", "2G_B4", "City Of Melbourne", "Cast bronze statue on granite pedestal", [ null, "-37.8143067586398", "144.978499373084", null, false ], "322061.795", "5812862.722" ]
+, [ 203, "9A8C3D4A-D8D0-4361-B888-0D4F712CCF79", 203, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Dairy Hall Window", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "62 Therry Street, MELBOURNE", "Artist Bernice McPherson; architect Craig Perry", null, "1996", "2B_C12", "City Of Melbourne", "Glass and steel window", [ null, "-37.8072067768463", "144.959271667297", null, false ], "320351.929", "5813613.775" ]
+, [ 204, "F9EB0BCE-93A1-4B23-BDD9-9A631E2CCFDB", 204, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Dolphin Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "4 Lansdowne Street, EAST MELBOURNE", "June Arnold", null, "1982", "2G_B2", "City Of Melbourne", "Bronze and granite fountain", [ null, "-37.8118884344659", "144.980015806146", null, false ], "322189.487", "5813133.961" ]
+, [ 205, "AB201BB9-DF45-4343-8310-4C58529B51E6", 205, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Domed Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "unknown", null, null, "2F_H7", "City Of Melbourne", "Marble and granite drinking fountain", [ null, "-37.8212404231762", "144.970769495267", null, false ], "321398.034", "5812078.566" ]
+, [ 206, "9BD96776-E865-493A-9EC7-486DBA77CA93", 206, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Eagle", "VicUrban (Docklands)", "AAM Hatch Photogrammetry - March 2005", "22 Wurundjeri Way, DOCKLANDS", "Bruce Armstrong", null, "2003", "2E_K7", "VicUrban", "Sculpture", [ null, "-37.8207247436456", "144.952391322514", null, false ], "319779.06", "5812100.482" ]
+, [ 207, "D029F7E2-5DA1-46A8-A78B-785B435785C3", 207, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Duke and Duchess of York Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "512 Elizabeth Street, MELBOURNE", "J. Churchman & Sons", "Temperance", "1901", "2B,_C11", "City Of Melbourne", "Marble, granite and sandstone drinking fountain,", [ null, "-37.806629256046", "144.959908916093", null, false ], "320406.634", "5813679.086" ]
+, [ 208, "61B11EE8-3470-471B-AAB9-A4B6CF67835E", 208, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Walker Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "210 St Kilda Road, SOUTHBANK", "Mobelt, Digregorio & Associates", null, "1981", "2F_H9", "City Of Melbourne", "Concrete fountain", [ null, "-37.8235489328706", "144.970827540478", null, false ], "321408.709", "5811822.511" ]
+, [ 209, "863F9DA3-7E0A-49E8-A683-4CB8D22D8B4A", 209, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Weathervanes", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "270 Bourke Street, MELBOURNE", "Daniel Jenkins", null, "1993", "2F_F3", "City Of Melbourne", "Hand-beaten copper sculpture with gold-leaf detail", [ null, "-37.8134883855915", "144.965515931433", null, false ], "320916.858", "5812928.72" ]
+, [ 210, "DC89D1A1-29F7-425A-A1B8-8202CF71E807", 210, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Weathervanes", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "178 Swanston Street, MELBOURNE", "Daniel Jenkins", null, "1993", "2F_F3", "City Of Melbourne", "Hand-beaten copper sculpture with gold-leaf detail", [ null, "-37.8135755457342", "144.965751391423", null, false ], "320937.797", "5812919.499" ]
+, [ 211, "56FB868F-AF90-4EEA-95C1-C8547D0BEE3B", 211, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Webb Bridge", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "50 River Esplanade, DOCKLANDS", "Robert Owen and Denton Corker Marshall", null, "2003", "2E_H9", "VicUrban", "Pedestrian and cyclist bridge", [ null, "-37.8239756487966", "144.947233077573", null, false ], "319332.935", "5811729.774" ]
+, [ 212, "B36D49FD-7DFC-4DB3-A281-5F7FCAEB8016", 212, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Weathervanes", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "271 Bourke Street, MELBOURNE", "Daniel Jenkins", null, "1993", "2F_F3", "City Of Melbourne", "Hand-beaten copper sculpture with gold-leaf detail", [ null, "-37.8136266014549", "144.965579210749", null, false ], "320922.763", "5812913.504" ]
+, [ 213, "1669E6EC-7AE3-4D4F-A858-E17F6D145B27", 213, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Outside Inside Out", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "27 Caravel Lane, DOCKLANDS", "Matthew McCarthy", null, "2006", "2E_E4", "VicUrban", "Mural", [ null, "-37.814359230579", "144.941130138162", null, false ], "318772.226", "5812785.05" ]
+, [ 214, "EC136D34-E9CB-49DA-8E0B-59FBAF9BA9C9", 214, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Mary Gilbert Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Conservatory, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE", "Alisa O'Connor", null, "1975", "2G_B3", "City Of Melbourne", "Cement fondue bust", [ null, "-37.8140756651063", "144.97856026709", null, false ], "322066.601", "5812888.481" ]
+, [ 215, "7401E848-6DFA-4AB7-91FB-8552D0C3CFEF", 215, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Model Tudor Village", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Cook's Cottage, Fitzroy Gardens, 274 Wellington Parade, EAST MELBOURNE", "Edgar Wilson", null, "1948", "2G_C3", "City Of Melbourne", "Painted cement model", [ null, "-37.8132572520671", "144.981012379899", null, false ], "322280.503", "5812983.966" ]
+, [ 216, "612C83DF-AD1C-4DE3-9C5C-0968119A42D7", 216, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "The Travellers", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Sandridge Bridge, SOUTHBANK", "Artist Nadim Karam; manufacturer Arup Engineering", null, "2005", "2F_E7", "City Of Melbourne", "Stainless-steel tubing and glass panel installation", [ null, "-37.8206998343058", "144.962209921997", null, false ], "320643.27793", "5812122.14905" ]
+, [ 217, "0E5D3D24-F091-4094-AB02-6A5DAE649261", 217, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Commonwealth Games Aquatic Sculptures - Eels", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Kensington Community Recreation Centre, KENSINGTON", "unknown", null, "2006", "42, J3", "City Of Melbourne", "Painted steel sculptures", [ null, "-37.7966290593729", "144.924306764698", null, false ], "317247.51149", "5814719.73186" ]
+, [ 218, "3AB349C8-9538-4A7B-A820-BD648C6919CB", 218, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Poise", "Qasco", "MCC - Ground Ortho Image March 2007", "110 Harbour Esplanade, DOCKLANDS", "Warren Langley", null, "2005", "2E_G6", "VicUrban", "Glass", [ null, "-37.8180105674976", "144.946830696021", null, false ], "319282.966", "5812390.92" ]
+, [ 219, "AA6056E6-64E2-46F1-BCA6-5F55F307CE86", 219, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Pastor Sir Doug and Lady Gladys Nicholls", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Parliament Gardens, EAST MELBOURNE", "Louis Laumen", null, "2007", "2F,_K1", "City Of Melbourne", "Bronze memorial statue", [ null, "-37.8100230422747", "144.973642124927", null, false ], "321623.89104", "5813328.80397" ]
+, [ 220, "E1FEDAD1-A611-4B9E-95EE-A9AA9029209C", 220, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.820097951228", "144.959505265904", null, false ], "320403.74248", "5812183.73994" ]
+, [ 221, "23D7316B-7D77-47AB-876C-2D167B4A2200", 221, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "John Batman Memorial (1)", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "439 Queen Street, MELBOURNE", "J.W. Brown", null, "unknown", "2B_B12", "City Of Melbourne", "Bluestone cairn", [ null, "-37.8081354860573", "144.957645863417", null, false ], "320211.045", "5813507.592" ]
+, [ 222, "43AD734E-9A82-43BD-96F8-6680FA1DBFA0", 222, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Man with the Donkey", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Shrine Of Remembrance Reserve, St Kilda Road, MELBOURNE", "Wallace Anderson", "Private John Simpson and His Little Donkey", "1935", "2F_K12", "City Of Melbourne", "Cast bronze statue on granite pedestal", [ null, "-37.8294820404839", "144.973858477761", null, false ], "321689.779", "5811169.929" ]
+, [ 223, "9C1FA363-39A9-4F40-AA06-2A2C5CB2C332", 223, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Macpherson Robertson Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "2 Domain Road, MELBOURNE", "Designer Philip Hudson; sculptor Paul Montford", null, "1934", "2K,_J1", "City Of Melbourne", "Granite, bronze and concrete fountain", [ null, "-37.8323774569183", "144.972934293353", null, false ], "321615.413", "5810846.87" ]
+, [ 224, "3E209379-5DF3-460B-A7B5-4590D7253E53", 224, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Chinese Lion Guardians", "City of Melbourne", "MCC - Ortho Image March 2008 - Final", "Cohen Pl, CHINATOWN", "unknown", null, "unknown", "2F_G2", "City Of Melbourne", "Marble lions", [ null, "-37.8112537359422", "144.969347727216", null, false ], "321248.7929", "5813184.029725" ]
+, [ 225, "60E58048-385B-4781-88BE-2193F072DA5D", 225, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8202194220305", "144.959168439493", null, false ], "320374.38775", "5812169.61298" ]
+, [ 226, "82BAB47A-7C89-4400-BC56-7DAD6C369277", 226, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Island Wave", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "404 Queen Street, MELBOURNE", "Lisa Young", null, "2003", "2F_B1", "City Of Melbourne", "Steel sculpture on concrete footing", [ null, "-37.809326383142", "144.958057203226", null, false ], "320250.148", "5813376.235" ]
+, [ 227, "03DE51C8-76BE-4D11-8D96-F8B68E2D0033", 227, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Walk of Stars", "Beveridge Williams Surveyors", "Field Survey", "435 Docklands Drive, DOCKLANDS", "Peter Cortlett and Jamie Cooper", null, "2006", "2E_D4", "VicUrban", "Bronze statue and plaques", [ null, "-37.8152982442351", "144.938823236515", null, false ], "318571.443", "5812676.372" ]
+, [ 228, "4C3C1FC1-77E3-48F7-B1C4-A21214ADFED9", 228, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "John F. Kennedy Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "3 Treasury Place, EAST MELBOURNE", "Raymond B. Ewers", null, "1965", "2G_A3", "City Of Melbourne", "Bronze bas-relief head set in granite boulder on landscaped site", [ null, "-37.8136597830075", "144.976354519479", null, false ], "321871.424", "5812930.426" ]
+, [ 229, "74F9B0AF-3965-4C4C-AD11-AADA1F7D31DF", 229, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Painted Poles", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "322 Swanston Street, MELBOURNE", "Jennifer McCarthy", null, "1992", "2F_E1", "City Of Melbourne", "Metal poles", [ null, "-37.8099325911658", "144.964088812819", null, false ], "320782.625", "5813320.555" ]
+, [ 230, "D4AEE2C2-169C-4F8B-B29E-7A4B890859CD", 230, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Painted Poles", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "316 Swanston Street, MELBOURNE", "Jennifer McCarthy", null, "1992", "2F_E1", "City Of Melbourne", "Metal poles", [ null, "-37.8100968762417", "144.964165129049", null, false ], "320789.741", "5813302.472" ]
+, [ 231, "EBD3B045-3141-4146-8873-0A4CCD9B8B33", 231, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Painted Poles", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "308 Swanston Street, MELBOURNE", "Jennifer McCarthy", null, "1992", "2F_E1", "City Of Melbourne", "Metal poles", [ null, "-37.810347145096", "144.964280610813", null, false ], "320800.513", "5813274.922" ]
+, [ 232, "2515312C-C768-4AD8-AF91-71DE2FDB6A8F", 232, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201609405995", "144.95922840946", null, false ], "320379.52483", "5812176.2178" ]
+, [ 233, "3DD766B9-E7E7-487B-82D6-EB2EF7F3AEC3", 233, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200608408543", "144.959653574985", null, false ], "320416.70749", "5812188.14315" ]
+, [ 234, "EAB4DC03-4EA6-4442-A057-013CB8BFE4AE", 234, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "King Edward VII Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Queen Victoria Gardens, St Kilda Road, MELBOURNE", "Sculptor Edgar Bertram Mackennal; founder A.B. Burton", null, "1920", "2F_H8", "City Of Melbourne", "Bronze statue with basalt and granite pedestal", [ null, "-37.8226717982934", "144.970988232874", null, false ], "321420.738", "5811920.151" ]
+, [ 235, "AC683046-5F64-4299-B3B4-AA2099840379", 235, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Time and Tide", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "252 Little Collins Street, MELBOURNE", "Akio Makigawa", null, "1994", "2F_F4", "City Of Melbourne", "Bluestone, white marble, bronze and stainless-steel sculpture", [ null, "-37.8143983948935", "144.96625088381", null, false ], "320983.757", "5812829.149" ]
+, [ 236, "3C70E024-7136-40AD-B6E4-84317C7C9E01", 236, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Car Nuggets", "Qasco", "MCC - Ground Ortho Image March 2007", "15 Batmans Hill Drive, DOCKLANDS", "Patricia Piccinini", null, "2006", "2E_H8", "VicUrban", "Sculptural forms", [ null, "-37.8217384627114", "144.949169769731", null, false ], "319497.953", "5811981.772" ]
+, [ 237, "7E07256B-47FC-40FE-9868-05C9DCF79A56", 237, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Car Nuggets", "Qasco", "MCC - Ground Ortho Image March 2007", "15 Batmans Hill Drive, DOCKLANDS", "Patricia Piccinini", null, "2006", "2E_H8", "VicUrban", "Sculptural forms", [ null, "-37.8217244747982", "144.949168740276", null, false ], "319497.829", "5811983.322" ]
+, [ 238, "CF6DC78A-37E9-470B-B6F0-336F2C5FDDCD", 238, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Eel Trap", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Fiona Clarke and Ken McKean", null, "2003", "2F, K6", null, "Plate-steel sculpture", [ null, "-37.8191221824373", "144.97407578866", null, false ], "321683.96784", "5812319.93722" ]
+, [ 239, "5805D234-265F-4AFC-956D-5A934F6517C2", 239, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201547396011", "144.959252201884", null, false ], "320381.60412", "5812176.95166" ]
+, [ 240, "280A9F1F-BBE3-45C0-A5DC-AE45ED189DE4", 240, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200541369817", "144.959680160075", null, false ], "320419.0314", "5812188.93818" ]
+, [ 241, "31017923-1AFA-4F17-9396-81265DD8C1AD", 241, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Marquis of Linlithgow", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "268 St Kilda Road, SOUTHBANK", "William Birnie Rhind", null, "1911", "2F_J10", "City Of Melbourne", "Bronze statue with granite pedestal", [ null, "-37.8266640358872", "144.971916610826", null, false ], "321512.077", "5811478.922" ]
+, [ 242, "E060B4D9-CA6B-4E04-9208-BE1803C87C5C", 242, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "John Pascoe Fawkner", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "437 Collins Street, MELBOURNE", "Michael Meszaros", null, "1978", "2F_C5", "City Of Melbourne", "Bronze statue", [ null, "-37.8176770967418", "144.959995275694", null, false ], "320441.009", "5812453.315" ]
+, [ 243, "FE8A063E-3838-4698-A571-0B0794413045", 243, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Walk of Stars", "Beveridge Williams Surveyors", "Field Survey", "435 Docklands Drive, DOCKLANDS", "Peter Cortlett and Jamie Cooper", null, "2006", "2E_D4", "VicUrban", "Bronze statue and plaques", [ null, "-37.8152456579572", "144.938853960352", null, false ], "318574.019", "5812682.267" ]
+, [ 244, "6418F86C-5995-4CC9-B4E3-7A64002F30B8", 244, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Parrallax", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "47 Wurundjeri Way, DOCKLANDS", "Ari Purhonen", null, "2002", "2E_J6", "VicUrban", "Public installation", [ null, "-37.8196059887556", "144.951325455868", null, false ], "319682.514", "5812222.569" ]
+, [ 245, "3B0DB9B8-9BAB-4397-8246-1F0115B9D2AE", 245, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Photo art billboard", "VicUrban (Docklands)", "MCC - Ortho Image March 2005 - Final", "56 Lorimer Street, DOCKLANDS", "Various artists", null, "various", "2E_H9", "VicUrban", "Photographic images", [ null, "-37.8249065059188", "144.947426953214", null, false ], "319352.271", "5811626.855" ]
+, [ 246, "FC2D4299-D841-47EA-A52E-EE08A39AC464", 246, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201167536871", "144.959381777078", null, false ], "320392.91792", "5812181.41603" ]
+, [ 247, "66983AAF-13E8-41CC-B34D-6AE67C341605", 247, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Railway Viewing Platform", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "90 Railway Place, WEST MELBOURNE", "Designer Bernice McPherson; architects Craig Perry and Peter Dann", null, "1994", "2A_F12", "City Of Melbourne", "Metal platform", [ null, "-37.8088169283775", "144.943688304136", null, false ], "318983.89", "5813405.02" ]
+, [ 248, "647A4B7B-C433-4108-B5B1-61C905A4835A", 248, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "R.J. & F.G.J. Hardy Memorial Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "463 Lygon Street", "unknown", null, "1939", "29_J12", "City Of Melbourne", "Stone drinking fountain", [ null, "-37.7855912646095", "144.96931423372", null, false ], "321183.961", "5816031.622" ]
+, [ 249, "50176F44-5617-49F5-8CA2-1D022226F164", 249, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Queen Victoria Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Residence, Alexandra Gardens, Alexandra Avenue, MELBOURNE", "James White", null, "1907", "2F_J8", "City Of Melbourne", "White marble and granite sculpture", [ null, "-37.8218411817137", "144.972479044613", null, false ], "321549.962", "5812015.171" ]
+, [ 250, "F1616D21-7A73-4B81-AC7D-2E2F290EBF54", 250, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Sir John Monash", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "270 St Kilda Road, SOUTHBANK", "William Leslie Bowles", null, "1950", "2F_J10", "City Of Melbourne", "Bronze statue on granite plinth", [ null, "-37.8267733497848", "144.97275207638", null, false ], "321585.875", "5811468.389" ]
+, [ 251, "7963599F-B52B-466C-98D6-FCEBF6840AC8", 251, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Federation Bells", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Birrarung Marr, MELBOURNE", "Designers Neil McLachlan and Anton Hasell", null, "2002", "2F_ K6", "City of Melbourne", "Bronze-alloy bells on galvanised-steel poles", [ null, "-37.8186666064737", "144.974100167285", null, false ], "321685.0173", "5812370.53722" ]
+, [ 252, "82B19AF7-6707-4B5C-93A2-E05D9965340A", 252, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Adam Lindsay Gordan Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "96 Spring Street, EAST MELBOURNE", "Paul Montford", null, "1931", "2F_J2", "City Of Melbourne", "Bronze statue on sandstone pedestal", [ null, "-37.8123635338167", "144.97374504876", null, false ], "321638.585", "5813069.286" ]
+, [ 253, "AC0249E7-5952-457F-8164-57D293BD62C5", 253, 1398813043, "880594", 1398813043, "880594", "{\n}", "Fountain", "Dinny O'Hearn Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "331 Lygon Street, CARLTON", "unknown", null, "1981", "2B_G6", "City Of Melbourne", "Cast-iron and enamel fountain", [ null, "-37.7975991142625", "144.967306467399", null, false ], "321036.125", "5814695.319" ]
+, [ 254, "AFE60375-4D3C-469A-A092-238CEE45B036", 254, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Westgarth Drinking Fountain", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "9 Nicholson Street, CARLTON", "Alexander McDonald & Co", null, "c. 1888", "2B_J11", "City Of Melbourne", "Aberdeen pink-granite and bronze drinking fountain", [ null, "-37.8050913081625", "144.973417274498", null, false ], "321592.225", "5813875.629" ]
+, [ 255, "5AE31B20-F2B0-48C9-A160-E23F71EC13F7", 255, 1398813043, "880594", 1398813043, "880594", "{\n}", "Monument", "Pioneer Women's Memorial", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "Kings Domain, Alexandra Avenue, MELBOURNE", "Hugh Linaker", null, "1934", "2G_K9", "City Of Melbourne", "Memorial garden with bronze statue", [ null, "-37.8251147378564", "144.976076213311", null, false ], "321874.468", "5811658.785" ]
+, [ 256, "545976B3-1E39-4209-A59E-DCB562E2F9DB", 256, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8200950553396", "144.95952896712", null, false ], "320405.82177", "5812184.10688" ]
+, [ 257, "34BA8CBF-43C4-44F7-A552-ED45A1C0B5C1", 257, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Car Nuggets", "Qasco", "MCC - Ground Ortho Image March 2007", "15 Batmans Hill Drive, DOCKLANDS", "Patricia Piccinini", null, "2006", "2E_H8", "VicUrban", "Sculptural forms", [ null, "-37.8217401147159", "144.949142099572", null, false ], "319495.522", "5811981.535" ]
+, [ 258, "681242CB-7398-42B5-8A39-C07830E37AE4", 258, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.820084055671", "144.959593881825", null, false ], "320411.50925", "5812185.4523" ]
+, [ 259, "C7C32A97-5075-44A0-85E1-55A350F57645", 259, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Painted Poles", "City of Melbourne", "MCC - Ortho Image March 2005 - Final", "78 Swanston Street, MELBOURNE", "Maree Clarke and Sonja Hodge", null, "1992", "2F_F5", "City Of Melbourne", "Metal poles", [ null, "-37.8157410618987", "144.966836246828", null, false ], "321038.531", "5812681.28" ]
+, [ 260, "F17B2D51-33EE-4CDE-86B1-655B108FD5E6", 260, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Angel", "Owned by National Gallery of Victoria", "MCC - Ortho Image March 2008 - Final", "Birrarung Marr", "Deborah Halpern", null, "1988", "2F_J6", "National Gallery of Victoria", "Ceramic, steel and concrete sculpture", [ null, "-37.8189542313538", "144.972959186532", null, false ], "321585.273", "5812336.4415625" ]
+, [ 261, "865FCB8E-5F58-4078-A679-610C3A62FB2C", 261, 1398813043, "880594", 1398813043, "880594", "{\n}", "Art", "Scar - A Stolen Vision", "City of Melbourne", "MCC - Ground Ortho Image March 2008", "Enterprize Park, MELBOURNE", "Karen Casey, Craig Charles, Glenn Romanis, Maree Clarke, Ray Thomas, Ricardo Idagi and Treahna Hamm", null, "2001", "2E_C7", "City of Melbourne", "Wooden pier post and metal sculptures", [ null, "-37.8201046430242", "144.959477986287", null, false ], "320401.35741", "5812182.94492" ]
+ ]
+}
