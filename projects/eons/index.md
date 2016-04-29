@@ -33,7 +33,7 @@ This was enough for a player to explore a space naturally, even if they weren't 
 
 I used these mechanics to make a very simple locked room puzzle game.
 
-You can download the source [here](https://github.com/notoes/eons).
+You can download the source [here](https://github.com/johnsietsma/eons).
 
 
 <div class="text-center screen-shot">
