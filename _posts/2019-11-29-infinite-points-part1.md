@@ -10,7 +10,7 @@ I'd like to build a point cloud renderer for Unity that solves these issues but 
 
 * The data should be stored on disk in multiple files.
 * These files should be able to be loaded into memory at runtime.
-* The data should be laid out efficiently in memory to allow for quick processing for culling.
+* The data should be laid out efficiently in memory to allow for quick processing, eg for culling.
 
 ## Previous Work
 
