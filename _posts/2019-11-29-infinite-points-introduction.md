@@ -38,4 +38,4 @@ The number of nodes at each level grows very quickly. Assuming that lower levels
 A single array lookup is a binary search of the index array. Efficient processing of contiguous memory is still possible by turning an index range of large indices into an index range of nodes that exist. The most common case would be to process (for eg culling) an entire level of nodes directly, without using the index indirection.
 
 
-Please follow along here: https://github.com/johnsietsma/InfPoints
+Please follow along here: [https://github.com/johnsietsma/InfPoints](https://github.com/johnsietsma/InfPoints).
