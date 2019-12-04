@@ -1,6 +1,6 @@
 # Morton Order
 
-For the [out-of-core point cloud renderer I'm working on](../_posts/2019-11-29-infinite-points-introduction.md) I need a way to convert a node coordinate into an array index. The idea is all nodes in a layer and children of a node should be in contiguous memory for easy access and cache friendly processing.
+For the [out-of-core point cloud renderer I'm working on]({% post_url 2019-11-29-infinite-points-introduction.md %}) I need a way to convert a node coordinate into an array index. The idea is all nodes in a layer and children of a node should be in contiguous memory for easy access and cache friendly processing.
 
 In my first implementation I used Hilbert curves. They guarantee each array index will be a next-door neighbour node, but they are reasonably complex to calculate. Morton order guarantees the 8 children of a node will be contiguous, but there may be discontinuities between those blocks.
 
