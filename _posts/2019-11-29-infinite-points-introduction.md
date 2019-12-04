@@ -1,3 +1,9 @@
+---
+layout: post
+title: Infinite Points - Introduction
+tags: infpoints, point cloud
+---
+
 # Infinite Points - Introduction
 
 It's becoming more and more common to use photogrammetry and lidar scanning to capture buildings, engineering projects, sites of cultural significance, archaeological digs, etc. Most of these points clouds are in the billions of points; slow to render and unable to fit into memory.
