@@ -1,13 +1,18 @@
 # Morton Order
 
+For the [out-of-core point cloud renderer I'm working on](../_posts/2019-11-29-infinite-points-introduction.md) I need a way to convert a node coordinate into an array index. The idea is all nodes in a layer and children of a node should be in contiguous memory for easy access and cache friendly processing.
+
+In my first implementation I used Hilbert curves. They guarantee each array index will be a next-door neighbour node, but they are reasonably complex to calculate. Morton order guarantees the 8 children of a node will be contiguous, but there may be discontinuities between those blocks.
+
+
 ## What is Morton Order (Z-Order, Lebesgue Curve)
-To store an Octree node in an array, we need a way to convert its 3D corrdinate to a 1D array index. 
+To store an Octree node in an array, we need a way to convert its 3D coordinate to a 1D array index. 
 
 Let's take the simple case of the first level of the Octree, with 8 nodes. Each axis will be in either position 0 or 1. We can use one bit of each of these axis, or a total of 3 bits to encode each node. As enumerate each node, these bits increment just like normal binary numbers. They can be used as an integer index into an array.
 
 ```
 node  | bits | index
---------------------
+-----:|:----:|:-----
 0,0,0 |  000 |    0
 0,0,1 |  001 |    1
 0,1,0 |  010 |    2
@@ -18,7 +23,7 @@ node  | bits | index
 1,1,1 |  111 |    7
 ```
 
-For larger we continue to have sets of 3 bits for each additional digit on each axis and the Z pattern repeats.
+For larger coordinates we continue to have sets of 3 bits for each additional digit on each axis and the Z pattern repeats.
 
 Morton order is perfect for an Octree, the 8 children of a node are guaranteed to be in contiguous memory.
 
@@ -32,15 +37,11 @@ To make a morton code, we need to get each of the 3 axes and interleave their bi
 
 [Fabian "ryg" Giesen also mentions the same method as Asger Hoedt and gives an implementation for a 3D encoding](https://fgiesen.wordpress.com/2009/12/13/decoding-morton-codes/).
 
-[A follow up blog post](https://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/) shows that the third method, using a LUT, is faster. But for readbility and ease of implementation I'm going to use Asger/ryg's method. I may change this later if this encoding and decoding affects performance more then I'd like.
+[A follow up blog post](https://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/) shows that the third method, using a LUT, is faster. But Asger/ryg's method is more readable and I believe, more open to Burst performance optimisations.
 
 
-## Operations
-Tesseral Arithmetic
+[Here is code](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints.octree/Runtime/Morton.cs). I still have to add limits checking and Burst friendly versions.
 
-## Traversal
-
-Finding child indices
 
 # Resources
 * Wikipedia Z-Order Curves: https://en.wikipedia.org/wiki/Z-order_curve
@@ -55,6 +56,3 @@ Finding child indices
   * Paper cde: https://github.com/Forceflow/ooc_svo_builder
 * Ryg Blog Decoding: https://fgiesen.wordpress.com/2009/12/13/decoding-morton-codes/
 * Avenel's Code: https://github.com/aavenel/mortonlib
-* Tesseral Arithmetic:
-  * http://bitmath.blogspot.com/2012/11/tesseral-arithmetic.html
-  * http://bitmath.blogspot.com/2012/11/tesseral-arithmetic-useful-snippets.html
