@@ -46,19 +46,20 @@ To make a morton code, we need to get each of the 3 axes and interleave their bi
 [A follow up blog post](https://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/) shows that the third method, using a LUT, is faster. But Asger/ryg's method is more readable and I believe, more open to Burst performance optimisations.
 
 
-[Here is code](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints.octree/Runtime/Morton.cs). I still have to add limits checking and Burst friendly versions.
+[Here is the code](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints.octree/Runtime/Morton.cs). I still have to add limits checking and Burst friendly versions.
 
 
 # Resources
-* Wikipedia Z-Order Curves: https://en.wikipedia.org/wiki/Z-order_curve
-* Bithacks - Interleaving with magic numbers: http://www-graphics.stanford.edu/~seander/bithacks.html#InterleaveBMN
-* Generate magic numbers: https://stackoverflow.com/questions/18529057/produce-interleaving-bit-patterns-morton-keys-for-32-bit-64-bit-and-128bit
+* Wikipedia Z-Order Curves: [https://en.wikipedia.org/wiki/Z-order_curve](https://en.wikipedia.org/wiki/Z-order_curve)
+* Bithacks - Interleaving with magic numbers: [http://www-graphics.stanford.edu/~seander/bithacks.html#InterleaveBMN](http://www-graphics.stanford.edu/~seander/bithacks.html#InterleaveBMN)
+* Generate magic numbers: [https://stackoverflow.com/questions/18529057/produce-interleaving-bit-patterns-morton-keys-for-32-bit-64-bit-and-128bit](https://stackoverflow.com/questions/18529057/produce-interleaving-bit-patterns-morton-keys-for-32-bit-64-bit-and-128bit)
 * Jeoen Baert's Sparse Voxel Octree:
-  * Intro: https://www.forceflow.be/2012/07/24/out-of-core-construction-of-sparse-voxel-octrees/
-  * Encoding/decoding: https://www.forceflow.be/2013/10/07/morton-encodingdecoding-through-bit-interleaving-implementations/
-  * Update on perf: https://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/
-  * Paper: http://graphics.cs.kuleuven.be/publications/BLD13OCCSVO/BLD13OCCSVO_paper.pdf
-  * Code: https://github.com/Forceflow/libmorton
-  * Paper cde: https://github.com/Forceflow/ooc_svo_builder
-* Ryg Blog Decoding: https://fgiesen.wordpress.com/2009/12/13/decoding-morton-codes/
-* Avenel's Code: https://github.com/aavenel/mortonlib
+  * Intro: [https://www.forceflow.be/2012/07/24/out-of-core-construction-of-sparse-voxel-octrees/](https://www.forceflow.be/2012/07/24/out-of-core-construction-of-sparse-voxel-octrees/)
+  * Encoding/decoding: [https://www.forceflow.be/2013/10/07/morton-encodingdecoding-through-bit-interleaving-implementations/](https://www.forceflow.be/2013/10/07/morton-encodingdecoding-through-bit-interleaving-implementations/)
+  * Update on perf: [https://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/](https://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/)
+  * Paper: [http://graphics.cs.kuleuven.be/publications/BLD13OCCSVO/BLD13OCCSVO_paper.pdf](http://graphics.cs.kuleuven.be/publications/BLD13OCCSVO/BLD13OCCSVO_paper.pdf)
+  * Code: [https://github.com/Forceflow/libmorton](https://github.com/Forceflow/libmorton)
+  * Paper code: [https://github.com/Forceflow/ooc_svo_builder](https://github.com/Forceflow/ooc_svo_builder)
+* Ryg Blog Decoding: [https://fgiesen.wordpress.com/2009/12/13/decoding-morton-codes/](https://fgiesen.wordpress.com/2009/12/13/decoding-morton-codes/)
+* Avenel's Code: [https://github.com/aavenel/mortonlib](https://github.com/aavenel/mortonlib)
+
