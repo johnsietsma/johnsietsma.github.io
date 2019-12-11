@@ -1,3 +1,5 @@
+It's always good when performance results start coming back in milliseconds!
+
 Encode Job
 ```
         .text
