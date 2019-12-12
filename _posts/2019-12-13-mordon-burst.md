@@ -54,7 +54,7 @@ So I can run a test like this:
 Measure.Method(DoEncodeDecodeJob).WarmupCount(2).Run();
 ```
 
-So what's the result? I ran through encoded and decoded one million coordinates. Without Burst it takes 205.39ms, the same code outside of the job takes 207.98, so there is some job overhead. With Burst on it takes 6.12ms. This is a huge, exactly the same code runs 33x faster.
+So what's the result? I ran through encoded and decoded one million coordinates. Without Burst it takes 205.39ms, the same code outside of the job takes 207.98, so there is some job overhead. With Burst on it takes 6.12ms. This is huge, exactly the same code runs 33x faster.
 
 For a great background on what Burst does and how it can achieve this speed up, check out - [ECS - Deep Dive into the Burst Compiler](https://www.youtube.com/watch?v=QkM6zEGFhDY).
 
