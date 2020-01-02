@@ -9,7 +9,7 @@ tags: infpoints, point cloud, morton order
 
 So what happens when I turn it on? In order to use Burst, we need to have our code in a job.
 
-```
+```csharp
 [BurstCompile(FloatPrecision.Standard, FloatMode.Fast, CompileSynchronously = true)]
 public struct MortonDecodeJob_Packed : IJob
 {
@@ -29,7 +29,7 @@ public struct MortonDecodeJob_Packed : IJob
 `CompileSynchronously` is only used in the editor to make sure the Burst code is compiled before this function is called, rather then using the non-burst code until it's ready.
 
 I then fire everything off like this:
-```
+```csharp
 var encodeJob = new MortonEncodeJob()
 {
     Coordinates = m_Coordinates,
@@ -50,7 +50,7 @@ decodeJobHandle.Complete();
 I'm using the [Performance Testing API](https://docs.unity3d.com/Packages/com.unity.test-framework.performance@2.0/manual/index.html) to measure results. It has some nice features like warm-up and iterations.
 
 So I can run a test like this:
-```
+```csharp
 Measure.Method(DoEncodeDecodeJob).WarmupCount(2).Run();
 ```
 
@@ -64,11 +64,13 @@ Out encoding function changes from `public static uint EncodeMorton3(uint3 coord
 
 Assembly is not my strong point. But what I'm looking for is moving data to registers changing from:
 
-```movsxd  r8, dword ptr [rcx + 8]```
+```asm
+movsxd  r8, dword ptr [rcx + 8]
+```
 
 to
 
-```
+```asm
 movdqa  xmmword ptr [rsp + 80], xmm11
 movdqa  xmmword ptr [rsp + 64], xmm10
 movdqa  xmmword ptr [rsp + 48], xmm9
@@ -79,13 +81,13 @@ movdqa  xmmword ptr [rsp], xmm6
 xmmword is a SIMD data type with 128 bits (16bytes), which is exactly the size of a uint4x3.
 
 Here is the first couple of lines of the morton encoding:
-```
+```asm
 x = (x ^ (x << 16)) & 0xff0000ff; // x = ---- --98 ---- ---- ---- ---- 7654 3210
 x = (x ^ (x << 8)) & 0x0300f00f;  // x = ---- --98 ---- ---- 7654 ---- ---- 3210
 ```
 
 In the unpacked version we see this:
-```
+```asm
 shl     ecx, 16
 or      ecx, edx
 shl     eax, 8
@@ -95,7 +97,7 @@ or      ecx, eax
 ```
 
 In the packed version, which is exactly the same code, but with a `unit4` passed in instead of a `uint`.
-```
+```asm
 pslld   xmm6, 16
 por     xmm6, xmm0
 pslld   xmm4, 8
