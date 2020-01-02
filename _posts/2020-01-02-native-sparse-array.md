@@ -14,7 +14,7 @@ A sparse array is usually slower for large data sets, and a hash map is preferre
 I'd like the SparseArray API to be a close a possible to the [NativeArray](https://docs.unity3d.com/ScriptReference/Unity.Collections.NativeArray_1.html). But with two caveats:
 
 * The `CopyTo`, `CopyFrom` and `ToArray` functions don't make a lot of sense, how should a sparse array get converted to a normal array? You can use the pulblic field `Indices` and `Data` to get access to the underlying arrays if you'd like to copy to and from `NativeArrays`.
-* Indexing into the the array can add data. For example `array[1]=2` will add an index `1` with data `2`. The array is fixed size, so simple index access can fail if the array is full. Prefer to `IsFull`, `ContainsIndex` and `SetValue` to explicitly add items. Attempting to access or write to a non-existent index will throw  an `ArgumentOutOfRangeException` if `ENABLE_UNITY_COLLECTIONS_CHECKS` is enabled. 
+* Indexing into the the array can add data. For example `array[1]=2` will add an index `1` with data `2`. The array is fixed size, so simple index access can fail if the array is full. It will fail silently fails is collection checks are off. Prefer to `IsFull`, `ContainsIndex` and `AddValue` to explicitly add items and check for errors.
 
 ## Native Collection Extensions
 
