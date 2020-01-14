@@ -11,3 +11,10 @@ NativeCollections cannot hold other native collections.
 
 ## Adding Points
 Multiple points can be added to a single level. Points are first processed into the node AABBs, then bulk added to each node.
+
+Point storage as 4x3
+
+Steps:
+- Convert points to Octree space
+- Convert points to node coordinates
+- 
