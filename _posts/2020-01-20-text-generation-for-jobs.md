@@ -71,3 +71,10 @@ You can even use the text templates to generate the tests. This may seem like a 
 ![Burst Addition Job Tests]({{site.assetsurl}}/images/blog/AdditionJobTests.png "Addition Job Tests")
 
 Very handy. I'm sure I'm going to be using more T4 templates in the future.
+
+Resources
+
+* The [Addition Job Template](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints/Runtime/AdditionJob.tt)
+* The [Addition Job Generated code](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints/Runtime/AdditionJob.gen.cs)
+* The [Addition Job Tests Template](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints/Tests/Editor/AdditionJobTests.tt)
+* The [Addition Job Tests Generated code](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints/Tests/Editor/AdditionJobTests.gen.cs)
