@@ -63,11 +63,11 @@ public struct AdditionJob_<#=TYPE_FULL#> : IJobParallelFor
 
 Running it gives you all the combinations you need.
 
-![Burst Addition Jobs]("{{site.assetsurl}}/images/blog/AdditionJobs.png" "Addition Jobs")
+![Burst Addition Jobs]({{site.assetsurl}}/images/blog/AdditionJobs.png "Addition Jobs")
 
 
 You can even use the text templates to generate the tests. This may seem like a waste of test time, but it actually helped me find precision differences between the `float` and `float4` versions of these jobs.
 
-![Burst Addition Job Tests]("{{site.assetsurl}}/images/blog/AdditionJobTests.png" "Addition Job Tests")
+![Burst Addition Job Tests]({{site.assetsurl}}/images/blog/AdditionJobTests.png "Addition Job Tests")
 
 Very handy. I'm sure I'm going to be using more T4 templates in the future.
