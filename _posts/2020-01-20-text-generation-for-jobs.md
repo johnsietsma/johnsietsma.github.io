@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Generation fro Unity Jobs
+title: Text Generation for Unity Jobs
 tags: t4, text, unity, jobs
 ---
 
