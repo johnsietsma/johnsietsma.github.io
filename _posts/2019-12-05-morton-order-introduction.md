@@ -46,7 +46,7 @@ To make a morton code, we need to get each of the 3 axes and interleave their bi
 [A follow up blog post](https://www.forceflow.be/2016/01/18/libmorton-a-library-for-morton-order-encoding-decoding/) shows that the third method, using a LUT, is faster. But Asger/ryg's method is more readable and I believe, more open to Burst performance optimisations.
 
 
-[Here is the code](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints.octree/Runtime/Morton.cs). I still have to add limits checking and Burst friendly versions.
+[Here is the code](https://github.com/johnsietsma/InfPoints/blob/master/com.infpoints/Runtime/Morton.cs). I still have to add limits checking and Burst friendly versions.
 
 
 # Resources
