@@ -1,10 +1,12 @@
+# Point Cloud
+
 ## Nodes
+
 The nodes are a level index, morton code.
 
 ## Storing Points
 
 Point storage, break the one to one relationship between a node and its points. Allow paged memory, containing points from multiple nodes, with async loading.
-
 
 Requirements:
 
@@ -21,18 +23,31 @@ Requirements:
 
 Points will have their axes stored individually, eg all the 'X's, the all the 'Y's, etc. This allows for easy access to "wide" (SIMD-friendly) processing jobs.
 
+We want to minimize copying as the Octree is being built. Points are added in any order, points for each node should be in contiguous memory. Using a simple array means lots of rearranging points to make this happen.
+
+We want to minimize memory when the Octree is being used. So each node's points can be packed together.
+
 There a few options for storing points:
 
 - In the Octree node. The node could contain a native array. This does suit the requirements of having multiple nodes in one memory chunk and means that the node data is not in contiguous memory anymore.
-- In a mirror data octree. Each level would be a series of chunks. As point are added more chunks are added as needed. Octree is extended to have per-level data. In this case each level would have a series of NativeArrays and give out chunks as NativeSlices. This gives the opportunity to load enter levels, for example level 0 on start. The storage would have to deal with very large data sets. So the memory handle would be a an index to a NativeArray and a NativeSlice into that array.
-- In a node:memory hash map. Simple to set up, kinda complicated to pass to jobs.
+- In a node:memory hash map. Simple to set up, but harder to rearrange and consolidate chunks.
+- Per-level in the octree.
 
+## Per-level Storage
 
+Per-level storage fits with the idea of level by level processing that is being used generally within the Octree. A level can easily be pre-loaded, level 0 for example.
+
+A level may still have billions of points. An array can index up to ‭2,147,483,647‬ points. So multiple arrays need to be used. We'll call those array chunks.
+
+For simplicity each node will get its own chunk at Octree build time. This will get normalized as the Octree is saved.
+
+The each level will have a array of chunks. And a SparseArray of chunk index, NativeSlice pairs. This array can be indexed with the morton code. The chunk index points to a specific chunk, and the NativeSlice gives the slice that contains the points within that chunk.
+
+This will be wrapped up in another native container, NativeSparseChunkArray. This will allow direct iteration of the chunks for use in jobs.
 
 ## Adding Points
+
 Multiple points can be added to a single level. Points are first processed into the node AABBs, then bulk added to each node.
-
-
 
 ## Steps
 
