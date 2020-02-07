@@ -6,6 +6,7 @@ description: "A portfolio of John Sietsma's game development and design work. Jo
 #avatar: /assets/img/ogp.png
 language: en-au
 markdown: kramdown
+highlighter: rouge
 excerpt_separator: <!--more-->
 
 redcarpet:
