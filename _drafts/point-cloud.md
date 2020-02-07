@@ -22,6 +22,7 @@ Requirements:
 - Large storage, must be able to hold GBs of points.
 
 Points will have their axes stored individually, eg all the 'X's, the all the 'Y's, etc. This allows for easy access to "wide" (SIMD-friendly) processing jobs.
+TODO: But this restricts streaming and make code awkward
 
 We want to minimize copying as the Octree is being built. Points are added in any order, points for each node should be in contiguous memory. Using a simple array means lots of rearranging points to make this happen.
 
