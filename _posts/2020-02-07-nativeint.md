@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using ints in Jobs
+title: NativeInt
 tags: unity, jobs
 ---
 ## Passing Data to Jobs
