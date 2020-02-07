@@ -7,6 +7,8 @@ tags: unity, jobs
 
 Jobs in Unity must be `struct`s and must only contain [blittable types](https://docs.microsoft.com/en-us/dotnet/framework/interop/blittable-and-non-blittable-types). This allows jobs to be copyable and for the job system to [enforce thread safety](https://docs.unity3d.com/Manual/JobSystemSafetySystem.html). If I have a job with an `int` field, the value of the `int` is copied and I have no way to get the result of my fancy calculation I performed in the job.
 
+<!--more-->
+
 So how to do [NativeCollections](https://docs.unity3d.com/Manual/JobSystemNativeContainer.html) get data in an out of jobs? Well the quick answer is that they hold a *pointer* to the data, instead of the data itself. So the pointer gets copied, rather then the data. The same data can still be accessed by all the copies of the job through the pointer.
 
 [The current advice](https://forum.unity.com/threads/job-is-struct-no-pointers-allowed-so-how-does-a-job-return-a-value.523339/) for passing simple `int`s into a job is to use a single element `NativeArray`.

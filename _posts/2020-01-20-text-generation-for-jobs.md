@@ -20,6 +20,8 @@ public struct AdditionJob : IJobParallelFor
 }
 ```
 
+<!--more-->
+
 Then you do a quick test and realise that using `float4`s in the job instead of `floats` will allow Burst to use SIMD operations. This cuts the time to add to four million elements to almost a third (from 1.996ms to 0.765ms). So you copy and paste the job for a `float4` version. Later in the project you realise that `int` and `int4` version would be useful as well. So calling on the [Rule of Three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)), you decide to generalise somehow.
 
 You'd like to make jobs for each [Unity.Mathematics](https://github.com/Unity-Technologies/Unity.Mathematics) numeric types; `double`, `float`, `int` and `uint` with the dimensions up to 4. This ends up being a lot of jobs! Unfortunately you can't use [Generics](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/) because there is no addition [constraint](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters). So the only real alternative is to use [T4 text generation](https://docs.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates?view=vs-2019).

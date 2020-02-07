@@ -12,6 +12,8 @@ There are workflows for converting point cloud data into meshes, but the process
 
 I'd like to build an out-of-core point cloud renderer for Unity that solves these issues but keeping parts of the point cloud data on disk and reading in the most important data for the users viewpoint.
 
+<!--more-->
+
 ## Requirements
 
 * The data should be stored on disk in multiple files.

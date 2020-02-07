@@ -10,6 +10,7 @@ For the [out-of-core point cloud renderer I'm working on]({% post_url 2019-11-29
 
 In my first implementation I used Hilbert curves. They guarantee each array index will be a next-door neighbour node, but they are reasonably complex to calculate. Morton order guarantees the 8 children of a node will be contiguous, but there may be discontinuities between those blocks.
 
+<!--more-->
 
 ## What is Morton Order (Z-Order, Lebesgue Curve)
 To store an Octree node in an array, we need a way to convert its 3D coordinate to a 1D array index. 

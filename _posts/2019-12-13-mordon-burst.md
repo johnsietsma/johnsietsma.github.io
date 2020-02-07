@@ -9,6 +9,8 @@ tags: infpoints, point cloud, morton order
 
 So what happens when I turn it on? In order to use Burst, we need to have our code in a job.
 
+<!--more-->
+
 ```csharp
 [BurstCompile(FloatPrecision.Standard, FloatMode.Fast, CompileSynchronously = true)]
 public struct MortonDecodeJob_Packed : IJob

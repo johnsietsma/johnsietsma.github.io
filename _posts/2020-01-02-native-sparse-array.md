@@ -5,9 +5,11 @@ tags: infpoints, pointcloud, sparsearray
 ---
 (Part of a series where I think out loud about an [out-of-core point cloud renderer](https://github.com/johnsietsma/InfPoints) I'm working on.)
 
-A sparse array uss the classic programming trick of adding another layer of indirection. Not by using a pointer, but by adding an abstraction over a traditional array. 
+A sparse array uss the classic programming trick of adding another layer of indirection. Not by using a pointer, but by adding an abstraction over a traditional array.
 
 I'm in the process of building an Octree for use in a [Point Cloud Renderer](https://github.com/johnsietsma/InfPoints). The Octree will store nodes layer by layer. This means that some layers will have mostly empty space. Rather then storing the nodes directly, this sparse array has two arrays, one to store the data and the other to store the indices of the data. The data is always sorted, so a binary search can be used to find data or insertion points for adding data.
+
+<!--more-->
 
 A sparse array is usually slower for large data sets, and a hash map is preferred. But for the point cloud renderer, most of the time will be bulk processing the nodes for culling, etc. So having all the nodes in contiguous memory is just what I want.
 
