@@ -48,7 +48,7 @@ The gotcha with this (and most) container is that jobs are required to have an `
 
 ## Usage
 
-```
+```csharp
 public struct IncrementIntJob : IJobParallelFor
 {
     [DeallocateOnJobCompletion] public NativeInt Count;
