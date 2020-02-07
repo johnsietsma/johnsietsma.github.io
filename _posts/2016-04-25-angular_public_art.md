@@ -10,6 +10,7 @@ I've been wanting to learn more about [Angular.JS](https://angularjs.org/) so ma
 There is an amazing amount of open data on the web. The Australian government has been releasing its data through [data.gov.au](https://data.gov.au/). The dataset of all [Melbourne's public art](https://data.melbourne.vic.gov.au/Assets-Infrastructure/Melbourne-Public-Artwork/6fzs-45an) seemed like a great place to start.
 
 I used the [AngularJS Google Maps directives](https://angular-ui.github.io/angular-google-maps/#!/). It provdes a promise that gets called when Google Maps is loaded and ready to go. Then I fire off a http request to data.gov.au, with yet another promise that extracts the marker data and sets it the data bound markers array.
+<!--more-->
 
 I center the map over Melbourne with an appropraite zoom level and off we go.
 
