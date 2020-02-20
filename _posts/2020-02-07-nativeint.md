@@ -3,6 +3,20 @@ layout: post
 title: NativeInt
 tags: unity, jobs
 ---
+
+## Update (20/02/20)
+
+The `NativeContainerIsAtomicWriteOnly` attribute is required for use in `IJobParallelFor`, but it also means the container is marked as write only! If you use it in a `IJobParallelFor` and attempt to read a value which is checked with `AtomicSafetyHandle.CheckReadAndThrow(m_Safety);`, then you'll get the error `When accessing: InvalidOperationException: The native container has been declared as [WriteOnly] in the job, but you are reading from it.`
+
+So two separate containers are required.
+
+* A write only container that uses the `NativeContainerIsAtomicWriteOnly` attribute.
+* A read and write container without this attribute for use in `IJob`s. You can optional mark this as read only with the `[ReadOnly]` attribute.
+
+Note you can use a container that is not marked as atomic write only in an IJobParallelFor if the field in the job has a `NativeDisableParallelForRestriction` attribute.
+
+This impossible without copying and pasting code. `struct`s don't have inheritance, you can't use an interface in a job. You can't use a third shared class for implementation with two light wrappers around it. The `DisposeSentinel` is not blittable and can't be used in this class. So none of the safety checks can go in the third class. Which in this case is the majority of the code.
+
 ## Passing Data to Jobs
 
 Jobs in Unity must be `struct`s and must only contain [blittable types](https://docs.microsoft.com/en-us/dotnet/framework/interop/blittable-and-non-blittable-types). This allows jobs to be copyable and for the job system to [enforce thread safety](https://docs.unity3d.com/Manual/JobSystemSafetySystem.html). If I have a job with an `int` field, the value of the `int` is copied and I have no way to get the result of my fancy calculation I performed in the job.
@@ -37,7 +51,7 @@ But we can use [interlocked methods](https://docs.microsoft.com/en-us/dotnet/api
 
 ## NativeInt
 
-There are already a couple of implmentations that use `int` pointers and interlocked functions.
+There are already a couple of implementations that use `int` pointers and interlocked functions.
 
 - In the [Unity Custom Containers sample code](https://docs.unity3d.com/Packages/com.unity.jobs@0.0/manual/custom_job_types.html#custom-nativecontainers). It's a great start and shows a non-interlocked per-thread counter.
 - [NativeIntPtr](https://github.com/jacksondunstan/NativeCollections/blob/master/JacksonDunstanNativeCollections/NativeIntPtr.cs) by Jackson Dunstan. His implementation has a non-thread-safe container with a separate `Parallel` interface that uses the interlocked methods. I'd prefer to just have one, thread-safe interface.
