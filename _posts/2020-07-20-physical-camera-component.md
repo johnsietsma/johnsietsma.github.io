@@ -21,3 +21,22 @@ Current features:
 Here's a short tutorial video on the the physical camera settings and using this component to frame and expose a shot.
 
 [![Framing and Exposure using Unity's HDRP Physical Camera](https://img.youtube.com/vi/loddo4XcYng/0.jpg)](https://youtu.be/loddo4XcYng)
+
+<!--more-->
+
+
+Wide shot:
+
+![Wide Shot]({{ site.assetsurl }}/images/physical_camera/close2.PNG){:height="40%" width="40%"}
+
+Narrow shot:
+
+![Narrow Shot]({{ site.assetsurl }}/images/physical_camera/narrow1.PNG){:height="40%" width="40%"}
+
+Dolly Zoom:
+
+![Dolly Zoom]({{ site.assetsurl }}/images/physical_camera/DollyZoom.gif){:height="40%" width="40%"}
+
+Lock Exposure - Change F/Stop for Depth of Field effect without ruining exposure:
+
+![Lock Exposure]({{ site.assetsurl }}/images/physical_camera/LockExposure.gif){:height="40%" width="40%"}

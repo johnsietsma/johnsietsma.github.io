@@ -36,7 +36,7 @@ The implmentation is in ThreeJs/WebGL, check the source code of this page for de
 {% include shaders/fluid/flowFluid.frag %}
 {% include shaders/fluid/smokeFluid.frag %}
 
-<script src="{{ '/js/DoubleBufferedRenderTarget.js'' | prepend: site.assetsurl }}"></script>
+<script src="{{ '/js/DoubleBufferedRenderTarget.js' | prepend: site.assetsurl }}"></script>
 
 <script>
 
