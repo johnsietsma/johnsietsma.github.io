@@ -9,7 +9,7 @@ date: 2020-07-20
 to-date: 2020-07-20
 platforms: [Unity]
 technologies: [Unity, C#, .NET, C/C++, Kinect, Point Cloud Library, Image Processing]
-splash: "/images/physical_camera/PhysicalCameraComponent.PNG"
+splash: "/images/physical_camera/PhysicalCameraControlComponent.PNG"
 ---
 
 ![Physical Camera Control]({{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG)
