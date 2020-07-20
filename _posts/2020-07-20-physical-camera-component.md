@@ -4,7 +4,7 @@ title: Physical Camera Component
 tags: unity, hdrp, camera
 ---
 
-![Physical Camera Control]('{{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG')
+![Physical Camera Control]({{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG)
 
 Unity HDRP has a physical section on it's camera component. It mimics real=life camera settings like sensor, size, ISO, focal length and aperture. These settings are used by the camera itself, but also by other systems that affect rendering, like the `Exposure` and `Depth of Field` volume overrides.
 
