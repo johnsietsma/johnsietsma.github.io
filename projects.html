@@ -9,7 +9,7 @@ title: John Sietsma
             <h2 class="col-md-12">Projects</h2>
         </div>
         <div class="row">
-            {% assign sorted_pages = site.pages | sort:"date" %}
+            {% assign sorted_pages = site.pages | sort:"date" reversed %}
             {% for page in sorted_pages %}
             {% if page.categories contains 'project' %}
             <a href="{{ page.url }}">
