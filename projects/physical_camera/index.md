@@ -12,7 +12,9 @@ technologies: [Unity, C#, .NET, C/C++, Kinect, Point Cloud Library, Image Proces
 splash: "/images/physical_camera/close2.PNG"
 ---
 
-![Physical Camera Control]({{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG)
+[![Physical Camera Control]({{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG)](https://github.com/johnsietsma/PhysicalCameraControl)
+
+Find the project on [Github](https://github.com/johnsietsma/PhysicalCameraControl).
 
 Unity HDRP has a physical section on it's camera component. It mimics real-life camera settings like sensor, size, ISO, focal length and aperture. These settings are used by the camera itself, but also by other systems that affect rendering, like the `Exposure` and `Depth of Field` volume overrides.
 

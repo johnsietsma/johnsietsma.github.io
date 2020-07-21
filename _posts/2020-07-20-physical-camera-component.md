@@ -4,7 +4,7 @@ title: Physical Camera Component
 tags: unity, hdrp, camera
 ---
 
-![Physical Camera Control]({{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG)
+[![Physical Camera Control]({{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG)](https://github.com/johnsietsma/PhysicalCameraControl)
 
 Unity HDRP has a physical section on it's camera component. It mimics real-life camera settings like sensor, size, ISO, focal length and aperture. These settings are used by the camera itself, but also by other systems that affect rendering, like the `Exposure` and `Depth of Field` volume overrides.
 
@@ -17,6 +17,8 @@ Current features:
 * Standard camera presets for ISO, F/Stop and focal lengths.
 * Exposure locking by automatically adjusting shutter speed or aperture settings. Makes it easy to set up depth of field.
 * Dolly zoom to make it easy to frame a shot while adjusting the focal length.
+
+Find the project on [Github](https://github.com/johnsietsma/PhysicalCameraControl).
 
 Here's a short tutorial video on the the physical camera settings and using this component to frame and expose a shot.
 
