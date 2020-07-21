@@ -9,7 +9,7 @@ order: 1
 date: 2020-07-21
 to-date: 2020-07-21
 platforms: [Unity]
-technologies: [Unity, C#, .NET, Oculus Quest, Oculus Rift]
+technologies: [Unity, C#, .NET, VR, Oculus Quest, Oculus Rift]
 splash: "/images/radiation/com.UoN.Radiation2.jpg"
 ---
 

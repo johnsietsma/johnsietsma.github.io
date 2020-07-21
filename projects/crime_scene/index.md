@@ -9,7 +9,7 @@ order: 1
 date: 2020-03-20
 to-date: 2020-03-20
 platforms: [Unity]
-technologies: [Unity, C#, .NET, Oculus Quest, Oculus Rift]
+technologies: [Unity, C#, .NET, VR, Oculus Quest, Oculus Rift]
 splash: "/images/crime_scene/Capture17_thumb.PNG"
 ---
 
