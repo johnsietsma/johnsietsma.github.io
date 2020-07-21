@@ -25,7 +25,7 @@ layout: main
               <h2>Latest Posts</h2>
 
               <ul>
-                  {% for post in site.posts | limit: site.recent_posts_num %}
+                  {% for post in site.posts limit: site.recent_posts_num %}
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                           <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
