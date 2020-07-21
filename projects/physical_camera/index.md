@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Personal
+title: Physical Camera Component
 www: http://johnsietsma.com/
 categories: [project]
 position: Developer
@@ -8,8 +8,8 @@ order: 1
 date: 2020-07-20
 to-date: 2020-07-20
 platforms: [Unity]
-technologies: [Unity, C#, .NET, C/C++, Kinect, Point Cloud Library, Image Processing]
-splash: "/images/physical_camera/close2.PNG"
+technologies: [Unity, HDRP, C#, .NET]
+splash: "/images/physical_camera/close2_thumb.PNG"
 ---
 
 [![Physical Camera Control]({{ site.assetsurl }}/images/physical_camera/PhysicalCameraControlComponent.PNG)](https://github.com/johnsietsma/PhysicalCameraControl)
@@ -32,6 +32,14 @@ Here's a short tutorial video on the the physical camera settings and using this
 
 [![Framing and Exposure using Unity's HDRP Physical Camera](https://img.youtube.com/vi/loddo4XcYng/0.jpg)](https://youtu.be/loddo4XcYng)
 
+Dolly Zoom - Change Focal Length while keeping the same objects in frame:
+
+![Dolly Zoom]({{ site.assetsurl }}/images/physical_camera/DollyZoom.gif){:height="60%" width="60%"}
+
+Lock Exposure - Change F/Stop for Depth of Field effect without ruining exposure:
+
+![Lock Exposure]({{ site.assetsurl }}/images/physical_camera/LockExposure.gif){:height="60%" width="60%"}
+
 Wide shot:
 
 ![Wide Shot]({{ site.assetsurl }}/images/physical_camera/close2.PNG){:height="60%" width="60%"}
@@ -40,10 +48,3 @@ Narrow shot:
 
 ![Narrow Shot]({{ site.assetsurl }}/images/physical_camera/narrow1.PNG){:height="60%" width="60%"}
 
-Dolly Zoom:
-
-![Dolly Zoom]({{ site.assetsurl }}/images/physical_camera/DollyZoom.gif){:height="60%" width="60%"}
-
-Lock Exposure - Change F/Stop for Depth of Field effect without ruining exposure:
-
-![Lock Exposure]({{ site.assetsurl }}/images/physical_camera/LockExposure.gif){:height="60%" width="60%"}

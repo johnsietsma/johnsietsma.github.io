@@ -165,6 +165,13 @@ code {
   margin-top: 20px;
   box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
   border-bottom: 5px solid $light-blue;
+
+  img {
+    width: 40%;
+    height: 40%;
+    border-width: thin;
+    padding: 2px;
+  }
 }
 
 .post-content {
@@ -265,7 +272,8 @@ code {
   border-width: medium;
   border-style: solid;
   border-color: $border_color;
-  color: $dark_slate;
+  color: $light;
+  background-size: cover;
 }
 
 .project {
@@ -285,15 +293,20 @@ code {
 }
 
 .greyscale {
-  filter: grayscale(50%);
-  -webkit-filter: grayscale(80%);  /* For Webkit browsers */
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);  /* For Webkit browsers */
   filter: gray;  /* For IE 6 - 9 */
   -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+  background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
 }
 
 .project:hover {
   filter: none;
   -webkit-filter: none;
+  background-blend-mode: normal;
+  background-size: cover;
 }
 
 .screen-shot img {
