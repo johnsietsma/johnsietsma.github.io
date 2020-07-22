@@ -3,12 +3,16 @@ layout: project
 title: Speaking
 www: http://johnsietsma.com/
 categories: [project]
-position: Presenter
+position: Technical Evangelist
 order: 1
 date: 3000-01-01
 to-date: 3000-01-01
 splash: "/images/speaking/Speaking_thumb.PNG"
 ---
+
+As a Technical Evangelist for Unity I spent a lot of my time speaking and presenting. This includes being part of the Unite Conference keynote 3 years in a row, running roadshows around Australia and New Zealand and speaking at many conferences.
+
+Here's a selection fo talks and workshops I delivered.
 
 Extending the Lightweight Render Pipeline
 

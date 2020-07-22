@@ -1,8 +1,7 @@
 <h1>{{page.title}}</h1>
 <ul>
-  <li>Position: {{page.position}}</li>
-  <li>Platforms: {{page.platforms | join: ', '}}</li>
-  <li>Technologies: {{page.technologies | join: ', '}}
+{% if page.platforms %}  <li>Platforms: {{page.platforms | join: ', '}}</li>{% endif} %}
+{% if page.technologies %}    <li>Technologies: {{page.technologies | join: ', '}}{% endif %}  
 <br />
 <br /></li>
 </ul>
