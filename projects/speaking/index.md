@@ -7,7 +7,7 @@ position: Technical Evangelist
 order: 1
 date: 3000-01-01
 to-date: 3000-01-01
-splash: "/images/speaking/Speaking_thumb.PNG"
+splash: "/images/speaking/Speaking_thumb.png"
 ---
 
 As a Technical Evangelist for Unity I spent a lot of my time speaking and presenting. This includes being part of the Unite Conference keynote 3 years in a row, running roadshows around Australia and New Zealand and speaking at many conferences.
