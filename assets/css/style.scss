@@ -57,7 +57,7 @@ $small_font: 1em "Glegoo";
  body {
   font: $normal_font;
   color: $light;
-  background-color: $light;
+  background-color: $medium;
   height: 100%;
   width: 100%;
 }
@@ -188,7 +188,7 @@ code {
 
 .header {
   font-size: $header-font;
-  background-color: $dark;
+  background-color: $darker;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
@@ -268,6 +268,10 @@ code {
 /*
  * Project styles
  */ 
+
+.projects {
+  color: $light;
+}
 
 .project-square {
   height: 12em;
