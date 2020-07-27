@@ -1,21 +1,22 @@
 ---
 layout: project
-title: AR Environment Lighting
+title: QODE Virtual Conference
 www: http://johnsietsma.com/
 categories: [project]
 position: Developer
 order: 1
-date: 2018-04-19
-to-date: 2018-04-19
+date: 2020-03-26
+to-date: 2020-03-26
 platforms: [Unity]
-technologies: [Unity, C#, .NET, Shaders]
-splash: "/images/arlighting/kyle_walking_thumb.gif"
+technologies: [Unity, C#, .NET]
+splash: "/images/qode/Qode_thumb.gif"
 ---
 
-![Kyle Walking]({{ site.assetsurl }}/images/arlighting/kyle_walking.gif))
+![QODE Virtual Conference]({{ site.assetsurl }}/images/qode/qode.png)
 
-Before ARCore and ARKit added environmental lighting it was a real challenge to make AR content look like it was part of the real world.
+The [QODE conference](https://qodebrisbane.com/) in Brisbane was in danger of being cancelled due to Covid-19. [Visitor Vision](http://visitor.vision/) stepped in to make a virtual exhibition space to help keep the conference going.
 
-I implemented a custom lighting solution in Unity that used the camera feed to add lighting and reflections to the virtual content. Not perfect at all, but it really made the content feel like it belonged.
+I helped get this done on a very tight timeline by contributing to the virtual attendee AI.
 
-Find the project on [Github](https://github.com/johnsietsma/ARCameraLighting).
+![QODE Tweet 1]({{ site.assetsurl }}/images/qode/qode_tweet1.png)
+![QODE Tweet 2]({{ site.assetsurl }}/images/qode/qode_tweet2.png)

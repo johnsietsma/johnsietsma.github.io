@@ -12,7 +12,7 @@ technologies: [Unity, HoloLens, Mixed Reality]
 splash: "/images/pmmr/PlayMakerMR.jpg"
 ---
 
-The PlayMaker Mixed Reality Add-on was a way to use visual scripting to develop for the HoloLens. Most people who wanted to use the HoloLens were not necessarily developers, this really held back the uptake and experimentation on the platform.
+The PlayMaker Mixed Reality Add-on was a way to use visual scripting to develop for the HoloLens. Most people who wanted to use the HoloLens were not necessarily developers, this really held back the uptake and experimentation on the platform. This was a personal project that I worked on to help people start creating on this platform.
 
 I released this open source add-on via [Github](https://github.com/johnsietsma/PlayerMakerWindowsMixedReality) and the Unity Asset Store.
 

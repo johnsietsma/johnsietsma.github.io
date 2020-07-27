@@ -13,7 +13,9 @@ technologies: [Unity, C#, .NET, VR, Aimsun, Protocol Buffers, Sockets]
 splash: "/images/aimsun/Micro-non-lane-based.gif"
 ---
 
-As part of Unity's professional services I developed a virtual freeway project for [Main Roads Western Australia](https://www.mainroads.wa.gov.au).
+We launched Unity Professional services to help up-skill developers and complete difficult projects.
+
+One of the first projects we worked on was a virtual freeway project for [Main Roads Western Australia](https://www.mainroads.wa.gov.au). I almost exclusively drove this challenging project; from gathering requirements, scoping, training and completion the first stage.
 
 Main Roads Western Australia use [Aimsun NEXT](https://www.aimsun.com/aimsun-next/) for traffic simulation when working freeway projects. Without a 3D simulation it can be difficult to visualize the impact of changes and to communicate changes to key stakeholders.
 

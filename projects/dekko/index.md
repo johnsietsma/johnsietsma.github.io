@@ -27,6 +27,10 @@ We published two demos to the app store, Dekko Monkey and Table Top Speed. Table
   </div>
 </div>
 
+I gave talk on design lessons learnt at Dekko: AWE - Mobile AR Design: From Start to Finish
+
+[![Mobile AR Design: From Start to Finish](https://img.youtube.com/vi/skMim823U5s/0.jpg)](https://youtu.be/skMim823U5s)
+
 
 ## Press
 - [Tech Crunch: TableTop Speed](http://techcrunch.com/2013/06/09/dekko-2/)

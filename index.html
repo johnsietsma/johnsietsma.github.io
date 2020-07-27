@@ -12,8 +12,8 @@ layout: main
             <h1 class="author-header" itemprop="headline">{{ site.title }}</h1>
 
             <div class="author-text">
-                <p>I'm a developer and educator. Speaking about Unity and AR at conferences and workshops. I love figuring out ways to use technology to create new and interesting experiences.</p>
-                <p>While you're here, checkout my <a href="{{ '/projects' | prepend: site.baseurl }}">projects</a>, <a href="{{ '/blog/index.html' | prepend: site.baseurl }}">blog</a> or <a href="https://sketchfab.com/john.sietsma/models">photogrammetry models</a></p>
+                <p>A creative technologist. Bridging the divide between creativity, technology and business.</p>
+                <p>While you're here, checkout my <a href="{{ '/projects' | prepend: site.baseurl }}">projects</a> and <a href="{{ '/blog/index.html' | prepend: site.baseurl }}">blog</a>.</p>
             </div>
 
             {% include social_links.html %}
@@ -25,7 +25,7 @@ layout: main
               <h2>Latest Posts</h2>
 
               <ul>
-                  {% for post in site.posts limit: site.recent_posts_num %}
+                  {% for post in site.posts limit: 5 %}
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                           <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
