@@ -2,7 +2,7 @@ url: https://johnsietsma.com
 baseurl: "" # using the full domain here causes issues running Jekyll locally.
 assetsurl: /assets
 title: John Sietsma
-description: "A portfolio of John Sietsma's game development and design work. John Sietsma has experience with Unity 3D, C#, .NET, Mono, WebGL, JavaScript, Python, Django and C/C++."
+description: "John Sietsma is a creative technologist in Newcastle, Australia. Real-time 3D, 3D capture and machine learning: photogrammetry, Gaussian splatting, Unity, computer vision."
 #avatar: /assets/img/ogp.png
 language: en-au
 markdown: kramdown
