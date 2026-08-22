@@ -1,4 +1,3 @@
-a
 ---
 layout: portfolio
 title: Education
@@ -7,7 +6,6 @@ order: 4
 date: 2001-03-01
 ---
 
-#Education
+## Education
 
-- Master of Technology (Intelligent Systems). Minor thesis on modelling emotions in NPCs.
--
+- Master of Technology (Intelligent Systems), RMIT University. Minor thesis on modelling emotions in NPCs.

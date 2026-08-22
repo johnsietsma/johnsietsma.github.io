@@ -1,4 +1,4 @@
-url: http://johnsietsma.com
+url: https://johnsietsma.com
 baseurl: "" # using the full domain here causes issues running Jekyll locally.
 assetsurl: /assets
 title: John Sietsma
@@ -50,7 +50,7 @@ icons:
 permalink: pretty
 
 ogp:
-  image_url: http://www.johnsietsma.com/assets/images/profile_512.jpg
+  image_url: https://www.johnsietsma.com/assets/images/profile_512.jpg
   fb:
     admin: # facebook admin id
     app_id: # facebook application id
@@ -59,7 +59,9 @@ ogp:
 #
 # Scripts.
 #
-google_analytics: UA-44034071-2
+# Universal Analytics was shut down July 2023 - this property collected nothing
+# after that date. Disabled until replaced (GA4 / Plausible).
+#google_analytics: UA-44034071-2
 google_site_verification: "9js9QIDMT2cmliNmP3SqMg42Vo6OwUxsmpWoiPq6KWc"
 
 #
