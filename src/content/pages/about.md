@@ -50,11 +50,6 @@ objects into Gaussian splats and archival-quality meshes. A museum shouldn't nee
 $50,000 scanner to put an object online. Most collections hold millions of items and give
 each one a single flat photograph.
 
-What matters most to me is who ends up holding the result. The model I'm working from is
-Factum Foundation's: go to the site, train local practitioners, leave the capability
-behind, licence the finished assets back to the community the heritage came from. A
-production-ready 3D asset is an economic instrument. It should belong to the people whose
-heritage it is, not to whoever turned up with the camera.
 
 I'm in Newcastle, Australia. I write about what I learn, I publish the methodology, and
 I'm interested in work where the 3D is pointed at something worth keeping.
