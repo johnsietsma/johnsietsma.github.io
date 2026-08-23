@@ -12,7 +12,7 @@ tags:
 
 # Fluid Simulation to Generate a Flow Map
 
-Here is a proof of concept of using a 2D fluid simluation to generate a [Flow Map]({% post_url 2015-12-01-flow-maps %}). This follows on from my [Fluid/Flow Map ShaderToy experiment]({% post_url 2016-04-13-fluid-flow-shadertoy %}) to do the same thing, except here I have a much better fluid simulation.
+Here is a proof of concept of using a 2D fluid simluation to generate a [Flow Map](/posts/flow-maps/). This follows on from my [Fluid/Flow Map ShaderToy experiment](/posts/fluid-flow-shadertoy/) to do the same thing, except here I have a much better fluid simulation.
 
 **Press the 'f' key to swap between the fluid simulation and the flow map**. When the flow map is being displayed the fluid simulation stops. 
 

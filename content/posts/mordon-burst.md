@@ -10,7 +10,7 @@ tags:
 
 (Part of a series where I think out loud about an [out-of-core point cloud renderer](https://github.com/johnsietsma/InfPoints) I'm working on.)
 
-[Morton encoding]({% post_url 2019-12-05-morton-order-introduction %}) is a perfect set up for [Burst](https://docs.unity3d.com/Packages/com.unity.burst@latest/index.html), lots of data in a row to crunch!
+[Morton encoding](/posts/morton-order-introduction/) is a perfect set up for [Burst](https://docs.unity3d.com/Packages/com.unity.burst@latest/index.html), lots of data in a row to crunch!
 
 So what happens when I turn it on? In order to use Burst, we need to have our code in a job.
 

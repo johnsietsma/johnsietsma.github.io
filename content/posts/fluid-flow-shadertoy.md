@@ -10,7 +10,7 @@ tags:
 ---
 
 
-Following on from my previous [Flow Map post]({% post_url 2015-12-01-flow-maps %}), I wanted to see what flow maps would look like with maps generated in real time using a fluid sim.
+Following on from my previous [Flow Map post](/posts/flow-maps/), I wanted to see what flow maps would look like with maps generated in real time using a fluid sim.
 
 
 
