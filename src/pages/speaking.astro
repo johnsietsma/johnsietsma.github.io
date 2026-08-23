@@ -1,36 +1,16 @@
 ---
-import { getEntry, render } from "astro:content";
-import Layout from "@/layouts/Layout.astro";
-import Header from "@/components/Header.astro";
-import Breadcrumb from "@/components/Breadcrumb.astro";
-import Main from "@/components/Main.astro";
-import Footer from "@/components/Footer.astro";
-import config from "@/config";
+import { Content as SpeakingContent } from "@/prose/speaking.md";
+import PageLayout from "@/layouts/Base.astro";
 
-const speaking = await getEntry("pages", "speaking");
-
-if (!speaking) {
-  throw new Error(
-    "Missing content entry: `speaking.md` in `src/content/pages/`"
-  );
-}
-
-const { Content } = await render(speaking);
+const meta = {
+	description: "Talks, keynotes, workshops and conference papers.",
+	title: "Speaking",
+};
 ---
 
-<Layout
-  title={`${speaking.data.title} | ${config.site.title}`}
-  description={speaking.data.description}
-  ogImage={speaking.data.ogImage}
-  canonicalURL={speaking.data.canonicalURL}
->
-  <Header />
-
-  <Breadcrumb />
-
-  <Main pageTitle={speaking.data.title} class="app-prose">
-    <Content />
-  </Main>
-
-  <Footer />
-</Layout>
+<PageLayout meta={meta}>
+	<h1 class="title mb-12">Speaking</h1>
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<SpeakingContent />
+	</div>
+</PageLayout>

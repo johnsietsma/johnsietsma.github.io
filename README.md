@@ -1,23 +1,24 @@
 # johnsietsma.com
 
-Personal site: blog (Gaussian splatting, photogrammetry, graphics), portfolio, about.
+Personal site: blog and notes (Gaussian splatting, photogrammetry, graphics), portfolio, about.
 
-Built with [Astro](https://astro.build) on the [AstroPaper](https://github.com/satnaing/astro-paper) theme (MIT).
+Built with [Astro](https://astro.build) on the [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus) theme (MIT).
 Deployed to GitHub Pages via `.github/workflows/deploy.yml`.
 
 ## Develop
 
     npm install
     npm run dev      # local preview at localhost:4321
-    npm run build    # type check + build + search index
+    npm run build
 
 ## Layout
 
-- `src/content/posts/` - blog posts (markdown)
-- `src/content/portfolio/` - project pages
-- `src/content/pages/` - about, speaking
-- `public/assets/` - images, legacy three.js runtime for 2015-16 posts
-- `astro-paper.config.ts` - site config (title, socials, features)
+- `content/posts/` - blog posts (markdown)
+- `content/notes/` - short-form notes
+- `content/portfolio/` - project pages
+- `src/prose/` - about and speaking page content
+- `public/assets/` - images, legacy three.js runtime for the 2015-16 posts
+- `src/site.config.ts` - site config (title, nav, socials)
 
 Old Jekyll post URLs (`/YYYY/MM/DD/slug/`) redirect to `/posts/slug/` via
 `redirects` in `astro.config.ts`.

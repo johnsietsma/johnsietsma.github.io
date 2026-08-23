@@ -1,50 +1,72 @@
 import { defineCollection } from "astro:content";
-import { z } from "astro/zod";
 import { glob } from "astro/loaders";
-import config from "@/config";
+import { z } from "astro/zod";
 
-export const BLOG_PATH = "src/content/posts";
+function removeDupsAndLowerCase(array: string[]) {
+	return [...new Set(array.map((str) => str.toLowerCase()))];
+}
 
-const posts = defineCollection({
-  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: `./${BLOG_PATH}` }),
-  schema: ({ image }) =>
-    z.object({
-      author: z.string().default(config.site.author),
-      pubDatetime: z.date(),
-      modDatetime: z.date().optional().nullable(),
-      title: z.string(),
-      featured: z.boolean().optional(),
-      draft: z.boolean().optional(),
-      tags: z.array(z.string()).default(["others"]),
-      ogImage: image().or(z.string()).optional(),
-      description: z.string(),
-      canonicalURL: z.string().optional(),
-      hideEditPost: z.boolean().optional(),
-      timezone: z.string().optional(),
-    }),
+const titleSchema = z.string().max(60);
+
+const baseSchema = z.object({
+	title: titleSchema,
 });
 
-const pages = defineCollection({
-  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/pages" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    ogImage: z.string().optional(),
-    canonicalURL: z.string().optional(),
-  }),
+const post = defineCollection({
+	loader: glob({ base: "./content/posts", pattern: "**/*.{md,mdx}" }),
+	schema: ({ image }) =>
+		baseSchema.extend({
+			description: z.string(),
+			coverImage: z
+				.object({
+					alt: z.string(),
+					src: image(),
+				})
+				.optional(),
+			draft: z.boolean().default(false),
+			ogImage: z.string().optional(),
+			tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
+			publishDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val)),
+			updatedDate: z
+				.string()
+				.optional()
+				.transform((str) => (str ? new Date(str) : undefined)),
+			pinned: z.boolean().default(false),
+		}),
+});
+
+const note = defineCollection({
+	loader: glob({ base: "./content/notes", pattern: "**/*.{md,mdx}" }),
+	schema: baseSchema.extend({
+		description: z.string().optional(),
+		publishDate: z.iso
+			.datetime({ offset: true }) // Ensures ISO 8601 format with offsets allowed (e.g. "2024-01-01T00:00:00Z" and "2024-01-01T00:00:00+02:00")
+			.transform((val) => new Date(val)),
+	}),
+});
+
+const tag = defineCollection({
+	loader: glob({ base: "./content/tags", pattern: "**/*.{md,mdx}" }),
+	schema: z.object({
+		title: titleSchema.optional(),
+		description: z.string().optional(),
+	}),
 });
 
 const portfolio = defineCollection({
-  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/portfolio" }),
-  schema: z
-    .object({
-      title: z.string(),
-      position: z.string().optional(),
-      organization: z.string().optional(),
-      www: z.string().optional(),
-      splash: z.string().optional(),
-    })
-    .passthrough(),
+	loader: glob({ base: "./content/portfolio", pattern: "**/*.{md,mdx}" }),
+	schema: z
+		.object({
+			title: z.string(),
+			position: z.string().optional(),
+			organization: z.string().optional(),
+			www: z.string().optional(),
+			splash: z.string().optional(),
+		})
+		.passthrough(),
 });
 
-export const collections = { posts, pages, portfolio };
+export const collections = { post, note, tag, portfolio };
