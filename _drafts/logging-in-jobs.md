@@ -1,1 +1,0 @@
-Using static fixed strings.

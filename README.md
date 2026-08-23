@@ -1,15 +1,23 @@
-JohnSietsma.com
-===============
+# johnsietsma.com
 
-My portfolio site. (http://johnsietsma.com)
+Personal site: blog (Gaussian splatting, photogrammetry, graphics), portfolio, about.
 
-Use Jekyll with a Less plugin.
+Built with [Astro](https://astro.build) on the [AstroPaper](https://github.com/satnaing/astro-paper) theme (MIT).
+Deployed to GitHub Pages via `.github/workflows/deploy.yml`.
 
-# Running locally
-Simply run Jekyll from the 'www' directory.
+## Develop
 
-Alternatively run './start_server.sh' in the Vagrant shell.
+    npm install
+    npm run dev      # local preview at localhost:4321
+    npm run build    # type check + build + search index
 
-# Using Vagrant
-Run 'vag up' to get a virtual machine with all dependencies installed.
-Jekyll will be started automatically.
+## Layout
+
+- `src/content/posts/` - blog posts (markdown)
+- `src/content/portfolio/` - project pages
+- `src/content/pages/` - about, speaking
+- `public/assets/` - images, legacy three.js runtime for 2015-16 posts
+- `astro-paper.config.ts` - site config (title, socials, features)
+
+Old Jekyll post URLs (`/YYYY/MM/DD/slug/`) redirect to `/posts/slug/` via
+`redirects` in `astro.config.ts`.
