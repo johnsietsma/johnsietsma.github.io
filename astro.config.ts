@@ -26,7 +26,6 @@ export default defineConfig({
     "/2015/12/01/flow-maps/": "/posts/flow-maps/",
     "/2016/04/13/fluid-flow-shadertoy/": "/posts/fluid-flow-shadertoy/",
     "/2016/04/14/fluids-threejs/": "/posts/fluids-threejs/",
-    "/2016/04/25/angular_public_art/": "/posts/angular_public_art/",
     "/2019/11/29/infinite-points-introduction/": "/posts/infinite-points-introduction/",
     "/2019/12/05/morton-order-introduction/": "/posts/morton-order-introduction/",
     "/2019/12/13/mordon-burst/": "/posts/mordon-burst/",
