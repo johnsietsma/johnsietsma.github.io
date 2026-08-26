@@ -13,7 +13,10 @@ I've been working on a capture app. The primary purpose is to capture objects an
 present them in the best way possible. This could be a sculpture in a gallery, an important
 cultural artefact, or a product you'd like to have on your shopfront.
 
-Here is a pair of shoes I've captured. No expensive cameras, no markers, no lighting setup.
+Here is a pair of shoes I've captured with the app.
+
+It's early days, but I'm aiming to add custom lighting, virtual cameras and sharing. It's
+virtual production for real-world objects.
 
 Drag the handle: the left half is the photograph, the right half is the reconstruction
 rendered from the same camera position, with the room removed.
