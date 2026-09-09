@@ -1,54 +1,18 @@
+I like to make things, mostly in 3D (games, XR, point clouds, Gaussian splats). Lately that means 3D capture and machine learning. I've been a programmer, a technical lead, a co-founder, a teacher and a technical evangelist, and the thread through all of it is building something and then showing people how it works.
 
+I started in AI, back when that meant something different. I helped build a neural-network search engine that answered plain-English questions, did a Master's in Intelligent Systems, and wrote a thesis on giving game characters emotions.
 
-I started out in artificial intelligence, which meant something different then. I helped
-commercialise a neural-network search engine that categorised documents and answered
-questions posed in plain English, for clients like Telstra and Intel. I followed it with a
-Master's in intelligent systems, specialising in agent systems, and wrote a thesis on
-modelling emotions in non-player characters.
+Then I spent a long time making games. I ran the tech team at Transmission Games, where we rebuilt London from OpenStreetMap data. I led programming at Big Ant. I was a co-director at League of Geeks working on [Armello](/portfolio/armello/). I was the only programmer on [Oscura Lost Light](/portfolio/clf/). Games taught me about performance and hardware as well as psychology and human experience.
 
-Then I moved into real-time 3D and spent a long stretch making games.
+After that I got interested in putting the real world into the picture. At [Dekko](/portfolio/dekko/) in San Francisco I built Augmented Reality on the iPhone before ARKit existed: no markers, no depth sensor, just the camera. At [Many Monkeys](/portfolio/many_monkeys/) I wired rooms full of Kinects together to turn spaces into playgrounds. At the [University of Newcastle](/portfolio/uon/) I built VR classrooms, a crime scene for criminology students and a radiation lab for physics.
 
-I led a technology team at Transmission Games, where we rebuilt London from OpenStreetMap
-data so players could fly across a hundred square kilometres of it. I led the programming
-team at Big Ant. I co-directed League of Geeks and architected [Armello](/portfolio/armello/),
-a turn-based multiplayer game, largely single-handedly. I was the sole programmer on
-[Oscura Lost Light](/portfolio/clf/).
+For a few years I was Unity's Technical Evangelist for Australia and New Zealand. I wrote shaders that still ship in AR Foundation, helped run a 500-person conference three years running, and taught rendering to everyone from primary school kids to conference halls. I specialised in XR and worked closely with Microsoft and the Hololens.
 
-Games taught me the thing I've used ever since: how to make real-time 3D work under hard
-constraints, and how to make a place feel like somewhere you could actually be.
+More recently I've worked closer to the data. I led a team processing rail point clouds at scale, then did a run of machine learning projects: tracking players from broadcast footage, measuring athletes from phone video, and an acoustics recogniser that could be fine-tuned by audio experts for different applications. That one became a paper at Inter-Noise 2026.
 
-Then I got interested in the real world getting into the frame. At
-[Dekko](/portfolio/dekko/), a San Francisco startup, I built augmented reality on iPad
-where virtual objects interacted with real surfaces, with no markers and no depth sensor,
-just the camera. At [Many Monkeys](/portfolio/many_monkeys/) I wired networks of Kinects
-together to reconstruct physical spaces as point clouds for installations. At the
-[University of Newcastle](/portfolio/uon/) I built VR learning experiences: a crime scene
-for criminology students, a radiation lab for physics students.
+Now I'm building CultCap: a phone app and pipeline that turns a walk around an object into detailed 3D. I want a regional museum to be able to put its collection online without a $50,000 scanner. I've written about [why I'm doing this](/posts/cultcap-why-im-doing-this/).
 
-Somewhere in there I became Unity's Technical Evangelist for Australia and New Zealand. We
-doubled the business year on year. I wrote core shaders that still ship in AR Foundation,
-helped put on a 500-person conference three years running, and taught shaders and
-rendering to everyone from primary schoolers to conference halls. I've taught game
-programming at university level and started an after-school games club at a primary
-school. Teaching is the part I've never wanted to stop doing.
-
-More recently I've worked closer to the data. I led a team of six on rail infrastructure,
-processing point clouds at a scale I hadn't worked at before. Then more machine learning:
-tracking players from broadcast footage, measuring athletic performance from a phone, and
-an acoustics platform that lets engineers annotate, train and publish their own models
-instead of waiting on someone like me. That last one became a paper at Inter-Noise 2026.
-It closed a loop I'd left open a long time ago.
-
-What I keep coming back to is work where the thing being captured matters to someone.
-
-So I'm building **CultCap**, a pipeline that turns handheld phone footage of heritage
-objects into Gaussian splats and archival-quality meshes. A museum shouldn't need a
-$50,000 scanner to put an object online. Most collections hold millions of items and give
-each one a single flat photograph.
-
-
-I'm in Newcastle, Australia. I write about what I learn, I publish the methodology, and
-I'm interested in work where the 3D is pointed at something worth keeping.
+I live in Newcastle, Australia. I build in the open and write here about what I learn.
 
 ## Publications
 
