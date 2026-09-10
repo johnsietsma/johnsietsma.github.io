@@ -15,11 +15,13 @@ replay is noise, and a two-number correction at load time is all the colour mach
 this pipeline needs. Claims like that deserve pictures. This post is the eyeball check
 -- the same evidence I used to convince myself, laid out so you can disagree.
 
-Two capture sessions appear throughout. A vase of daffodils
+Three capture sessions appear throughout. A vase of daffodils
 (`20260804-080136`) is the stress test: the camera swung 2.65 stops of exposure while
-orbiting it, the widest wobble in my capture library. A terracotta pipe elbow
-(`20260805-060542`) is the control: its exposure barely moved (0.44 stops), so any
-"fix" that changes it much is doing something wrong.
+orbiting it, the widest wobble in my capture library. A small red sculpture
+(`20260805-060435`) sits in the middle at 1.94 stops -- and turned out to be the most
+interesting of the three. A terracotta pipe elbow (`20260805-060542`) is the control:
+its exposure barely moved (0.44 stops), so any "fix" that changes it much is doing
+something wrong.
 
 ## What the wobble looks like
 
@@ -95,6 +97,34 @@ model to compensate with more view-dependent colour, not less. Exposure alone mo
 everything the right way. The difference between those two corrections is one deleted
 term, and it flips the sign of the result.
 
+## The session in between, and why one number isn't enough
+
+The red sculpture wobbled 2.3 stops -- and unlike the daffodils, you can see it in the
+raw strip. The darkest-set frame is visibly dim and cool; auto-exposure couldn't
+fully hold the line here.
+
+![Eight red-sculpture frames sorted by recorded exposure, the darkest visibly dim.](/assets/images/cultcap/wobble/20260805-060435-wobble.jpg)
+
+![The same frames after normalisation.](/assets/images/cultcap/wobble/20260805-060435-normalised.jpg)
+
+Then the models did something the daffodils hadn't prepared me for. The orbit drift
+barely moved -- 1.22 stops before, 1.18 after -- and if drift were the only
+instrument, this session would read as a null result.
+
+![Orbit renders from the red sculpture's control model.](/assets/images/cultcap/wobble/20260805-060435-orbit-control.jpg)
+
+![Orbit renders from its exposure-normalised model.](/assets/images/cultcap/wobble/20260805-060435-orbit-fixed.jpg)
+
+But this session's control model carried the *largest* recoverable exposure error of
+the three -- a +0.67 dB brightness cast on held-out frames -- and the normalised
+model takes it to zero exactly. The wobble baked in differently here: not as
+view-dependent colour that swings around the orbit, but as a *uniform* baseline
+error, the whole model slightly mis-exposed. A uniform error shifts every orbit view
+equally, so a drift statistic can't see it at all; the held-out brightness gap can
+see nothing else. One nuisance, two different failure shapes, one per instrument. I
+built the second instrument as a cross-check on the first, and this session is the
+one where it turned out to be the *only* witness.
+
 ## Why not just lock the camera
 
 The obvious alternative is locking exposure at capture and having nothing to correct.
@@ -132,12 +162,17 @@ verified against the pixels. That decision is waiting on one more measurement.
 
 ## Where this is up to
 
-This is a gate in progress, not a concluded adoption. One session of three is fully
-judged; the third is training as I write this. The decision rules were written down
-before any run launched -- including the rule that the standard score is not a judge,
-because it structurally rewards the model that bakes the wobble in. If the other
-sessions hold the pattern, the two-number correction becomes the default and the
-alternatives get deleted.
+All nine runs are in -- three sessions, each with a control and two correction
+mechanisms (normalise the training targets, or correct the render at the loss; they
+tied everywhere, and the simpler one wins ties). The scorecard: where a recoverable
+exposure error existed, the correction removed it, both times, completely. Where the
+wobble had baked into view-dependent colour, drift fell 1.2 stops. On the control
+session, quality tied exactly -- with a ~0.2 stop drift wobble between runs that I
+still owe a seed-repeat to bound. The decision rules were written down before any run
+launched -- including the rule that the standard score is not a judge, because it
+structurally rewards the model that bakes the wobble in. (That score rose in every
+corrected arm anyway, which was gracious of it.) The two-number correction is set to
+become the default, and the alternatives get deleted.
 
 ## The experiments behind this
 
