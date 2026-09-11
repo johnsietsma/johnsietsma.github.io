@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="system-ui, sans-serif" font-size="14">
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8a857b"/></marker></defs>
+  <!-- world point -->
+  <circle cx="60" cy="70" r="5" fill="#c98a3e"/>
+  <text x="40" y="52" fill="#8a857b">3D point</text>
+  <!-- pinhole -->
+  <line x1="420" y1="30" x2="420" y2="140" stroke="#8a857b" stroke-width="2.5"/>
+  <line x1="420" y1="160" x2="420" y2="270" stroke="#8a857b" stroke-width="2.5"/>
+  <text x="392" y="292" fill="#8a857b">pinhole</text>
+  <!-- optical axis -->
+  <line x1="20" y1="150" x2="740" y2="150" stroke="#9a958b" stroke-width="1" stroke-dasharray="6 5"/>
+  <text x="24" y="168" fill="#9a958b" font-size="12">optical axis</text>
+  <!-- sensor -->
+  <line x1="640" y1="40" x2="640" y2="260" stroke="#8a857b" stroke-width="3.5"/>
+  <text x="652" y="46" fill="#8a857b">sensor</text>
+  <!-- ray through pinhole to sensor -->
+  <line x1="60" y1="70" x2="640" y2="199" stroke="#c98a3e" stroke-width="2.5"/>
+  <circle cx="640" cy="199" r="5" fill="#c98a3e"/>
+  <text x="652" y="205" fill="#8a857b">pixel (u, v)</text>
+  <!-- principal point -->
+  <circle cx="640" cy="150" r="4" fill="#8a857b"/>
+  <text x="652" y="140" fill="#8a857b">principal point (cx, cy)</text>
+  <!-- focal length -->
+  <line x1="420" y1="230" x2="640" y2="230" stroke="#8a857b" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="640" y1="230" x2="420" y2="230" stroke="#8a857b" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="490" y="250" fill="#8a857b">focal length f (pixels)</text>
+</svg>
