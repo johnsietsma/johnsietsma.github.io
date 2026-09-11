@@ -10,7 +10,7 @@ tags:
 draft: false
 ---
 
-I chose to write my own app and splat trainer for a number of reasons. I'm going to walk through the entire process in a series of posts to show why I thought this was necessary.
+I chose to write my own capture app and splat trainer for a number of reasons. I'm going to walk through the entire process in a series of posts to show why I thought this was necessary.
 
 A key goal for CultCap was to avoid needing expensive equipment and technical knowledge. Traditionally the recommendation is to use a DSLR camera and lock exposure, focus and white balance. This requires the operator to know how to get an appropriate depth of field and to maintain a constant distance from the subject.
 
