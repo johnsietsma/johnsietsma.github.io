@@ -20,6 +20,8 @@ In this post I just want to talk about focus.
 
 In order to do a 3D reconstruction we need a series of images that are consistent with each other. We're going to try to match each image and use parallax to find points in 3D space using a process called Structure from Motion (SfM). If the images differ from each other, then those points will be in the wrong position.
 
+![Structure from motion on one capture: the first photograph, every camera position seen from above, and the triangulated points seen from the side, where the dragon's profile emerges.](/assets/images/cultcap/intrinsics/sfm-walk-around.png)
+
 The camera properties that map from a 3D point in the real world to a pixel on a sensor are called intrinsics.
 
 ## The pinhole model
