@@ -79,17 +79,7 @@ Testing on a Google Pixel showed the static table was several percent off — th
 **Two pixel frames, one conversion, easy to get wrong.** Intrinsics are in sensor-array
 pixel space. Your image is in image pixel space. The scale between them is not necessarily what the aspect ratio suggests, because the readout may crop as well as scale. Record it; don't infer it.
 
-**Orientation metadata will rotate your world.** Phone sensors are mounted landscape.
-The saved image is stored sensor-native, and there's a `SENSOR_ORIENTATION` field that
-says how to rotate it for display. I computed the rotation between the accelerometer
-frame and the camera frame for a portrait camera, and stored landscape frames. Every
-session had its notion of "up" twisted 90 degrees about the lens axis. What made it
-hard to find: a top-down capture only spins the up-vector's azimuth, which is harmless,
-while a level walk-around rotates "up" into the horizontal. It surfaced as one model
-rendering on its side, months in. The fix was one matrix multiply and a marker in the
-metadata so old sessions get corrected on load.
-
-![Two frames with the gravity direction drawn on: computed the old way it points sideways; computed the corrected way it points at the table.](/assets/images/cultcap/intrinsics/gravity-before-after.jpg)
+**Orientation metadata will rotate your world.** Phone sensors are mounted landscape and frames are saved that way; `SENSOR_ORIENTATION` says how to rotate them for display. I applied it in the wrong place, so every session's "up" was twisted 90 degrees about the lens axis. Top-down captures hid it, a level walk-around didn't, and it surfaced months in as a model rendering on its side. The fix was one matrix multiply.
 
 **Stabilisation moves the principal point.** Optical image stabilisation physically
 shifts the lens to counter hand shake. The principal point moves with it, by tens of
