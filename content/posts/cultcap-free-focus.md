@@ -79,8 +79,6 @@ Testing on a Google Pixel showed the static table was several percent off — th
 **Two pixel frames, one conversion, easy to get wrong.** Intrinsics are in sensor-array
 pixel space. Your image is in image pixel space. The scale between them is not necessarily what the aspect ratio suggests, because the readout may crop as well as scale. Record it; don't infer it.
 
-**Orientation metadata will rotate your world.** Phone sensors are mounted landscape and frames are saved that way; `SENSOR_ORIENTATION` says how to rotate them for display. I applied it in the wrong place, so every session's "up" was twisted 90 degrees about the lens axis. Top-down captures hid it, a level walk-around didn't, and it surfaced months in as a model rendering on its side. The fix was one matrix multiply.
-
 **Stabilisation moves the principal point.** Optical image stabilisation physically
 shifts the lens to counter hand shake. The principal point moves with it, by tens of
 pixels between frames. It's another argument for per-frame cameras rather than one
