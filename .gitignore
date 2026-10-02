@@ -24,3 +24,6 @@ pnpm-debug.log*
 .cache
 .astro
 _refresh/
+
+# Videos are hosted on R2 at media.johnsietsma.com
+public/assets/video/

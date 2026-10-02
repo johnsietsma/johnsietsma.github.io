@@ -29,14 +29,14 @@ Unfortunately I couldn't find the name of the art work or the artist. Please tel
 
 <figure>
   <video controls muted loop playsinline preload="metadata" width="100%">
-    <source src="/assets/video/cultcap/newcastle/caravan_model.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/cultcap/newcastle/caravan_model.mp4" type="video/mp4">
   </video>
   <figcaption>The reconstructed model, orbiting only through the angles the capture covered.</figcaption>
 </figure>
 
 <figure>
   <video controls muted loop playsinline preload="metadata" width="100%">
-    <source src="/assets/video/cultcap/newcastle/caravan_capture.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/cultcap/newcastle/caravan_capture.mp4" type="video/mp4">
   </video>
   <figcaption>The capture: one pass along the front of the case.</figcaption>
 </figure>
@@ -48,14 +48,14 @@ This one is a little easier, a bronze on a plinth in the middle of a room. The t
 
 <figure>
   <video controls muted loop playsinline preload="metadata" width="100%">
-    <source src="/assets/video/cultcap/newcastle/bronze_model.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/cultcap/newcastle/bronze_model.mp4" type="video/mp4">
   </video>
   <figcaption>The reconstructed model.</figcaption>
 </figure>
 
 <figure>
   <video controls muted loop playsinline preload="metadata" width="100%">
-    <source src="/assets/video/cultcap/newcastle/bronze_capture.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/cultcap/newcastle/bronze_capture.mp4" type="video/mp4">
   </video>
   <figcaption>The capture: a full walk around the plinth.</figcaption>
 </figure>
@@ -68,14 +68,14 @@ Another capture from one side only. This is a tricky one with long, thin objects
 
 <figure>
   <video controls muted loop playsinline preload="metadata" width="100%">
-    <source src="/assets/video/cultcap/newcastle/wall_model.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/cultcap/newcastle/wall_model.mp4" type="video/mp4">
   </video>
   <figcaption>The reconstructed model, from the covered side.</figcaption>
 </figure>
 
 <figure>
   <video controls muted loop playsinline preload="metadata" width="100%">
-    <source src="/assets/video/cultcap/newcastle/wall_capture.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/cultcap/newcastle/wall_capture.mp4" type="video/mp4">
   </video>
   <figcaption>The capture, from one side only.</figcaption>
 </figure>
@@ -87,7 +87,7 @@ Not a capture, just an amazing tactile sculpture. Dani Marti's *Looking for Feli
 
 <figure>
   <video controls muted loop playsinline preload="metadata" width="100%">
-    <source src="/assets/video/cultcap/newcastle/hangingbead_walk.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/cultcap/newcastle/hangingbead_walk.mp4" type="video/mp4">
   </video>
   <figcaption>Walking through Looking for Felix.</figcaption>
 </figure>
