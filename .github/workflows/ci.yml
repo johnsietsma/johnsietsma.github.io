@@ -18,25 +18,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v6
-        with:
-          version: 10
-          run_install: false
-
       - name: Setup node
         uses: actions/setup-node@v7
         with:
           node-version: 22
-          cache: "pnpm"
+          cache: "npm"
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
 
-        # use astro check for issues
+        # use astro check for issues; it needs more than Node's default heap
       - name: Run Astro check
-        run: pnpm astro check
+        run: node --max-old-space-size=8192 node_modules/astro/bin/astro.mjs check
 
         # ensure build works
       - name: Run Astro build
-        run: pnpm build
+        run: npm run build
