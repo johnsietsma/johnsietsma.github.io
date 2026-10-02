@@ -1,0 +1,17 @@
+---
+// Loads the <img-comparison-slider> web component. Rendered by BlogPost.astro only on
+// posts whose body uses the element, so other pages don't download it. Usage in a post:
+//
+// <img-comparison-slider aria-label="Drag to compare A and B">
+//   <figure slot="first" class="compare-pane"><img src="..." alt="..."><figcaption>A</figcaption></figure>
+//   <figure slot="second" class="compare-pane"><img src="..." alt="..."><figcaption>B</figcaption></figure>
+// </img-comparison-slider>
+//
+// Styles live in src/styles/components/compare-slider.css. The library's own stylesheet is
+// deliberately NOT imported: it hides the whole element until the script runs, so a reader
+// without JavaScript would see nothing. Ours shows the first image instead.
+---
+
+<script>
+	import "img-comparison-slider";
+</script>

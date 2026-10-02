@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, render } from "astro:content";
 
+import CompareSlider from "@/components/blog/CompareSlider.astro";
 import Masthead from "@/components/blog/Masthead.astro";
 import TOC from "@/components/blog/TOC.astro";
 import WebMentions from "@/components/blog/webmentions/index.astro";
@@ -17,6 +18,8 @@ const socialImage = ogImage ?? `/og-image/${post.id}.png`;
 const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
 const { headings, remarkPluginFrontmatter } = await render(post);
 const readingTime: string = remarkPluginFrontmatter.readingTime;
+// Load the comparison-slider web component only on posts that use it.
+const usesCompareSlider = post.body?.includes("<img-comparison-slider") ?? false;
 ---
 
 <BaseLayout
@@ -39,6 +42,7 @@ const readingTime: string = remarkPluginFrontmatter.readingTime;
 			</div>
 		</div>
 	</article>
+	{usesCompareSlider && <CompareSlider />}
 	<button
 		class="hover:border-link fixed end-4 bottom-8 z-90 flex h-10 w-10 translate-y-28 cursor-pointer items-center justify-center rounded-full border-2 border-transparent bg-zinc-200 text-3xl opacity-0 transition-all transition-discrete duration-300 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12 dark:bg-zinc-700"
 		data-show="false"

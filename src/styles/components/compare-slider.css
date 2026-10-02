@@ -1,0 +1,53 @@
+/* <img-comparison-slider>: see src/components/blog/CompareSlider.astro for usage. */
+img-comparison-slider {
+	display: block;
+	margin: 2rem 0;
+	--divider-width: 2px;
+	--divider-color: var(--color-accent);
+	--default-handle-color: var(--color-accent);
+	--default-handle-width: 48px;
+	--default-handle-opacity: 1;
+}
+
+img-comparison-slider:focus-visible {
+	outline: 2px solid var(--color-accent);
+	outline-offset: 4px;
+}
+
+/* Without JavaScript, or before the script runs: show the first image only. */
+img-comparison-slider:not(:defined) [slot="second"] {
+	display: none;
+}
+
+.prose .compare-pane {
+	position: relative;
+	margin: 0;
+}
+
+.prose .compare-pane img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.prose .compare-pane figcaption {
+	position: absolute;
+	top: 0.75rem;
+	margin: 0;
+	padding: 0.25rem 0.55rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #f2f0eb;
+	background: rgb(8 8 10 / 0.72);
+	pointer-events: none;
+}
+
+.prose .compare-pane[slot="first"] figcaption {
+	left: 0.75rem;
+}
+
+.prose .compare-pane[slot="second"] figcaption {
+	right: 0.75rem;
+}
