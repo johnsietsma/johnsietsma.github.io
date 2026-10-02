@@ -17,9 +17,11 @@ three hundred at once.
 
 What do you want it to look like?
 
-This is the question the previous post ended on, and it has a surprisingly precise answer.
-It also has a long history in this project of me answering it wrong, in increasingly
-sophisticated ways, before measuring my way back to something simple.
+[The bronze that changed its finish](/posts/cultcap-bronze-changed-its-finish/) showed what
+happens when you don't answer that question: a model that plays the camera's exposure
+changes back at you as you turn it. The question has a surprisingly precise answer. It also
+has a long history in this project of me answering it wrong, in increasingly sophisticated
+ways, before measuring my way back to something simple. This is that history.
 
 ## Radiometry in one section
 
@@ -90,7 +92,9 @@ I tried both, in that order, and then the other order.
    visibly washed the render out — lower contrast, lifted shadows — while the held-out
    score moved by a hundredth of a decibel. The correction was moving the baseline with
    nothing legitimate to correct, and the metric couldn't see it. Off by default, pending
-   understanding.
+   understanding. (Step 4 found the culprit: the white balance and colour matrix terms,
+   not the exposure term. Re-scored later, the combined correction had made the model's
+   colour *less* stable around the orbit than no correction at all.)
 
 4. **Audited the metadata directly.** Instead of testing corrections through expensive
    training runs, check the camera's notes against the pixels: when the recorded exposure
@@ -99,11 +103,15 @@ I tried both, in that order, and then the other order.
    white balance, whose recorded wander left no consistent trace in the images. The
    colour matrix barely moved at all.
 
-5. **Normalise by exposure alone.** The current approach: bring every frame to the
-   session's median exposure using the recorded ISO and shutter, nothing else, at load
-   time. No white balance term, no matrix, no learned parameters. Any residual becomes a
-   candidate for a learned correction later, with a measured ceiling on how much it could
-   possibly help.
+5. **Correct by exposure alone.** The current approach uses the recorded ISO and
+   shutter, nothing else: no white balance term, no matrix, no learned parameters. I
+   tested it both ways round on three captures, scaling the photographs to the session's
+   median exposure before training, and scaling the model's render by each photo's
+   exposure inside the loss. They tied on every measure. The render side won the tie: the
+   photographs stay untouched, so every score stays comparable with everything measured
+   before, and it's where a learned correction would plug in later. Adopted as the
+   default. The residual it leaves is around 0.15 to 0.35 of a stop, which is the measured
+   ceiling on what a learned correction could add.
 
 ## Gotchas
 
@@ -141,9 +149,10 @@ use of eight bits as long as you can invert it exactly.
 ## Where it landed
 
 The correction I ended up with is two numbers per frame that the camera wrote down
-anyway, applied once at load. It replaced a learned network, then a matrix pipeline, then
-a period of nothing at all. Every step of that was a measurement showing the previous
-step was doing less than I thought. I'd have got there faster by auditing the metadata
-first and building the correction second. That's the order I'd recommend.
+anyway, applied to the render during training. It replaced a learned network, then a
+matrix pipeline, then a period of nothing at all. Every step of that was a measurement
+showing the previous step was doing less than I thought. I'd have got there faster by
+auditing the metadata first and building the correction second. That's the order I'd
+recommend.
 
-Next: knowing whether any of it worked.
+Next: [knowing whether any of it worked](/posts/cultcap-knowing-whether-it-worked/).
