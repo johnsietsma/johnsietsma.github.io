@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="system-ui, sans-serif" font-size="14">
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8a857b"/></marker></defs>
+  <g fill="none" stroke="#8a857b" stroke-width="2">
+    <rect x="15" y="30" width="160" height="76" rx="10" stroke="#c98a3e" stroke-width="2.5"/>
+    <rect x="205" y="30" width="160" height="76" rx="10"/>
+    <rect x="395" y="30" width="160" height="76" rx="10"/>
+    <rect x="585" y="30" width="160" height="76" rx="10"/>
+    <rect x="585" y="174" width="160" height="76" rx="10"/>
+    <rect x="395" y="174" width="160" height="76" rx="10"/>
+    <rect x="205" y="174" width="160" height="76" rx="10" stroke="#c98a3e" stroke-width="2.5"/>
+  </g>
+  <g fill="#8a857b" text-anchor="middle">
+    <text x="95" y="62" font-weight="600" fill="#c98a3e">Mum</text>
+    <text x="95" y="84" font-size="12">just speaks</text>
+    <text x="285" y="62" font-weight="600">Siri</text>
+    <text x="285" y="84" font-size="12">"open Helpen"</text>
+    <text x="475" y="62" font-weight="600">Helpen app</text>
+    <text x="475" y="84" font-size="12">starts a voice call</text>
+    <text x="665" y="62" font-weight="600">Vapi</text>
+    <text x="665" y="84" font-size="12">speech → LLM → voice</text>
+    <text x="665" y="206" font-weight="600">Tools API</text>
+    <text x="665" y="228" font-size="12">Python on AWS Lambda</text>
+    <text x="475" y="206" font-weight="600">Todoist</text>
+    <text x="475" y="228" font-size="12">lists and diary</text>
+    <text x="285" y="206" font-weight="600" fill="#c98a3e">Family's phones</text>
+    <text x="285" y="228" font-size="12">"Ask John to…"</text>
+  </g>
+  <g stroke="#8a857b" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="176" y1="68" x2="202" y2="68"/>
+    <line x1="366" y1="68" x2="392" y2="68"/>
+    <line x1="556" y1="68" x2="582" y2="68"/>
+    <line x1="665" y1="107" x2="665" y2="171"/>
+    <line x1="584" y1="212" x2="558" y2="212"/>
+    <line x1="394" y1="212" x2="368" y2="212"/>
+  </g>
+  <text x="675" y="145" fill="#9a958b" font-size="12">tool calls</text>
+</svg>
