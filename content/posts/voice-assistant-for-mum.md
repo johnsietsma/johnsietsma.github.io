@@ -10,15 +10,15 @@ tags:
 draft: true
 ---
 
-## The Eye Operation
+## Losing Her Sight
 
-My mum has dry macular degeneration. She's losing her central vision, and last year she had an operation on her "good" eye. Staying with her for a few days afterwards was a huge shock. Her remaining eye has no central vision at all. She kept laughing about my head disappearing as we talked!
+My mum is losing her central vision. Staying with her for a few days last year was a huge shock. Her central vision is almost gone. She kept laughing about my head disappearing as we talked!
 
 We knew she was losing her vision, but the reality of seeing it first hand was frightening.
 
 ## Existing Technology
 
-Mum has been really proactive in going to assistive technology sessions with Guide Dogs Australia. After the operation I assumed that her phone and voice assistant would be very useful for daily chores.
+Mum has been really proactive in going to assistive technology sessions with Guide Dogs Australia. I assumed that her phone and voice assistant would be very useful for daily chores.
 
 She tried to send a text message and got interrupted after a few words and the garbled message was sent. Same with email. Siri could launch Uber, but then she was asked to press buttons.
 
@@ -30,24 +30,19 @@ My siblings and I all work in technology. So we decided to see if building a voi
 
 ## The Process
 
-In classic software engineering fashion I jumped into building way too quickly. My brother Kor said why don't we actually talk to mum to see what she wants? Brilliant idea. That was the first lesson, every time we talked to mum we learnt something surprising about what she needed and wanted.
+In classic software engineering fashion I jumped into building way too quickly. My brother said why don't we actually talk to mum to see what she wants? Brilliant idea. That was the first lesson, every time we talked to mum we learnt something surprising about what she needed and wanted.
 
 We learnt that she wants to record things as she thinks about them, organisation is really important, she needs to be able to share her shopping list with her carer, doctors give cab charges but she and friends have had bad taxi experiences and more.
 
 There was complexity with different needs, particular ways she liked to do things and the support structures she has.
 
-My sister Janet jumped on researching existing apps, just to make sure we were not building something that already existed. She tested ten different note keeping apps and all required vision, complicated set up or didn't fit with what she needed. It all confirmed what we had found, voice assistance is not always assistive.
+My sister jumped on researching existing apps, just to make sure we were not building something that already existed. She tested ten different note keeping apps and all required vision, complicated set up or didn't fit with what she needed. It all confirmed what we had found, voice assistance is not always assistive.
 
-My other sister Silka built a list of scenarios. Scripts of what mum would say to the voice assistant and how it would respond. And mapping those interactions back to the things that mum needed.
+My other sister built a list of scenarios. Scripts of what mum would say to the voice assistant and how it would respond. And mapping those interactions back to the things that mum needed.
 
 ## The App
 
 So we built her a voice assistant. We called it Helpen, which is Dutch for "to help".
-
-<figure>
-  <img src="/assets/images/helpen/icon.png" alt="The Sarene Helpen app icon: a microphone in an orange circle above the words Sarene Helpen." width="256" height="256">
-</figure>
-<!-- TODO: credit the icon design (Siewke?) -->
 
 It was never a product. There was no business plan and no other users. It was a thing just for Mum. That made a lot of decisions easy: hard-code what suits her, use shared API keys, deploy outside the App Store. Building for one person is much, much easier than making a product for many.
 
@@ -57,13 +52,13 @@ It was never a product. There was no business plan and no other users. It was a 
 
 The app is a small [React Native](https://reactnative.dev/) and [Expo](https://expo.dev/) app. When it opens, it starts a voice call straight away. There's almost no screen, just a few audio tones. 
 
-Expo worked very well for me, it saved a lot of certificate handling pain, it made deployment for both iOS and Android super easy. But then I lost all the time again trying to get Silka set up with the same flow, errors I could just not fix.
+Expo worked very well for me, it saved a lot of certificate handling pain, it made deployment for both iOS and Android super easy. But then I lost all the time again trying to get my sister set up with the same flow, errors I could just not fix.
 
 The voice side is [Vapi](https://vapi.ai/). It's effectively a voice API with an LLM in the cloud. Again, very easy to use and prototype, perfect for this type of project.
 
 The app code lived in an AWS lambda. It started as an MCP server. This should have been painless, but as I've found in other projects, it breaks in weird ways. Getting VAPI and MCP to work together was painful. I switched to plain REST endpoints, which required more setup in VAPI, but it worked.
 
-I kept the MCP so I could test locally. Silka's scenarios came in handy here. They became integration tests that I could run with a local [Ollama](https://ollama.com/) server.
+I kept the MCP so I could test locally. My sister's scenarios came in handy here. They became integration tests that I could run with a local [Ollama](https://ollama.com/) server.
 
 There's no database. The backend is Todoist. The key advantage is that it handled notifications. All the siblings could see the notes and tasks (with mum's permission).
 
@@ -73,15 +68,15 @@ For example, assigning a task to someone sends them a notification. So when Mum 
 
 ## Testing
 
-Janet ran through app changes with mum, with often hilarious results. What seems straightforward and obvious to a developer often isn't to everyone else. Every developer knows the feeling of watching someone use something you've made, wanting to jump in and explain and help. But realising that you've not thought things through.
+My sister ran through app changes with mum, with often hilarious results. What seems straightforward and obvious to a developer often isn't to everyone else. Every developer knows the feeling of watching someone use something you've made, wanting to jump in and explain and help. But realising that you've not thought things through.
 
-It was invaluable to have Janet make notes about things that worked well, when mum got confused, when there was a misunderstanding.
+It was invaluable to have her make notes about things that worked well, when mum got confused, when there was a misunderstanding.
 
 ## Design
 
 When I first made the app I just had a single big red button that hung up the call, the call started automatically when the app started. In my mind that was all that was required.
 
-Silka went deeper. Low vision does not mean no vision. She made a design that included ebbing lights with different hues. Movement and colour are two things that are still available when central vision is gone.
+My other sister went deeper. Low vision does not mean no vision. She made a design that included ebbing lights with different hues. Movement and colour are two things that are still available when central vision is gone.
 
 She added audio feedback:
 * A processing tone plays while Helpen fetches data, so silence doesn’t feel like the call dropped.
@@ -123,7 +118,7 @@ We made a change to start a conversation with reminders of outstanding tasks and
 
 ### Paper calendars have spatial awareness
 
-My sister Janet pointed out something I hadn't thought of. On a paper calendar you can see that something is two weeks away. You lose that when you can't see the page. "The twentieth" is just a date.
+My sister pointed out something I hadn't thought of. On a paper calendar you can see that something is two weeks away. You lose that when you can't see the page. "The twentieth" is just a date.
 
 So the assistant should say "in two weeks" or "next Thursday". Mum also wanted to know if she was double-booking a day, which is obvious on paper and invisible in voice.
 
@@ -135,7 +130,7 @@ The assistant reads back anything important before acting on it: appointments, m
 
 ### Consistency matters
 
-Janet noted the assistant used different wording each time. A sighted user can glance at a screen to check. Mum only has the words, so variation becomes confusion.
+My sister noted the assistant used different wording each time. A sighted user can glance at a screen to check. Mum only has the words, so variation becomes confusion.
 
 Then there is the talking itself.
 
@@ -167,7 +162,7 @@ Because the assistant talks and responds in a human-like way, it's natural to as
 
 ### LLM guard rails
 
-In testing Janet found Helpen would make promises to do things it couldn't actually do. Like with all LLMs, having guardrails is important. 
+In testing my sister found Helpen would make promises to do things it couldn't actually do. Like with all LLMs, having guardrails is important. 
 
 Our approach in Helpen was careful prompt construction. After my experience using AI to write software, I would add an explicit checking agent. One LLM generates text, another assesses it for truthfulness. Generation is quite different from assessment.
 
