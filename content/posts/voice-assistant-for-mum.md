@@ -70,7 +70,7 @@ For example, assigning a task to someone sends them a notification. So when Mum 
 
 My sister ran through app changes with mum, with often hilarious results. What seems straightforward and obvious to a developer often isn't to everyone else. Every developer knows the feeling of watching someone use something you've made, wanting to jump in and explain and help. But realising that you've not thought things through.
 
-It was invaluable to have her make notes about things that worked well, when mum got confused, when there was a misunderstanding.
+It was invaluable to have my sister make notes about things that worked well, when mum got confused, when there was a misunderstanding.
 
 ## Design
 
@@ -84,7 +84,7 @@ She added audio feedback:
 * A closure chime plus “All done” tells her she can put the phone down. Knowing when a conversation has ended is its own problem without a screen.
 * All sounds were chosen to be distinct from household noise, so nothing sounds like the microwave, doorbell or TV.
 
-Her point was that multi-modal feedback is more comforting and human. We're so focused on parsing symbols; we forget about the other senses, and ways of conveying information.
+Her point was that multi-modal feedback is more comforting and human. We're so focused on parsing symbols; we forget about the other senses, and other ways of conveying information.
 
 She wanted to dive deeper into the idea that all needs are individual. AI should be able to adapt. Generative UI can also be about voice, audio, features. It should be able to create responses we haven't planned for.
 
@@ -104,11 +104,9 @@ I'm pretty happy with that result. When mum's vision continues to deteriorate, t
 
 This is what we learnt building a voice assistant for our mum. It is not universal advice. I am not an expert in this at all!
 
-Most of what we learnt came from Mum not having a screen to glance at.
-
 ### Voice is reactive not proactive
 
-We had locked in making notes, but far more often mum wants to read her notes. 
+We had locked in on mum writing notes, but far more often mum wants to read those notes at a glance. 
 
 A paper diary sits on the bench and reminds you of things just by being there. A voice assistant does nothing until you speak to it. It's driven entirely by requests.
 
@@ -130,9 +128,7 @@ The assistant reads back anything important before acting on it: appointments, m
 
 ### Consistency matters
 
-My sister noted the assistant used different wording each time. A sighted user can glance at a screen to check. Mum only has the words, so variation becomes confusion.
-
-Then there is the talking itself.
+My sister noted the assistant used different wording each time. A "task", "note", "job", all meaning much the same thing. Variation became confusion.
 
 ### Word choice is important
 
@@ -174,4 +170,4 @@ For an assistant to _do_ something, then there has to be integrations. Zapier is
 
 *Special mention* I want to point out the online shopping sites like Coles and Woolworths do everything they can to stop people automating online shopping. I tried pretty hard to find ways around this. I understand they are trying to stop scrapers. But please, please open an API so people like me can enable online shopping for vision impaired people.
 
-**Sometimes the best outcome is that nobody needs the thing you made**
+**TLDR; Sometimes the best outcome is that nobody needs the thing you made**
