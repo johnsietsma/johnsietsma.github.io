@@ -36,7 +36,7 @@ We learnt that she wants to record things as she thinks about them, organisation
 
 There was complexity with different needs, particular ways she liked to do things and the support structures she has.
 
-My sister jumped on researching existing apps, just to make sure we were not building something that already existed. She tested ten different note keeping apps and all required vision, complicated set up or didn't fit with what she needed. It all confirmed what we had found, voice assistance is not always assistive.
+My sister jumped on researching existing apps, just to make sure we were not building something that already existed. She tested different note keeping apps and all required vision, complicated set up or didn't fit with what she needed. It all confirmed what we had found, voice assistance is not always assistive.
 
 My other sister built a list of scenarios. Scripts of what mum would say to the voice assistant and how it would respond. And mapping those interactions back to the things that mum needed.
 
@@ -54,7 +54,7 @@ The app is a small [React Native](https://reactnative.dev/) and [Expo](https://e
 
 Expo worked very well for me, it saved a lot of certificate handling pain, it made deployment for both iOS and Android super easy. But then I lost all the time again trying to get my sister set up with the same flow, errors I could just not fix.
 
-The voice side is [Vapi](https://vapi.ai/). It's effectively a voice API with an LLM in the cloud. Again, very easy to use and prototype, perfect for this type of project.
+My brother found and suggested [Vapi](https://vapi.ai/) for the voice side of things. It's effectively a voice API with an LLM in the cloud. Again, very easy to use and prototype, perfect for this type of project.
 
 The app code lived in an AWS lambda. It started as an MCP server. This should have been painless, but as I've found in other projects, it breaks in weird ways. Getting VAPI and MCP to work together was painful. I switched to plain REST endpoints, which required more setup in VAPI, but it worked.
 
@@ -98,7 +98,7 @@ When I next was visiting I asked mum how it was going. She said after her catara
 
 It's pretty funny. There is a combination of caring for your mum, helping in a way you know how. And also building things because you enjoy it. And also rushing in with a high-tech solution when a low tech solution works better.
 
-I'm pretty happy with that result. When mum's vision continues to deteriorate, then perhaps it will become more useful for her. I'm hoping by then vision assistive technology has come a long way and people with low vision can do everything on a phone that a sighted person can.
+I'm pretty happy with that result. When mum's vision continues to deteriorate, then perhaps it will become more useful for her. I'm hoping by then vision assistive technology will have come a long way and people with low vision can do everything on a phone that a sighted person can.
 
 ## What We Learnt
 
