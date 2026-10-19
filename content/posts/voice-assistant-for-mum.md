@@ -1,5 +1,5 @@
 ---
-title: "We made Mum an AI voice assistant"
+title: "We made mum an AI voice assistant"
 publishDate: 2026-10-19T00:00:00+11:00
 description: "Mum was losing her sight, so the family built her a voice assistant to replace her paper diary. Siri, Vapi, an LLM and AWS Lambda."
 tags:
@@ -36,7 +36,7 @@ We learnt that she wants to record things as she thinks about them, organisation
 
 There was complexity with different needs, particular ways she liked to do things and the support structures she has.
 
-My sister jumped on researching existing apps, just to make sure we were not building something that already existed. She tested different note keeping apps and all required vision, complicated set up or didn't fit with what she needed. It all confirmed what we had found, voice assistance is not always assistive.
+My sister started researching existing apps, just to make sure we were not building something that already existed. She tested different note keeping apps and all required vision, complicated set up or didn't fit with what she needed. It all confirmed what we had found, voice assistance is not always assistive.
 
 My other sister built a list of scenarios. Scripts of what mum would say to the voice assistant and how it would respond. And mapping those interactions back to the things that mum needed.
 
@@ -44,7 +44,7 @@ My other sister built a list of scenarios. Scripts of what mum would say to the 
 
 So we built her a voice assistant. We called it Helpen, which is Dutch for "to help".
 
-It was never a product. There was no business plan and no other users. It was a thing just for Mum. That made a lot of decisions easy: hard-code what suits her, use shared API keys, deploy outside the App Store. Building for one person is much, much easier than making a product for many.
+It was never a product. There was no business plan and no other users. It was a thing just for mum. That made a lot of decisions easy: hard-code what suits her, use shared API keys, deploy outside the App Store. Building for one person is much, much easier than making a product for many.
 
 <!-- TODO: photo of the paper diary? -->
 
@@ -62,9 +62,9 @@ I kept the MCP so I could test locally. My sister's scenarios came in handy here
 
 There's no database. The backend is Todoist. The key advantage is that it handled notifications. All the siblings could see the notes and tasks (with mum's permission).
 
-For example, assigning a task to someone sends them a notification. So when Mum says "ask John to fix the gate", I get a ping on my phone.
+For example, assigning a task to someone sends them a notification. So when mum says "ask John to fix the gate", I get a ping on my phone.
 
-![How Helpen fits together: Mum asks Siri to open the Helpen app, the app starts a Vapi voice call, Vapi calls tools on a Python API on AWS Lambda, the tools read and write Todoist, and Todoist notifies the family's phones.](/assets/images/helpen/flow.svg)
+![How Helpen fits together: mum asks Siri to open the Helpen app, the app starts a Vapi voice call, Vapi calls tools on a Python API on AWS Lambda, the tools read and write Todoist, and Todoist notifies the family's phones.](/assets/images/helpen/flow.svg)
 
 ## Testing
 
