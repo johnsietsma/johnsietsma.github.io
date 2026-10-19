@@ -10,13 +10,13 @@ tags:
 draft: false
 ---
 
-## Losing Her Sight
+## Losing her sight
 
 My mum is losing her central vision. Staying with her for a few days last year was a huge shock. Her central vision is almost gone. She kept laughing about my head disappearing as we talked!
 
 We knew she was losing her vision, but the reality of seeing it first hand was frightening.
 
-## Existing Technology
+## Existing technology
 
 Mum has been really proactive in going to assistive technology sessions with Guide Dogs Australia. I assumed that her phone and voice assistant would be very useful for daily chores.
 
@@ -28,7 +28,7 @@ And it went on and on. Even though modern phones have voice assistants, you can 
 
 My siblings and I all work in technology. So we decided to see if building a voice assistant for mum would help. It didn't really. This is our experience and what we learnt from it.
 
-## The Process
+## The process
 
 In classic software engineering fashion I jumped into building way too quickly. My brother said why don't we actually talk to mum to see what she wants? Brilliant idea. That was the first lesson, every time we talked to mum we learnt something surprising about what she needed and wanted.
 
@@ -40,7 +40,7 @@ My sister started researching existing apps, just to make sure we were not build
 
 My other sister built a list of scenarios. Scripts of what mum would say to the voice assistant and how it would respond. And mapping those interactions back to the things that mum needed.
 
-## The App
+## The app
 
 So we built her a voice assistant. We called it Helpen, which is Dutch for "to help".
 
@@ -48,7 +48,7 @@ It was never a product. There was no business plan and no other users. It was a 
 
 <!-- TODO: photo of the paper diary? -->
 
-## The Tech Stack
+## The tech stack
 
 The app is a small [React Native](https://reactnative.dev/) and [Expo](https://expo.dev/) app. When it opens, it starts a voice call straight away. There's almost no screen, just a few audio tones. 
 
@@ -94,7 +94,7 @@ Her point was that multi-modal feedback is more comforting and human. We're so f
 
 She wanted to dive deeper into the idea that all needs are individual. AI should be able to adapt. Generative UI can also be about voice, audio, features. It should be able to create responses we haven't planned for.
 
-## The Final Result
+## The final result
 
 We worked together as a family. We made a cool voice assistant with an Australian accent that mum could chat to. It could handle her tasks, schedule things, remind her of upcoming events. There were multiple rounds of testing, chats with mum. The scenarios we laid out all worked. Everything was good. 
 
@@ -102,11 +102,11 @@ She was surprised it could do everything she needed. She said the voice was "ver
 
 When I next was visiting I asked mum how it was going. She said after her cataract surgery her vision had improved a bit. She was still able to write notes and that is what works the best. It's tactile, spatial, easy. Nothing beats a pen and paper.
 
-It's pretty funny. There is a combination of caring for your mum, helping in a way you know how. And also building things because you enjoy it. And also rushing in with a high-tech solution when a low tech solution works better.
+There was a combination of caring for your mum, helping in a way you know how. And also building things because you enjoy it. And also rushing in with a high-tech solution when a low tech solution works better.
 
-I'm pretty happy with that result. When mum's vision continues to deteriorate, then perhaps it will become more useful for her. I'm hoping by then vision assistive technology will have come a long way and people with low vision can do everything on a phone that a sighted person can.
+I'm happy with that result. When mum's vision continues to deteriorate, then perhaps it will become more useful for her. I'm hoping by then vision assistive technology will have come a long way and people with low vision can do everything on a phone that a sighted person can.
 
-## What We Learnt
+## What we learnt
 
 This is what we learnt building a voice assistant for our mum. It is not universal advice. I am not an expert in this at all!
 
@@ -176,4 +176,6 @@ For an assistant to _do_ something, then there has to be integrations. Zapier is
 
 *Special mention* I want to point out the online shopping sites like Coles and Woolworths do everything they can to stop people automating online shopping. I tried pretty hard to find ways around this. I understand they are trying to stop scrapers. But please, please open an API so people like me can enable online shopping for vision impaired people.
 
-**TLDR; Sometimes the best outcome is that nobody needs the thing you made**
+## The future
+
+Although pen and paper work for now, it won't work for long. We'll continue to look at existing solutions and also whether Helpen will be useful once pen and paper isn't an option.
