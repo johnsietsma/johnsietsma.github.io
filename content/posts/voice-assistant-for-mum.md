@@ -76,7 +76,7 @@ My other sister went deeper. Low vision does not mean no vision. She made a desi
 
 <figure>
   <video autoplay muted loop playsinline preload="metadata" width="100%">
-    <source src="https://media.johnsietsma.com/video/helpen/helpen-ui-loop.mp4" type="video/mp4">
+    <source src="https://media.johnsietsma.com/video/helpen/helpen-ui-loop-3.mp4" type="video/mp4">
   </video>
 </figure>
 
