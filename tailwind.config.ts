@@ -7,6 +7,12 @@ export default {
 			typography: () => ({
 				DEFAULT: {
 					css: {
+						// Proportional body text reads faster over long posts; headings and code stay
+						// monospace to match the rest of the site.
+						fontFamily: "var(--font-sans)",
+						"h1, h2, h3, h4, h5, h6, code, kbd, samp": {
+							fontFamily: "var(--font-mono)",
+						},
 						a: {
 							textUnderlineOffset: "2px",
 							"&:hover": {
@@ -19,6 +25,9 @@ export default {
 						blockquote: {
 							borderLeftWidth: "0",
 						},
+						// Quotes in the content carry their own quote marks, so don't add more.
+						"blockquote p:first-of-type::before": { content: "none" },
+						"blockquote p:last-of-type::after": { content: "none" },
 						code: {
 							border: "1px dotted #666",
 							borderRadius: "2px",

@@ -49,8 +49,70 @@
 	initial-value: oklch(55.27% 0.195 19.06);
 }
 
+/* iA Writer fonts, self-hosted from public/fonts/ia-writer (SIL OFL, see LICENSE.md there) */
+@font-face {
+	font-family: "iA Writer Quattro";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterQuattroS-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "iA Writer Quattro";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterQuattroS-Italic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "iA Writer Quattro";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterQuattroS-Bold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "iA Writer Quattro";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterQuattroS-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "iA Writer Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterMonoS-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "iA Writer Mono";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterMonoS-Italic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "iA Writer Mono";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterMonoS-Bold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "iA Writer Mono";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/ia-writer/iAWriterMonoS-BoldItalic.woff2") format("woff2");
+}
+
 /* you could refactor below to use light-dark(), depending on your target audience */
 @theme {
+	--font-sans: "iA Writer Quattro", ui-sans-serif, system-ui, sans-serif;
+	--font-mono:
+		"iA Writer Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+		"Courier New", monospace;
 	--color-global-bg: oklch(98.48% 0 0);
 	--color-global-text: oklch(26.99% 0.0096 235.05);
 	--color-muted: oklch(44.6% 0.03 256.802);

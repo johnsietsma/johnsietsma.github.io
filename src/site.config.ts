@@ -27,6 +27,9 @@ export const siteConfig: SiteConfig = {
 			day: "numeric",
 			month: "short",
 			year: "numeric",
+			// Format in Australian time, not the build machine's (CI runs in UTC, which shows
+			// midnight-AEST publish dates as the previous day).
+			timeZone: "Australia/Sydney",
 		},
 	},
 };
@@ -60,7 +63,7 @@ export const expressiveCodeOptions: AstroExpressiveCodeOptions = {
 	styleOverrides: {
 		borderRadius: "4px",
 		codeFontFamily:
-			'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+			'"iA Writer Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
 		codeFontSize: "0.875rem",
 		codeLineHeight: "1.7142857rem",
 		codePaddingInline: "1rem",

@@ -1,0 +1,57 @@
+<!doctype html>
+<!--
+	Template for public/social-card.png, the site-wide share image.
+	Regenerate from the repo root with:
+	  chrome --headless=new --hide-scrollbars --window-size=1200,630 --screenshot=public/social-card.png scripts/social-card.html
+-->
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<style>
+	@font-face {
+		font-family: "iA Writer Mono";
+		font-weight: 400;
+		src: url("../public/fonts/ia-writer/iAWriterMonoS-Regular.woff2") format("woff2");
+	}
+	@font-face {
+		font-family: "iA Writer Mono";
+		font-weight: 700;
+		src: url("../public/fonts/ia-writer/iAWriterMonoS-Bold.woff2") format("woff2");
+	}
+	html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+	body {
+		display: flex;
+		flex-direction: column;
+		background: #1d1f21;
+		color: #fff;
+		font-family: "iA Writer Mono", monospace;
+	}
+	main { flex: 1; display: flex; align-items: center; gap: 66px; padding: 0 64px; }
+	img { width: 300px; height: 300px; border-radius: 50%; object-fit: cover; }
+	h1 { margin: 0 0 28px; font-size: 76px; font-weight: 700; line-height: 1; }
+	p { margin: 0; font-size: 30px; }
+	.role { color: #c9cacc; margin-bottom: 30px; }
+	.focus { color: #2bbc89; }
+	footer {
+		height: 128px;
+		display: flex;
+		align-items: center;
+		padding: 0 64px;
+		border-top: 2px solid #2bbc89;
+		font-size: 22px;
+		font-weight: 700;
+	}
+</style>
+</head>
+<body>
+	<main>
+		<img alt="" src="../public/assets/images/profile.jpg">
+		<div>
+			<h1>John Sietsma</h1>
+			<p class="role">Creative technologist</p>
+			<p class="focus">3D, capture and machine learning</p>
+		</div>
+	</main>
+	<footer>johnsietsma.com</footer>
+</body>
+</html>

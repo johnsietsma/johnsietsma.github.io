@@ -14,7 +14,8 @@ const toc = generateToc(headings);
 
 {
 	toc.length > 0 && (
-		<details open class="lg:sticky lg:top-12 lg:order-2 lg:-me-32 lg:basis-64">
+		<>
+		<details open class="lg:sticky lg:top-12 lg:order-2 lg:-me-32 lg:basis-64 lg:shrink-0">
 			<summary class="title hover:marker:text-accent cursor-pointer text-lg">
 				Table of Contents
 			</summary>
@@ -26,5 +27,11 @@ const toc = generateToc(headings);
 				</ol>
 			</nav>
 		</details>
+		{/* Start collapsed on narrow screens, where it sits above the post and would fill the first screen */}
+		<script is:inline>
+			if (!matchMedia("(min-width: 64rem)").matches)
+				document.currentScript.previousElementSibling.removeAttribute("open");
+		</script>
+		</>
 	)
 }

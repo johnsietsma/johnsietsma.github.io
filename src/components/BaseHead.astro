@@ -18,6 +18,22 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>{siteTitle}</title>
 
+{/* Preload the regular weights so text doesn't visibly swap fonts on first load */}
+<link
+	as="font"
+	crossorigin
+	href="/fonts/ia-writer/iAWriterMonoS-Regular.woff2"
+	rel="preload"
+	type="font/woff2"
+/>
+<link
+	as="font"
+	crossorigin
+	href="/fonts/ia-writer/iAWriterQuattroS-Regular.woff2"
+	rel="preload"
+	type="font/woff2"
+/>
+
 {/* Icons */}
 <link href="/icon.svg" rel="icon" type="image/svg+xml" />
 {
@@ -60,11 +76,11 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 }
 
 {/* Twitter */}
-<meta content="summary_large_image" property="twitter:card" />
-<meta content={canonicalURL} property="twitter:url" />
-<meta content={title} property="twitter:title" />
-<meta content={description} property="twitter:description" />
-<meta content={socialImageURL} property="twitter:image" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content={canonicalURL} name="twitter:url" />
+<meta content={title} name="twitter:title" />
+<meta content={description} name="twitter:description" />
+<meta content={socialImageURL} name="twitter:image" />
 
 {/* Sitemap */}
 <link href="/sitemap-index.xml" rel="sitemap" />
@@ -85,8 +101,18 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <meta content={Astro.generator} name="generator" />
 
 <!-- GoatCounter analytics: cookie-free page counts, https://johnsietsma.goatcounter.com -->
-<script
-	async
-	data-goatcounter="https://johnsietsma.goatcounter.com/count"
-	is:inline
-	src="https://gc.zgo.at/count.js"></script>
+<!-- Loaded only once the page is shown: count.js doesn't detect Chrome's speculative prerendering,
+     so hovered-but-unvisited links would otherwise count as views. -->
+<script is:inline>
+	(function () {
+		function load() {
+			var s = document.createElement("script");
+			s.async = true;
+			s.dataset.goatcounter = "https://johnsietsma.goatcounter.com/count";
+			s.src = "https://gc.zgo.at/count.js";
+			document.head.appendChild(s);
+		}
+		if (document.prerendering) document.addEventListener("prerenderingchange", load, { once: true });
+		else load();
+	})();
+</script>
