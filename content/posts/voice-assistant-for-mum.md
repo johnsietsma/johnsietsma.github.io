@@ -90,18 +90,6 @@ Her point was that multi-modal feedback is more comforting and human. We're so f
 
 She wanted to dive deeper into the idea that all needs are individual. AI should be able to adapt. Generative UI isn't just visual. It can also shape the voice, the audio and the app's features. It should be able to create responses we haven't planned for.
 
-## The final result
-
-We worked together as a family. We made a cool voice assistant with an Australian accent that mum could chat to. It could handle her tasks, schedule things, remind her of upcoming events. There were multiple rounds of testing, chats with mum. The scenarios we laid out all worked. Everything was good. 
-
-She was surprised it could do everything she needed. She said the voice was "very friendly and nice and makes you feel at ease", and she liked that it said her name.
-
-When I next was visiting I asked mum how it was going. She said after her cataract surgery her vision had improved a bit. She was still able to write notes and that is what works the best. It's tactile, spatial, easy. Nothing beats a pen and paper.
-
-There was a combination of caring for your mum, helping in a way you know how. And also building things because you enjoy it. And also rushing in with a high-tech solution when a low tech solution works better.
-
-I'm happy with that result. When mum's vision continues to deteriorate, then perhaps it will become more useful for her. I'm hoping by then vision assistive technology will have come a long way and people with low vision can do everything on a phone that a sighted person can.
-
 ## What we learnt
 
 This is what we learnt building a voice assistant for our mum. It is not universal advice. I am not an expert in this at all!
@@ -164,10 +152,22 @@ Finally, an assistant can only do what it can connect to.
 
 ### Integration limits
 
-For an assistant to _do_ something, there have to be integrations. Zapier is fine, but needs Google authorisation renewed every now and then. Getting access to GSuite, SMS, online shopping, Uber, etc all require some sort of authorisation which can be tricky if there is not a clean API with API keys. This was a hard limit on what we could do.
+For an assistant to _do_ something, there have to be integrations. Zapier worked, but the Google connection would sometimes expire and need reconnecting, which meant someone sighted had to step in. Getting access to GSuite, SMS, online shopping, Uber, etc all require some sort of authorisation which can be tricky if there is not a clean API with API keys. This was a hard limit on what we could do.
 
 **A plea to Coles and Woolworths:** online shopping sites do everything they can to stop people automating online shopping, and I couldn't find a reliable way to make it work. I understand they are trying to stop scrapers. But please, please open an API so people like me can enable online shopping for vision-impaired people.
 
+## The final result
+
+We worked together as a family. We made a cool voice assistant with an Australian accent that mum could chat to. It could handle her tasks, schedule things, remind her of upcoming events. There were multiple rounds of testing, chats with mum. The scenarios we laid out all worked. Everything was good. 
+
+She was surprised it could do everything she needed. She said the voice was "very friendly and nice and makes you feel at ease", and she liked that it said her name.
+
+When I next was visiting I asked mum how it was going. She said after her cataract surgery her vision had improved a bit. She was still able to write notes and that is what works the best. It's tactile, spatial, easy. Nothing beats a pen and paper.
+
+There was a combination of caring for your mum, helping in a way you know how. And also building things because you enjoy it. And also rushing in with a high-tech solution when a low tech solution works better.
+
+I'm happy with that result.
+
 ## The future
 
-Pen and paper work for now, but probably not for long. We'll continue to look at existing solutions and also whether Helpen will be useful once pen and paper isn't an option.
+Pen and paper work for now, but probably not for long. We'll continue to look at existing solutions and also whether Helpen will be useful once pen and paper isn't an option. I'm hoping by then vision assistive technology will have come a long way and people with low vision can do everything on a phone that a sighted person can.
