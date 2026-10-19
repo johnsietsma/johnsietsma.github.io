@@ -1,7 +1,7 @@
 ---
 title: "We made mum an AI voice assistant"
 publishDate: 2026-10-19T00:00:00+11:00
-description: "Mum was losing her sight, so the family built her a voice assistant to replace her paper diary. Siri, Vapi, an LLM and AWS Lambda."
+description: "Mum was losing her sight, so the family built her a voice assistant to replace her paper diary. Siri, VAPI, an LLM and AWS Lambda."
 tags:
   - voice
   - ai
@@ -32,7 +32,7 @@ My siblings and I all work in technology. So we decided to see if building a voi
 
 In classic software engineering fashion I jumped into building way too quickly. My brother said why don't we actually talk to mum to see what she wants? Brilliant idea. That was the first lesson, every time we talked to mum we learnt something surprising about what she needed and wanted.
 
-We learnt that she wants to record things as she thinks about them, organisation is really important, she needs to be able to share her shopping list with her carer, doctors give cab charges but she and friends have had bad taxi experiences and more.
+We learnt that she wants to record things as she thinks about them, organisation is really important, she needs to be able to share her shopping list with her carer, doctors give taxi vouchers but she and friends have had bad taxi experiences and more.
 
 There was complexity with different needs, particular ways she liked to do things and the support structures she has.
 
@@ -46,17 +46,13 @@ So we built her a voice assistant. We called it Helpen, which is Dutch for "to h
 
 It was never a product. There was no business plan and no other users. It was a thing just for mum. That made a lot of decisions easy: hard-code what suits her, use shared API keys, deploy outside the App Store. Building for one person is much, much easier than making a product for many.
 
-<!-- TODO: photo of the paper diary? -->
-
-## The tech stack
-
 The app is a small [React Native](https://reactnative.dev/) and [Expo](https://expo.dev/) app. When it opens, it starts a voice call straight away. There's almost no screen, just a few audio tones. 
 
 Expo worked very well for me, it saved a lot of certificate handling pain, it made deployment for both iOS and Android super easy. But then I lost all the time again trying to get my sister set up with the same flow, errors I could just not fix.
 
-My brother found and suggested [Vapi](https://vapi.ai/) for the voice side of things. It's effectively a voice API with an LLM in the cloud. Again, very easy to use and prototype, perfect for this type of project.
+My brother found and suggested [VAPI](https://vapi.ai/) for the voice side of things. It's effectively a voice API with an LLM in the cloud. Again, very easy to use and prototype, perfect for this type of project.
 
-The app code lived in an AWS lambda. It started as an MCP server. This should have been painless, but as I've found in other projects, it breaks in weird ways. Getting VAPI and MCP to work together was painful. I switched to plain REST endpoints, which required more setup in VAPI, but it worked.
+The backend lived in AWS Lambda. It started as an MCP server. This should have been painless, but as I've found in other projects, it breaks in weird ways. Getting VAPI and MCP to work together was painful. I switched to plain REST endpoints, which required more setup in VAPI, but it worked.
 
 I kept the MCP so I could test locally. My sister's scenarios came in handy here. They became integration tests that I could run with a local [Ollama](https://ollama.com/) server.
 
@@ -64,7 +60,7 @@ There's no database. The backend is Todoist. The key advantage is that it handle
 
 For example, assigning a task to someone sends them a notification. So when mum says "ask John to fix the gate", I get a ping on my phone.
 
-![How Helpen fits together: mum asks Siri to open the Helpen app, the app starts a Vapi voice call, Vapi calls tools on a Python API on AWS Lambda, the tools read and write Todoist, and Todoist notifies the family's phones.](/assets/images/helpen/flow.svg)
+![How Helpen fits together: mum asks Siri to open the Helpen app, the app starts a VAPI voice call, VAPI calls tools on a Python API on AWS Lambda, the tools read and write Todoist, and Todoist notifies the family's phones.](/assets/images/helpen/flow.svg)
 
 ## Testing
 
@@ -92,7 +88,7 @@ She added audio feedback:
 
 Her point was that multi-modal feedback is more comforting and human. We're so focused on parsing symbols; we forget about the other senses, and other ways of conveying information.
 
-She wanted to dive deeper into the idea that all needs are individual. AI should be able to adapt. Generative UI can also be about voice, audio, features. It should be able to create responses we haven't planned for.
+She wanted to dive deeper into the idea that all needs are individual. AI should be able to adapt. Generative UI isn't just visual. It can also shape the voice, the audio and the app's features. It should be able to create responses we haven't planned for.
 
 ## The final result
 
@@ -132,19 +128,15 @@ Because of the lack of spatial awareness and at a glance summaries, we made sure
 
 The assistant reads back anything important before acting on it: appointments, messages to family, anything being deleted. After a change, it says the new state: "You now have four things for John."
 
-### Consistency matters
+### Words matter
 
 My sister noted the assistant used different wording each time. A "task", "note", "job", all meaning much the same thing. Variation became confusion.
-
-### Word choice is important
 
 Our dog trainer told us not to use similar sounding words for commands. Dogs confuse "go" and "no". Voice apps are the same. 
 
 We wanted Siri to open the app but "Helpen" and "health" sound similar. Mum was often in the Health app instead of the Helpen app. We need to be very careful about key words and phrases.
 
-### Tone matters
-
-We designed with functionality in mind, "Assign John a task". But that's not how mum talks. She likes to say "Send John a message to ...". It's kinder.
+Tone matters too. We designed with functionality in mind, "Assign John a task". But that's not how mum talks. She likes to say "Send John a message to ...". It's kinder.
 
 We had to design for how mum talks about things, not how a software developer thinks about requirements and jobs.
 
@@ -162,7 +154,7 @@ We thought of this as an app with a purpose. Mum would open it and make some not
 
 Because the assistant talks and responds in a human-like way, it's natural to assume it is a multi-purpose assistant. It's a different mental model to what we had.
 
-### LLM guard rails
+### LLM guardrails
 
 In testing my sister found Helpen would make promises to do things it couldn't actually do. Like with all LLMs, having guardrails is important. 
 
@@ -172,10 +164,10 @@ Finally, an assistant can only do what it can connect to.
 
 ### Integration limits
 
-For an assistant to _do_ something, then there has to be integrations. Zapier is fine, but needs Google authorisation renewed every now and then. Getting access to GSuite, SMS, online shopping, Uber, etc all require some sort of authorisation which can be tricky if there is not a clean API with API keys. This was a hard limit on what we could do.
+For an assistant to _do_ something, there have to be integrations. Zapier is fine, but needs Google authorisation renewed every now and then. Getting access to GSuite, SMS, online shopping, Uber, etc all require some sort of authorisation which can be tricky if there is not a clean API with API keys. This was a hard limit on what we could do.
 
-*Special mention* I want to point out the online shopping sites like Coles and Woolworths do everything they can to stop people automating online shopping. I tried pretty hard to find ways around this. I understand they are trying to stop scrapers. But please, please open an API so people like me can enable online shopping for vision impaired people.
+**A plea to Coles and Woolworths:** online shopping sites do everything they can to stop people automating online shopping, and I couldn't find a reliable way to make it work. I understand they are trying to stop scrapers. But please, please open an API so people like me can enable online shopping for vision-impaired people.
 
 ## The future
 
-Although pen and paper work for now, it won't work for long. We'll continue to look at existing solutions and also whether Helpen will be useful once pen and paper isn't an option.
+Pen and paper work for now, but probably not for long. We'll continue to look at existing solutions and also whether Helpen will be useful once pen and paper isn't an option.

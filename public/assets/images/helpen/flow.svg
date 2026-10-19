@@ -16,7 +16,7 @@
     <text x="285" y="84" font-size="12">"open Helpen"</text>
     <text x="475" y="62" font-weight="600">Helpen app</text>
     <text x="475" y="84" font-size="12">starts a voice call</text>
-    <text x="665" y="62" font-weight="600">Vapi</text>
+    <text x="665" y="62" font-weight="600">VAPI</text>
     <text x="665" y="84" font-size="12">speech → LLM → voice</text>
     <text x="665" y="206" font-weight="600">Tools API</text>
     <text x="665" y="228" font-size="12">Python on AWS Lambda</text>
