@@ -168,6 +168,4 @@ There was a combination of caring for your mum, helping in a way you know how. A
 
 I'm happy with that result.
 
-## The future
-
 Pen and paper work for now, but probably not for long. We'll continue to look at existing solutions and also whether Helpen will be useful once pen and paper isn't an option. I'm hoping by then vision assistive technology will have come a long way and people with low vision can do everything on a phone that a sighted person can.
