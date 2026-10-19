@@ -49,7 +49,7 @@ for (const file of walk(LOCAL_DIR)) {
 				"wrangler", "r2", "object", "put", `${BUCKET}/${key}`,
 				"--file", file,
 				"--content-type", CONTENT_TYPES[extname(file).toLowerCase()],
-				"--cache-control", "public, max-age=31536000",
+				"--cache-control", "public,max-age=31536000",
 				"--remote",
 			],
 			{ stdio: "inherit", shell: process.platform === "win32" },

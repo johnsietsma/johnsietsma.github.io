@@ -1,13 +1,13 @@
 ---
 title: "We made Mum an AI voice assistant"
-publishDate: 2026-10-01T00:00:00+10:00
+publishDate: 2026-10-19T00:00:00+11:00
 description: "Mum was losing her sight, so the family built her a voice assistant to replace her paper diary. Siri, Vapi, an LLM and AWS Lambda."
 tags:
   - voice
   - ai
   - accessibility
   - family
-draft: true
+draft: false
 ---
 
 ## Losing Her Sight
@@ -77,6 +77,12 @@ It was invaluable to have my sister make notes about things that worked well, wh
 When I first made the app I just had a single big red button that hung up the call, the call started automatically when the app started. In my mind that was all that was required.
 
 My other sister went deeper. Low vision does not mean no vision. She made a design that included ebbing lights with different hues. Movement and colour are two things that are still available when central vision is gone.
+
+<figure>
+  <video autoplay muted loop playsinline preload="metadata" width="100%">
+    <source src="https://media.johnsietsma.com/video/helpen/helpen-ui-loop.mp4" type="video/mp4">
+  </video>
+</figure>
 
 She added audio feedback:
 * A processing tone plays while Helpen fetches data, so silence doesn’t feel like the call dropped.
