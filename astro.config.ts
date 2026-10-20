@@ -35,6 +35,9 @@ export default defineConfig({
     "/2020/02/07/nativeint/": "/posts/nativeint/",
     "/2020/07/20/physical-camera-component/": "/posts/physical-camera-component/",
     "/blog/": "/posts/",
+    "/2016/04/25/angular_public_art/": "/posts/",
+    "/public_art/": "/posts/",
+    "/search/": "/",
   },
 	image: {
 		domains: ["webmention.io"],

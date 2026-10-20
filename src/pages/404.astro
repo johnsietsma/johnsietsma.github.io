@@ -10,4 +10,12 @@ const meta = {
 <PageLayout meta={meta}>
 	<h1 class="title mb-12">404 | Oops something went wrong</h1>
 	<p class="mb-8">Please use the navigation to find your way back</p>
+	<!-- Old Jekyll URLs kept their capitals (e.g. /portfolio/Freelance/); try the lowercase path.
+	     Not an Astro redirect, because on Windows that folder would overwrite the real page. -->
+	<script is:inline>
+		(function () {
+			var lower = location.pathname.toLowerCase();
+			if (lower !== location.pathname) location.replace(lower + location.search + location.hash);
+		})();
+	</script>
 </PageLayout>
