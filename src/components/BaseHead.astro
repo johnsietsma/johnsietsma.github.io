@@ -109,6 +109,10 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 			var s = document.createElement("script");
 			s.async = true;
 			s.dataset.goatcounter = "https://johnsietsma.goatcounter.com/count";
+			// The 404 page's canonical is always /404/, so record the missing URL instead.
+			if (document.querySelector('link[rel="canonical"][href$="/404/"]')) {
+				window.goatcounter = { path: "/404" + location.pathname + location.search };
+			}
 			s.src = "https://gc.zgo.at/count.js";
 			document.head.appendChild(s);
 		}
