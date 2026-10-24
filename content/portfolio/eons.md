@@ -1,12 +1,13 @@
 ---
 title: "Eons"
+organization: Personal project
 position: Designer and Developer
-date: 2014-10-01
-to-date: 2014-06-01
+date: 2014-06-01
+to-date: 2014-10-01
 platforms: [Oculus Rift]
 technologies: [Unity, C#/.NET, Shaders, VR]
-splash: "/images/eons/splash.jpg"
-order: 2
+splash: "/assets/images/eons/tile.jpg"
+order: 4
 categories: [personal]
 ---
 

@@ -1,13 +1,14 @@
 ---
 title: "PlayMaker Mixed Reality Add-ons"
+organization: Personal project
 position: Developer
 date: 2017-08-07
 to-date: 2017-08-07
 platforms: [Unity, HoloLens]
 technologies: [Unity, HoloLens, Mixed Reality]
 www: http://johnsietsma.com/
-splash: "/images/pmmr/PlayMakerMR.jpg"
-order: 1
+splash: "/assets/images/pmmr/tile.jpg"
+order: 13
 categories: [personal]
 ---
 

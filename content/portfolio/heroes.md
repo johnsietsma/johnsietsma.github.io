@@ -1,12 +1,13 @@
 ---
 title: "Heroes over Europe"
+organization: Transmission Games
 position: Lead Programmer
 date: 2007-03-01
 to-date: 2008-03-01
-platforms: [iPad]
+platforms: [Xbox360, PS3, PC]
 technologies: [C#, .NET, C/C++, Xbox360, PS3]
-splash: "/images/hoe/splash.jpg"
-order: 8
+splash: "/assets/images/hoe/tile.jpg"
+order: 14
 categories: [project]
 ---
 

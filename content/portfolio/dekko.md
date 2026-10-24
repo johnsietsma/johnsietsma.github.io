@@ -1,13 +1,14 @@
 ---
-title: "Dekko Augmented Reality"
+title: "Dekko AR Games"
+organization: Dekko
 position: Games Developer and Designer
 date: 2010-12-01
 to-date: 2013-01-01
 platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET, ObjectiveC, C]
 www: http://www.dekko.co/
-splash: "/images/dekko/dekko_splash.jpeg"
-order: 5
+splash: "/assets/images/dekko/tile.jpg"
+order: 10
 categories: [project]
 ---
 
@@ -20,10 +21,10 @@ We published two demos to the app store, Dekko Monkey and Table Top Speed. Table
 
 <div class="row video">
   <div class="col-md-6">
-    <iframe width="480" height="315" src="//www.youtube.com/embed/BAPkxkLdkEY" frameborder="0" allowfullscreen></iframe>
+    <iframe width="480" height="315" src="https://www.youtube.com/embed/BAPkxkLdkEY" frameborder="0" allowfullscreen></iframe>
   </div>
   <div class="col-md-6">
-    <iframe width="480" height="315" src="http://www.youtube.com/embed/Lqh8EXuoW-o" frameborder="0" allowfullscreen></iframe>
+    <iframe width="480" height="315" src="https://www.youtube.com/embed/Lqh8EXuoW-o" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
 

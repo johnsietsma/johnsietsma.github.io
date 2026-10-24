@@ -1,13 +1,14 @@
 ---
-title: "Chocolate Liberation Front"
+title: "Oscura: Lost Light"
+organization: Chocolate Liberation Front
 position: Creative Developer
 date: 2014-03-01
 to-date: 2014-10-01
 platforms: [Steam, iOS, Android]
 technologies: [Unity, C#, .NET, Shaders, Mechanim]
 www: http://www.givemechocolate.me/
-splash: "/images/clf/splash.png"
-order: 3
+splash: "/assets/images/clf/tile.jpg"
+order: 6
 categories: [project]
 ---
 

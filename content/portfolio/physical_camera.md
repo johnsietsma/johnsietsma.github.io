@@ -1,13 +1,15 @@
 ---
 title: "Physical Camera Component"
+hero: false
+organization: Personal project
 position: Developer
 date: 2020-07-20
 to-date: 2020-07-20
 platforms: [Unity]
 technologies: [Unity, HDRP, C#, .NET]
 www: http://johnsietsma.com/
-splash: "/images/physical_camera/close2_thumb.PNG"
-order: 1
+splash: "/assets/images/physical_camera/tile.jpg"
+order: 12
 categories: [personal]
 ---
 

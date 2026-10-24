@@ -1,13 +1,14 @@
 ---
-title: "Many Monkeys"
+title: "Multi-Kinect Installations"
+organization: Many Monkeys
 position: Developer
 date: 2014-09-01
 to-date: 2015-01-01
 platforms: [Windows, Installation]
 technologies: [Unity, C#, .NET, C/C++, Kinect, Point Cloud Library, Image Processing]
 www: http://manymonkeysdev.com/
-splash: "/images/many_monkeys/splash.png"
-order: 1
+splash: "/assets/images/many_monkeys/tile.jpg"
+order: 7
 categories: [project]
 ---
 

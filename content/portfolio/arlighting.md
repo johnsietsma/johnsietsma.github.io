@@ -1,13 +1,15 @@
 ---
 title: "AR Environment Lighting"
+hero: false
+organization: Personal project
 position: Developer
 date: 2018-04-19
 to-date: 2018-04-19
 platforms: [Unity]
 technologies: [Unity, C#, .NET, Shaders]
 www: http://johnsietsma.com/
-splash: "/images/arlighting/kyle_walking_thumb.gif"
-order: 1
+splash: "/assets/images/arlighting/tile.jpg"
+order: 5
 categories: [personal]
 ---
 

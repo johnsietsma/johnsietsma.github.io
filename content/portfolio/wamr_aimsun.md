@@ -7,8 +7,8 @@ to-date: 2019-05-10
 platforms: [Unity]
 technologies: [Unity, C#, .NET, VR, Aimsun, Protocol Buffers, Sockets]
 www: http://johnsietsma.com/
-splash: "/images/aimsun/Micro-non-lane-based.gif"
-order: 1
+splash: "/assets/images/aimsun/tile.jpg"
+order: 3
 categories: [project]
 ---
 

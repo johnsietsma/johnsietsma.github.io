@@ -16,11 +16,58 @@ const meta = {
 	description: entry.data.title,
 	title: entry.data.title,
 };
+
+// Front matter dates are untyped passthrough fields, so read them loosely.
+const year = (d: unknown) => (d ? new Date(d as string).getFullYear() : undefined);
+const from = year(entry.data.date);
+const to = year(entry.data["to-date"]);
+const years = from && to && to !== from ? `${from}–${to}` : from;
+const byline = [entry.data.organization, entry.data.position, years].filter(Boolean).join(" · ");
+const technologies = (entry.data.technologies as string[] | undefined) ?? [];
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="title mb-12">{entry.data.title}</h1>
-	<div class="prose prose-cactus max-w-none">
+	<a class="cactus-link text-muted text-xs" href="/portfolio/">&larr; Projects</a>
+	<h1 class="title mt-4">{entry.data.title}</h1>
+	{byline && <p class="text-muted mt-2">{byline}</p>}
+	{
+		technologies.length > 0 && (
+			<ul class="mt-3 flex flex-wrap gap-2 text-xs" role="list">
+				{technologies.map((t) => (
+					<li class="border-muted/40 rounded-sm border px-1.5 py-0.5">{t}</li>
+				))}
+			</ul>
+		)
+	}
+	{
+		entry.data.hero && entry.data.splash && (
+			<img class="mt-8 aspect-[16/10] w-full rounded-sm object-cover" src={entry.data.splash} alt="" />
+		)
+	}
+	<div class="portfolio-body prose prose-cactus mt-10 max-w-none">
 		<Content />
 	</div>
 </PageLayout>
+
+<style>
+	/* Some entries still carry Bootstrap markup from the Jekyll site. */
+	.portfolio-body :global(.screen-shot .row) {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	}
+	.portfolio-body :global(.screen-shot img) {
+		margin: 0;
+		width: 100%;
+	}
+	.portfolio-body :global(.video .row) {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	}
+	.portfolio-body :global(.video iframe) {
+		aspect-ratio: 16 / 9;
+		height: auto;
+		width: 100%;
+	}
+</style>

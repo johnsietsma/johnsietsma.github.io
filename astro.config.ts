@@ -38,6 +38,10 @@ export default defineConfig({
     "/2016/04/25/angular_public_art/": "/posts/",
     "/public_art/": "/posts/",
     "/search/": "/",
+    "/portfolio/uon/": "/portfolio/crime_scene/",
+    "/portfolio/speaking/": "/speaking/",
+    "/portfolio/teaching/": "/speaking/",
+    "/portfolio/education/": "/about/",
   },
 	image: {
 		domains: ["webmention.io"],

@@ -7,24 +7,36 @@ const meta = {
 	title: "Projects",
 };
 
-const entries = await getCollection("portfolio");
-entries.sort((a, b) => String(b.data.date ?? "").localeCompare(String(a.data.date ?? "")));
+const entries = (await getCollection("portfolio")).sort(
+	(a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
+);
 ---
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-12">Projects</h1>
-	<div class="prose prose-cactus max-w-none">
-		<ul>
-			{
-				entries.map((e) => (
-					<li>
-						<a class="cactus-link" href={"/portfolio/" + e.id + "/"}>
+	<ul class="grid gap-x-6 gap-y-10 sm:grid-cols-2" role="list">
+		{
+			entries.map((e, i) => (
+				<li>
+					<a class="group block" href={"/portfolio/" + e.id + "/"}>
+						{e.data.splash && (
+							<img
+								class="aspect-[16/10] w-full rounded-sm object-cover transition-opacity group-hover:opacity-85"
+								src={e.data.splash}
+								alt=""
+								loading={i < 4 ? "eager" : "lazy"}
+								decoding="async"
+							/>
+						)}
+						<h2 class="text-accent-2 mt-3 font-semibold group-hover:underline group-hover:underline-offset-2">
 							{e.data.title}
-						</a>
-						{e.data.position && <span> &mdash; {e.data.position}</span>}
-					</li>
-				))
-			}
-		</ul>
-	</div>
+						</h2>
+						<p class="text-muted mt-1 text-xs">
+							{[e.data.organization, e.data.position].filter(Boolean).join(" · ")}
+						</p>
+					</a>
+				</li>
+			))
+		}
+	</ul>
 </PageLayout>

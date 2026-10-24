@@ -65,6 +65,9 @@ const portfolio = defineCollection({
 			organization: z.string().optional(),
 			www: z.string().optional(),
 			splash: z.string().optional(),
+			order: z.number().optional(),
+			// Show the splash above the body; off when the body opens with its own image.
+			hero: z.boolean().default(true),
 		})
 		.passthrough(),
 });

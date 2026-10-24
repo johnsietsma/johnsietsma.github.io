@@ -1,13 +1,15 @@
 ---
 title: "Extending LWRP"
+hero: false
+organization: Personal project
 position: Field Engineer
 date: 2019-10-16
 to-date: 2019-10-16
 platforms: [Unity]
 technologies: [Unity, LWRP, Shaders]
 www: http://johnsietsma.com/
-splash: "/images/extending_lwrp/ExtendingLWRP_thumb.PNG"
-order: 1
+splash: "/assets/images/extending_lwrp/tile.jpg"
+order: 11
 categories: [personal]
 ---
 

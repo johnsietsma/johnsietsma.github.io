@@ -1,13 +1,14 @@
 ---
 title: "Armello"
+organization: League of Geeks
 position: Company Director, Technical Director
 date: 2011-09-01
 to-date: 2013-01-01
 platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET]
 www: http://www.armello.com/
-splash: "/images/armello/splash.jpeg"
-order: 4
+splash: "/assets/images/armello/tile.jpg"
+order: 2
 categories: [project]
 ---
 
@@ -22,7 +23,7 @@ As one of the directors, I help set out our business model, attract and lead dev
 <div class="text-center video">
     <div class="row">
         <div class="col-md-12">
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/rFnvUMtFhHI" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rFnvUMtFhHI" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
