@@ -8,7 +8,7 @@ platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET]
 www: http://www.armello.com/
 splash: "/assets/images/armello/tile.jpg"
-order: 2
+order: 3
 categories: [project]
 ---
 

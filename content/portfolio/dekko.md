@@ -8,7 +8,7 @@ platforms: [iPad]
 technologies: [Unity, C#, Mono, .NET, ObjectiveC, C]
 www: http://www.dekko.co/
 splash: "/assets/images/dekko/tile.jpg"
-order: 10
+order: 11
 categories: [project]
 ---
 

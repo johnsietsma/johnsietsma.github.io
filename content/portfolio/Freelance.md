@@ -6,7 +6,7 @@ to-date: 2010-11-01
 platforms: [Mobile]
 technologies: [Django, Python]
 splash: "/assets/images/qode/tile.jpg"
-order: 9
+order: 10
 categories: [project]
 ---
 

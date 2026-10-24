@@ -8,7 +8,7 @@ platforms: [Windows, Installation]
 technologies: [Unity, C#, .NET, C/C++, Kinect, Point Cloud Library, Image Processing]
 www: http://manymonkeysdev.com/
 splash: "/assets/images/many_monkeys/tile.jpg"
-order: 7
+order: 8
 categories: [project]
 ---
 
