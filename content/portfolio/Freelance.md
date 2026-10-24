@@ -2,7 +2,7 @@
 title: "Freelance Projects"
 position: Freelance Developer
 splash: "/assets/images/qode/tile.jpg"
-order: 10
+order: 9
 categories: [project]
 ---
 

@@ -9,7 +9,7 @@ platforms: [Unity]
 technologies: [Unity, LWRP, Shaders]
 www: http://johnsietsma.com/
 splash: "/assets/images/extending_lwrp/tile.jpg"
-order: 12
+order: 10
 categories: [personal]
 ---
 

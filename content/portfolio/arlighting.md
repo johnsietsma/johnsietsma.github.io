@@ -14,7 +14,7 @@ categories: [personal]
 ---
 
 
-![Kyle Walking](/assets/images/arlighting/kyle_walking.gif))
+![Kyle Walking](/assets/images/arlighting/kyle_walking.gif)
 
 Before ARCore and ARKit added environmental lighting, it was a real challenge to make AR content look like it was part of the real world.
 

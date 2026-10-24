@@ -7,7 +7,7 @@ to-date: 2014-10-01
 platforms: [Oculus Rift]
 technologies: [Unity, C#/.NET, Shaders, VR]
 splash: "/assets/images/eons/tile.jpg"
-order: 5
+order: 16
 categories: [personal]
 ---
 

@@ -8,7 +8,7 @@ platforms: [Unity]
 technologies: [Unity, C#, .NET, VR, Aimsun, Protocol Buffers, Sockets]
 www: http://johnsietsma.com/
 splash: "/assets/images/aimsun/tile.jpg"
-order: 4
+order: 13
 categories: [project]
 ---
 
