@@ -42,6 +42,7 @@ export default defineConfig({
     "/portfolio/speaking/": "/speaking/",
     "/portfolio/teaching/": "/speaking/",
     "/portfolio/education/": "/about/",
+    "/portfolio/eons/": "/portfolio/",
   },
 	image: {
 		domains: ["webmention.io"],
