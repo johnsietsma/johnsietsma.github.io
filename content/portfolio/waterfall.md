@@ -16,9 +16,9 @@ At the 2011 Melbourne International Jazz Festival at Fed Square I saw a life cha
 
 I loved the music, the power and imagery. I remember Bae Il Dong falling to his knees at some point during the performance as it reached it's peak. It was really amazing.
 
-There was a back story of Bae Il-dong living near, and doing voice training with a waterfall. I imagined him wrestling, learning, growing as he tested himself against the power of the water.
+There was a backstory of Bae Il-dong living near, and doing voice training with a waterfall. I imagined him wrestling, learning, growing as he tested himself against the power of the water.
 
-I've talked to many people about this project and finally, after 13 years it is coming to life.
+I've talked to many people about this project and finally, after many years it is coming to life.
 
 <figure>
   <video autoplay muted loop playsinline preload="metadata" style="display: block; margin-inline: auto; max-height: 80vh; width: auto; max-width: 100%;">

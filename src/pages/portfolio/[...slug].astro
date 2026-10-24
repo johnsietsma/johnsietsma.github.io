@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import CompareSlider from "@/components/blog/CompareSlider.astro";
 import PageLayout from "@/layouts/Base.astro";
 
 export async function getStaticPaths() {
@@ -24,6 +25,8 @@ const to = year(entry.data["to-date"]);
 const years = from && to && to !== from ? `${from}–${to}` : from;
 const byline = [entry.data.organization, entry.data.position, years].filter(Boolean).join(" · ");
 const technologies = (entry.data.technologies as string[] | undefined) ?? [];
+// Load the comparison-slider web component only on entries that use it.
+const usesCompareSlider = entry.body?.includes("<img-comparison-slider") ?? false;
 ---
 
 <PageLayout meta={meta}>
@@ -47,6 +50,7 @@ const technologies = (entry.data.technologies as string[] | undefined) ?? [];
 	<div class="portfolio-body prose prose-cactus mt-10 max-w-none">
 		<Content />
 	</div>
+	{usesCompareSlider && <CompareSlider />}
 </PageLayout>
 
 <style>

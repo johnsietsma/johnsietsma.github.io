@@ -19,27 +19,33 @@ img-comparison-slider:not(:defined) [slot="second"] {
 	display: none;
 }
 
+/* This file sits in the components layer, and the typography plugin's .prose rules sit in the
+   later utilities layer, which wins regardless of specificity. So every property .prose also sets
+   on figure, img or figcaption is !important here: an important declaration in an earlier layer
+   beats a normal one in a later layer. Without it the panes pick up .prose figure's 2em margins,
+   the slider grows taller than its image and the two images stop lining up. */
 .prose .compare-pane {
 	position: relative;
-	margin: 0;
+	margin: 0 !important;
 }
 
 .prose .compare-pane img {
 	display: block;
 	width: 100%;
 	height: auto;
-	margin: 0;
+	margin: 0 !important;
 }
 
 .prose .compare-pane figcaption {
 	position: absolute;
 	top: 0.75rem;
-	margin: 0;
+	margin: 0 !important;
 	padding: 0.25rem 0.55rem;
-	font-size: 0.7rem;
+	font-size: 0.7rem !important;
+	line-height: 1.5 !important;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: #f2f0eb;
+	color: #f2f0eb !important;
 	background: rgb(8 8 10 / 0.72);
 	pointer-events: none;
 }
