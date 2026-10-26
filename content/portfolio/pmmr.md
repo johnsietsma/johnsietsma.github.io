@@ -8,7 +8,7 @@ platforms: [Unity, HoloLens]
 technologies: [Unity, HoloLens, Mixed Reality]
 www: http://johnsietsma.com/
 splash: "/assets/images/pmmr/tile.jpg"
-order: 12
+order: 13
 categories: [personal]
 ---
 

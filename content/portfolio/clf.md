@@ -8,7 +8,7 @@ platforms: [Steam, iOS, Android]
 technologies: [Unity, C#, .NET, Shaders, Mechanim]
 www: http://www.givemechocolate.me/
 splash: "/assets/images/clf/tile.jpg"
-order: 8
+order: 9
 categories: [project]
 ---
 

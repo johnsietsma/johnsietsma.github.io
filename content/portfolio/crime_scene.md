@@ -8,7 +8,7 @@ platforms: [Unity]
 technologies: [Unity, C#, .NET, VR, Oculus Quest, Oculus Rift]
 www: http://johnsietsma.com/
 splash: "/assets/images/crime_scene/tile.jpg"
-order: 6
+order: 7
 categories: [project]
 ---
 

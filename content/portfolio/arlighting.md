@@ -9,7 +9,7 @@ platforms: [Unity]
 technologies: [Unity, C#, .NET, Shaders]
 www: http://johnsietsma.com/
 splash: "/assets/images/arlighting/tile.jpg"
-order: 4
+order: 5
 categories: [personal]
 ---
 

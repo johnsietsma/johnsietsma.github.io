@@ -8,7 +8,7 @@ platforms: [Unity]
 technologies: [Unity, C#, .NET, VR, Oculus Quest, Oculus Rift]
 www: http://johnsietsma.com/
 splash: "/assets/images/radiation/tile.jpg"
-order: 7
+order: 8
 categories: [project]
 ---
 
