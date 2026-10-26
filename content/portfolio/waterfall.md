@@ -14,7 +14,7 @@ categories: [personal]
 
 At the 2011 Melbourne International Jazz Festival at Fed Square I saw a life changing perfomance by [Chiri](https://simonbarker.bandcamp.com/album/chiri-the-return-of-spring).
 
-I loved the music, the power and imagery. I remember Bae Il Dong falling to his knees at some point during the performance as it reached it's peak. It was really amazing.
+I loved the music, the power and imagery. I remember Bae Il-dong falling to his knees at some point during the performance as it reached it's peak. It was really amazing.
 
 There was a backstory of Bae Il-dong living near, and doing voice training with a waterfall. I imagined him wrestling, learning, growing as he tested himself against the power of the water.
 
